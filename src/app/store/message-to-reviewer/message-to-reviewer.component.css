@@ -1,0 +1,159 @@
+.msg-review .mat-mdc-card {
+    top: 31px;
+}
+
+.pad-div{
+    padding: 0px 20px;
+}
+
+
+@media (min-width:550px) {
+
+    .lowerLine {
+
+        width: 80%;
+        margin: 7px 0px;
+        display: flex;
+        gap: 15px;
+
+    }
+}
+
+.lowerLine {
+
+    width: 80%;
+    margin: 7px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.lowerLine mat-slide-toggle {
+    /* position: reletive;
+    top: 135px; */
+}
+
+@media (min-width:405px) {
+
+    .Lowerline {
+        display: flex;
+    }
+}
+
+@media (min-width:550px) {
+
+    .lowerLine {
+        white-space: wrap;
+    }
+}
+
+.lowerLine p {
+    font-size: medium;
+    font-weight: 250;
+    white-space: nowrap;
+}
+
+
+.line {
+    background: #FF3389;
+    width: 90%;
+    height: 1px;
+    /* position: relative;
+    top: 45px; */
+}
+
+.Lowerline {
+    background: #FF3389;
+    width: 90%;
+    display: none;
+    height: 1px;
+    /* position: relative;
+    top: 25px; */
+}
+
+
+
+.Lowerline span {
+    color: #FF3389;
+    position: relative;
+    top: -7px;
+    left: -5px;
+}
+
+@media (min-width:405px) {
+
+    .Lowerline {
+        display: flex;
+    }
+}
+
+
+.line span {
+    color: #FF3389;
+    position: relative;
+    top: -10px;
+    left: -5px;
+}
+
+.heading h3 {
+    text-wrap: nowrap;
+}
+
+.textContent textarea {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+.heading {
+
+    margin: 7px 0px;
+    display: flex;
+    gap: 15px;
+
+}
+
+/* .heading p {
+    white-space: nowrap;
+    font-size: 9px;
+} */
+
+.line {
+    background: #FF3389;
+    width: 90%;
+    height: 1px;
+    position: relative;
+    top: 30px;
+}
+
+
+.line span {
+    color: #FF3389;
+    position: relative;
+    top: -8px;
+    left: -5px;
+}
+
+/* .mdc-form-field{
+    position:relative;
+    top:14px;
+   } */
+/* 
+.mdc-form-field{
+    position:relative;
+    top:13px;
+   } */
+
+::ng-deep .lowerLine #mat-mdc-slide-toggle-2 {
+    position: relative !important;
+    top: 13px !important;
+}
+
+/* .mat-mdc-form-field {
+    margin-top: 16px;
+} */

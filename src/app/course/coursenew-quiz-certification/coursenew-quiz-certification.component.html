@@ -1,0 +1,40 @@
+<div *ngIf="!isShowNewPlan">
+  <div class="result-statistics">
+    <div class="my-quizzer-heading-div">
+      <p>Quiz & Certification (Optional)</p>
+
+      <div class="quizzers-arrow-line-div">
+        <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+        <p class="quizzers-pink-line"></p>
+      </div>
+    </div>
+  </div>
+  <!-- button div starts -->
+  <div class="buttondiv">
+    <button mat-raised-button color="accent" (click)="toggleNewPlan()">New Quiz</button>
+  </div>
+
+  <div class="cardarticlediv">
+    <mat-card>
+      <mat-card-content>
+        <div class="cardsection">
+          <img src="assets/Courses/Group 340572.png" alt="" />
+          <div class="quizspan">
+            <span class="spanarticle med-24">No Quizz is selected for this course.</span>
+          </div>
+          <div class="spanpara">
+            <span class="reg-16 text-grey">By creating quizzes you can evaluate students and award
+              certificates to them.</span>
+          </div>
+          <!-- <div class="buttonpart">
+                  <button mat-raised-button color="accent">Create an article</button>
+              </div> -->
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<ng-container *ngIf="isShowNewPlan">
+  <app-courses-quiz-and-certificate-button-new-quiz></app-courses-quiz-and-certificate-button-new-quiz>
+</ng-container>

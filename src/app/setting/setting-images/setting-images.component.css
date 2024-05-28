@@ -1,0 +1,402 @@
+* {
+    margin: 0px;
+}
+
+.main {
+    margin-top: 300px;
+    margin-bottom: 26px;
+    margin: 0px 15px;
+}
+
+@media (max-width: 480px) {
+    .main {
+        margin-bottom: 5rem !important;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+    .main {
+        margin-bottom: 3rem !important;
+    }
+}
+
+@media (max-width:482px) {
+    .main {
+        margin-top: 170px;
+
+    }
+}
+
+.heading {
+
+    margin: 7px 0px;
+    display: flex;
+    gap: 15px;
+
+}
+
+.heading p {
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.line {
+    background: #FF3389;
+    width: 90%;
+    height: 1px;
+    position: relative;
+    top: 45px;
+}
+
+
+
+.line span {
+    color: #FF3389;
+    position: relative;
+    top: -11px;
+    left: -4px;
+
+}
+
+.imgContainer {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* margin-right: 20px; */
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 20px 0px;
+    gap: 4rem;
+
+}
+
+
+@media (min-width:946px) {
+    .imgContainer {
+        flex-direction: row;
+        gap: 6rem;
+
+    }
+}
+
+
+
+.profiileImg {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+
+}
+
+@media (max-width:946px) {
+    .profiileImg {
+        align-self: center;
+        width: 50%;
+
+    }
+}
+
+@media (max-width:506px) {
+    .profiileImg {
+        align-self: center;
+        width: 70%;
+
+    }
+}
+
+
+
+.profiileImg p {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+.blueBtn {
+    padding-block: 10px !important;
+    background: #2E108E;
+    color: white;
+
+}
+
+@media (max-width:506px) {
+    .blueBtn {
+        padding-inline: 2px;
+
+    }
+}
+
+
+.centerBtn {
+    /* margin-top: 300px; */
+    position: relative;
+    top: 15px;
+    width: 90%;
+    align-self: center;
+    font-size: medium;
+    padding-inline: 20px;
+    border-radius: 5px;
+
+}
+
+@media (max-width:506px) {
+    .centerBtn {
+        font-size: small;
+
+    }
+}
+
+@media (max-width:506px) {
+    .centerBtn {
+        font-size: x-small;
+
+    }
+}
+
+
+.searchbar {
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.searchbar input {
+    padding-left: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+@media (min-width:506px) {
+    .searchbar input {
+        width: 88px;
+
+    }
+}
+
+@media (max-width:459px) {
+    .searchbar input {
+        width: 50px;
+
+    }
+}
+
+.mat-horizontal-stepper-wrapper .searchbar input[type=text] {
+    outline: none !important;
+}
+
+
+.btnMain {
+    margin: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.pink-btn {
+    background: #FF3389;
+    color: white;
+
+}
+
+.red-btn {
+    padding: 0px 12px;
+    background: #FF0000;
+    color: white;
+
+}
+
+.green-btn {
+    background: #00CF70 !important;
+    color: white !important;
+
+}
+
+
+
+.upperpart {
+    padding: 20px;
+}
+
+.parapart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parapart p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.doyoupart span {
+    color: grey;
+}
+
+.buttondiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-block: 15px;
+}
+
+
+.confirmdelete .buttondiv .mat-mdc-raised-button:nth-child(1) {
+    background-color: var(--secondary-color) !important;
+    color: white !important;
+}
+
+.confirmdelete .buttondiv .mat-mdc-raised-button:nth-child(2) {
+    background-color: var(--red) !important;
+    color: white !important;
+    width: 20% !important;
+}
+
+.upperpart {
+    background-color: rgba(255, 145, 169, 0.2);
+    padding-block: 30px;
+}
+
+.parapart {
+    padding-block: 10px;
+    padding-bottom: 30px;
+}
+
+.buttondiv {
+    background-color: rgba(187, 187, 187, 0.2);
+
+}
+
+/* popup border radius notes ngdeep used */
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+    border-radius: 20px !important;
+}
+
+/* popup responsive media queries */
+@media (min-width:320px) and (max-width:900px) {
+    ::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+        width: inherit !important
+    }
+
+    .parapart p {
+        text-align: center;
+        padding-inline: 30px;
+    }
+
+
+
+
+}
+
+.upload-input-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #EEEEEE !important;
+    border: 1px solid var(--grey);
+}
+
+.upload-image-div {
+    background-color: var(--blue);
+    min-width: fit-content;
+    padding: 12px 15px;
+}
+
+.upload-input-div label {
+    margin: 0px;
+}
+
+.upload{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.placeholder {
+    color: grey;
+    font-size: small;
+    /* margin-top: 15px; */
+}
+
+.line {
+    background: #FF3389;
+    width: 90%;
+    height: 1px;
+    position: relative;
+    top: 30px;
+}
+
+.line span {
+    color: #FF3389;
+    position: relative;
+    top: -7px;
+    left: -5px;
+}
+
+.my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 2rem;
+
+}
+
+.quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.quizzers-pink-line {
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+.quizzers-arrow-icon {
+    margin-right: -10px;
+    color: var(--primary-color);
+    font-size: 15px;
+    min-width: fit-content;
+    height: 100% !important;
+}
+
+.med-16 {
+    font-size: 16px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+.med-20 {
+    font-size: 20px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+@media (max-width: 945px) {
+
+    /* Mat horizontal content container */
+    .mat-stepper-horizontal .mat-horizontal-stepper-wrapper .mat-horizontal-content-container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}

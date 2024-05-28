@@ -1,0 +1,274 @@
+*,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.my-result-heading {
+  font-size: 30px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--primary-color);
+  text-wrap: nowrap;
+  width: 8%;
+  /* padding-bottom: 20px; */
+
+}
+
+.page-container-div {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.result-statistics-div {
+  padding: 10px 20px;
+  /* border-top: 1px solid var(--primary-color); */
+  position: relative;
+}
+
+.result-statistics {
+  font-size: 20px;
+  font-weight: 500;
+  background-color: var(--white);
+  display: flex !important;
+  flex-direction: row;
+  align-items: center !important;
+  width: 100%;
+  /* justify-content: center; */
+  gap: 10px;
+  text-wrap: nowrap;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+
+  ::ng-deep .result-statistics-div {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    position: relative;
+  }
+
+  .result-statistics {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: absolute;
+  }
+}
+
+.my-quizzer-heading-div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.result-statistics p {
+  margin: 0;
+}
+
+.quizzers-arrow-line-div {
+  display: flex;
+  align-items: center;
+  gap: -1;
+  width: 100%;
+}
+
+.quizzers-arrow-icon {
+  color: var(--primary-color);
+  font-size: 15px;
+  width: fit-content;
+  height: 100% !important;
+}
+
+.quizzers-pink-line {
+  border: 1px solid var(--primary-color);
+  width: 100%;
+  opacity: 40%;
+  padding: 0 !important;
+  margin: 0 !important;
+
+
+}
+
+
+/* 3 cards css start */
+.relat_div {
+  position: relative;
+  padding: 25px !important;
+}
+
+.btn_upr_div {
+  display: flex;
+  justify-content: end;
+}
+
+.btn_bro {
+  background-color: var(--brown);
+  color: var(--darkbro);
+  font-size: 35px;
+  font-weight: 700;
+  padding: 20px 38px;
+  height: 60px;
+}
+
+.bronze button {
+  color: var(--darkbro);
+}
+
+.gold button {
+  color: var(--darkorange);
+  background-color: var(--lighyelow);
+
+}
+
+.silver button {
+  background-color: var(--silver);
+  color: var(--bluesil);
+}
+
+.ab_div {
+  position: absolute;
+  top: -30px;
+  left: -20px;
+}
+
+.p2-btn-gren {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.excel_para {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.excel_para2 {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 14px;
+
+}
+
+.gren_text {
+  color: var(--lightgreen);
+  /* color: #00CF70; */
+  /* text-align: start; */
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0px;
+  padding: 0px;
+}
+
+.list_text {
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: start;
+  /* margin: 16px 0px; */
+}
+
+.pur_btn button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 25px;
+}
+
+.card-flex {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+  padding: 10px 40px;
+  margin-top: 20px;
+  /* margin-left: 10px; */
+  /* justify-content: center; */
+}
+
+@media screen and (max-width:420px) {
+  .btn_bro {
+    background-color: var(--brown);
+    color: var(--darkbro);
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 10px;
+    height: 60px;
+  }
+}
+
+/*  */
+
+.mat-card,
+.mdc-card {
+  background-color: var(--white) !important;
+  margin: 0px;
+}
+
+@media (min-width: 669px) and (max-width:1180px) {
+  .card-flex {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width:668px) {
+  .card-flex {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+
+
+
+/* MAT ONR CARD */
+.outer-instructor {
+  margin: 20px;
+  box-shadow: 4px 4px 4px 4px #F5F5F5;
+
+}
+
+.inner-instructor {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.heading-content-instructor {
+  color: black;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.content-instructor {
+  font-size: 16px;
+  font-weight: 900px;
+  font-family: Poppins;
+  text-align: center;
+  margin: 0px;
+  color: var(--grey-sec);
+}
+
+@media screen and (max-width:410px) {
+  .img-course {
+    width: 70%;
+  }
+}
+
+.mat-card,
+.mdc-card {
+  background-color: var(--white) !important;
+}

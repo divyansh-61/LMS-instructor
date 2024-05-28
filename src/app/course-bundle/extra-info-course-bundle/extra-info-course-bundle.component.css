@@ -1,0 +1,277 @@
+p {
+    margin: 6px !important;
+    /* padding: 0px !important; */
+}
+
+.extra-information {
+    margin-top: 20px;
+}
+
+.extra-info-input-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+/* ------------------------image with inpuit ---------------------- */
+
+.new-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.new-form-label {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 400;
+    margin-bottom: 2px;
+    margin-top: 14px;
+}
+
+.icon-relative-div {
+    min-width: fit-content;
+    display: flex;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.2rem;
+    position: relative;
+}
+
+.icon-relative-div .mat-input-class {
+    height: 2rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    border: none !important;
+    margin-top: 8px;
+}
+
+.arrow-Icon {
+    padding: 10px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.mat-input-class {
+    height: 2rem;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.2rem;
+    width: -webkit-fill-available;
+    padding: 20px 4px;
+}
+
+/* ------------------------image with inpuit ---------------------- */
+
+.selected-form-field {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.select-input {
+    height: 2.8rem;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.3rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    color: var(--grey-sec);
+    appearance: none;
+}
+
+.dual-down-arrow {
+    position: absolute;
+    right: 0.4rem;
+    top: 1.2rem;
+}
+
+.dual-down-arrow-input-one {
+    position: absolute;
+    right: 0.4rem;
+    top: 1.2rem;
+}
+
+.grey-text {
+    font-size: 12px;
+    color: var(--grey);
+    font-weight: 500;
+    margin: 0px;
+}
+
+
+
+/* ----------------------------checkbox car ------------------- */
+.checkbox-main-div {
+    display: flex !important;
+    flex-direction: row !important;
+    /* justify-content: space-between; */
+    gap: 20px;
+    width: 80%;
+    padding: 18px;
+    margin-top: 5px;
+    /* overflow-x: auto; */
+}
+
+.checkbox-holder-div {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0px 0px 15px 0px var(--grey);
+    border-radius: 5px;
+    min-width: 25%;
+    max-width: 40%;
+}
+
+.checkbox-holder-heading {
+    width: fit-content;
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--primary-color);
+    border-width: 20% !important;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons-div {
+    margin: 20px 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 900px) {
+    .buttons-div {
+        margin: 20px 0;
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.checkbox-text {
+    text-wrap: nowrap;
+}
+
+@media (max-width: 500px) {
+    .checkbox-main-div {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: left !important;
+        gap: 20px;
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        overflow-x: auto;
+    }
+
+    .checkbox-holder-div {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        box-shadow: 0px 0px 15px 0px var(--grey);
+        border-radius: 5px;
+        width: 100%;
+        /* max-width: 90%; */
+    }
+
+}
+
+@media (max-width: 900px) {
+    .checkbox-main-div {
+        display: flex !important;
+        flex-direction: column !important;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        gap: 20px;
+        min-width: 80%;
+        margin-top: 5px;
+    }
+
+    .checkbox-holder-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: left !important;
+        padding: 15px;
+        box-shadow: 0px 0px 15px 0px var(--grey);
+        border-radius: 5px;
+        min-width: 26%;
+        max-width: 70%;
+    }
+}
+
+.reg-12 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.reg-14 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.reg-16 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.med-16 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ----------------------------checkbox car ------------------- */
+
+.Category-main-div {
+    margin: 20px 0;
+}
+
+.tags-input-div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px 15px;
+    border: 1px solid var(--grey);
+    border-radius: 6px;
+    width: 77%;
+    /* margin-top: 25px; */
+}
+
+.tags-input-inner-div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--white);
+    background-color: var(--blue);
+    width: fit-content;
+    padding: 5px 12px;
+    border-radius: 6px;
+}
+
+
+
+::ng-deep .mat-mdc-input-element:focus {
+    outline: none !important;
+}
+
+::ng-deep .select:focus {
+    outline: none !important;
+}
+
+::ng-deep .mat-mdc-input-element:focus {
+    outline: none !important;
+}
+
+::ng-deep .extra-info-input-div .new-form select {
+    outline: none !important;
+}
+
+::ng-deep .extra-information div select {
+    outline: none !important;
+}

@@ -1,0 +1,345 @@
+<div class="page-container-div">
+
+    <p class="my-result-heading">Students</p>
+
+
+
+    <!-- Students -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Students</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--cards-->
+    <div class="card-grid-div">
+        <!-- First Card -->
+        <mat-card>
+            <div class="card-top">
+                <div>
+                    <img src="../assets/instructor/image 143.png" alt="" class="img_first">
+                </div>
+                <div>
+                    <img src="../assets/instructor/stoke.png" alt="" class="img_second">
+                </div>
+            </div>
+            <div class="card-down">
+                <p class="card-medium">$251.40</p>
+                <p class="card-bottom">Account charge</p>
+            </div>
+        </mat-card>
+
+        <!-- Second Card -->
+        <mat-card>
+            <div class="card-top">
+                <div>
+                    <img src="../assets/instructor/image 144.png" alt="" class="img_first">
+                </div>
+                <div>
+                    <img src="../assets/instructor/stoke.png" alt="" class="img_second">
+                </div>
+            </div>
+            <div class="card-down">
+                <p class="card-medium">$46.50</p>
+                <p class="card-bottom">Ready to payout</p>
+            </div>
+        </mat-card>
+
+        <!-- Third Card -->
+        <mat-card>
+            <div class="card-top">
+                <div>
+                    <img src="../assets/instructor/image 145.png" alt="" class="img_first">
+                </div>
+                <div>
+                    <img src="../assets/instructor/stoke.png" alt="" class="img_second">
+                </div>
+            </div>
+            <div class="card-down">
+                <p class="card-medium">$46.50</p>
+                <p class="card-bottom">Total income</p>
+            </div>
+        </mat-card>
+
+        <!-- Fourth Card -->
+        <mat-card>
+            <div class="card-top">
+                <div>
+                    <img src="../assets/instructor/image 143.png" alt="" class="img_first">
+                </div>
+                <div>
+                    <img src="../assets/instructor/stoke.png" alt="" class="img_second">
+                </div>
+            </div>
+            <div class="card-down">
+                <p class="card-medium">$251.40</p>
+                <p class="card-bottom">Account charge</p>
+            </div>
+        </mat-card>
+
+    </div>
+    <!--end cards-->
+
+
+
+
+
+    <!--  Filter Students -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p> Filter Students</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- form div start  -->
+
+    <div class="form-div">
+
+        <div class="form-row">
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">From </mat-label><br />
+
+                <div class="calendar-input-field">
+
+                    <mat-form-field appearance="outline" class="form-field">
+                        <img src="assets/instructor/Group 340247.png" alt="" class="calendar-img">
+
+                        <input matInput class="input">
+
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">To</mat-label><br />
+
+                <div class="calendar-input-field">
+
+                    <mat-form-field appearance="outline" class="form-field">
+                        <img src="assets/instructor/Group 340247.png" alt="" class="calendar-img">
+
+                        <input matInput class="input">
+
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="form-row">
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Name</mat-label><br />
+
+                <div class="calendar-input-field">
+
+                    <mat-form-field appearance="outline" class="form-field">
+
+                        <input matInput class="input">
+
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Email </mat-label><br />
+
+                <div class="calendar-input-field">
+
+                    <mat-form-field appearance="outline" class="form-field">
+
+                        <input matInput class="input" type="email">
+
+                    </mat-form-field>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="form-row">
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Type</mat-label><br />
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" [(value)]="selected1">
+                            <mat-option value="Hindi">Hindi</mat-option>
+                            <mat-option value="green">English</mat-option>
+                            <mat-option value="blue">Blue</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+
+            <div class="in-form-row button-div">
+                <button mat-raised-button class="show-result-button">Show Results</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <!-- TABLE DIV-->
+    <div class="result-statistics-div">
+        <!-- table  heading -->
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Students List</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- table start -->
+    <div class="quizzer-table-div">
+
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+
+            <!-- Instructor Column -->
+            <ng-container matColumnDef="Name">
+                <th mat-header-cell *matHeaderCellDef class="table-thead" >Name </th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="td-div">
+                        <img [src]="element.Name.img" alt="">
+                        <div class="td-text-div">
+                            <p class="td-text-p1"> {{element.Name.text}}</p>
+
+                            <p class="td-text-p3"> {{element.Name.Text}}</p>
+                        </div>
+                    </div>
+                </td>
+            </ng-container>
+
+            <!-- Quiz Column -->
+            <ng-container matColumnDef="content">
+                <th mat-header-cell *matHeaderCellDef class="table-thead" >Content</th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="td-text-div">
+                        <p class="td-text-p1"> {{element.content.text}}</p>
+                        <p class="td-text-p2"> {{element.content.Text}}</p>
+                    </div>
+                </td>
+            </ng-container>
+
+            <!-- Quiz Grade Column -->
+            <ng-container matColumnDef="Price">
+                <th mat-header-cell *matHeaderCellDef class="table-thead" >Price </th>
+                <td mat-cell *matCellDef="let element" class=" ">
+                    <p class="">{{element.Price}} </p>
+                </td>
+            </ng-container>
+
+
+
+            <!--DiscountColumn -->
+            <ng-container matColumnDef="Discount">
+                <th mat-header-cell *matHeaderCellDef class="table-thead" > Discount </th>
+                <td mat-cell *matCellDef="let element">
+                    <p class="">{{element.Discount}} </p>
+                </td>
+            </ng-container>
+
+            <!--Total Amount -->
+            <ng-container matColumnDef="TotalAmount">
+                <th mat-header-cell *matHeaderCellDef class="table-thead" >Total Amount </th>
+                <td mat-cell *matCellDef="let element">
+                    <p class="">{{element.TotalAmount}} </p>
+                </td>
+            </ng-container>
+
+            <!-- Income -->
+            <ng-container matColumnDef="Income">
+                <th mat-header-cell *matHeaderCellDef class="table-thead" >Income</th>
+                <td mat-cell *matCellDef="let element">
+                    <p class="">{{element.Income}} </p>
+                </td>
+            </ng-container>
+            <!-- Type -->
+            <ng-container matColumnDef="type">
+                <th mat-header-cell *matHeaderCellDef class="table-thead" >Type </th>
+                <td mat-cell *matCellDef="let element"
+                    [ngClass]="element.type == 'Product' ? 'quizzer-text-black' : 'quizzer-text-green' ">
+                    <p class="">{{element.type}} </p>
+                </td>
+            </ng-container>
+
+            <!-- Date Column -->
+            <ng-container matColumnDef="date">
+                <th mat-header-cell *matHeaderCellDef class="table-thead" > Date </th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="quizzer-date-td">
+                        <span> {{element.date}}</span>
+
+                    </div>
+
+                </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+    </div>
+
+
+    <!-- slider button -->
+    <div class="button-slider">
+        <div class="btn-div">
+            <svg xmlns="http://www.w3.org/2000/svg" class=" bt-icon" width="2em" height="2em" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m14 7l-5 5m0 0l5 5" />
+            </svg>
+            <button class="btn-slider">1</button>
+            <button class="btn-slider">2</button>
+            <button class="btn-slider">3</button>
+            <svg xmlns="http://www.w3.org/2000/svg" class=" bt-icon" width="2em" height="2em" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m10 17l5-5m0 0l-5-5" />
+            </svg>
+        </div>
+    </div>
+
+
+
+</div>

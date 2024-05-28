@@ -1,0 +1,54 @@
+.main {
+    margin-top: 250px;
+    margin-bottom: 26px;
+    margin: 0px 15px;
+}
+
+@media (max-width:482px) {
+    .main {
+        margin-top: 170px;
+
+    }
+}
+
+.heading {
+
+    margin: 7px 0px;
+    display: flex;
+    gap: 15px;
+
+}
+
+.heading p {
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.line {
+    background: #FF3389;
+    width: 90%;
+    height: 1px;
+    position: relative;
+    top: 15px;
+}
+
+.line span {
+    color: #FF3389;
+    position: relative;
+    top: -7px;
+    left: -3px;
+}
+
+.textContent{
+    margin-left: 10px;
+}
+
+.biography{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+
+}
+.biography textarea{
+    border-radius: 8px;
+}

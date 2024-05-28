@@ -1,0 +1,185 @@
+<div class="parent-expansion-panel-inner-content">
+
+    <div class="my-quizzer-heading-div-2 head-aroowws ">
+        <div class="expansion-panel-head-text">
+            <p class="med-16">FAQ (Optional)</p>
+            <!-- <p class="med-12 text-grey">4 Topics | 0:00 Hr</p> -->
+        </div>
+
+        <div class="quizzers-arrow-line-div">
+            <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+            <p class="quizzers-pink-line m0"></p>
+        </div>
+    </div>
+
+    <button class="add-button med-14">FAQ (Optional)</button>
+
+
+    <!-- First Inner Expansion Panel -->
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" [expanded]="true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <div class="expansion-panel-head">
+                        <div class="">
+                            <img src="assets/Courses/Group 340514.png" alt="">
+                        </div>
+                        <div class="my-quizzer-heading-div-in">
+                            <div class="my-quizzer-heading-div-2">
+                                <div class="expansion-panel-head-text">
+                                    <p class="med-16">How can I get course updates?</p>
+                                    <!-- <p class="med-12 text-grey">4 Topics | 0:00 Hr</p> -->
+                                </div>
+
+                                <div class="quizzers-arrow-line-div">
+                                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                                    <p class="quizzers-pink-line m0"></p>
+                                </div>
+                            </div>
+
+                            <div class="expansion-panel-heading-icons-div">
+
+                                <!-- Move Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 56 56"
+                                    (click)="$event.stopPropagation();">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M30.014 30.014v16.158l3.757-3.758a2 2 0 0 1 2.829 2.829l-7.071 7.07a2.036 2.036 0 0 1-.052.05a1.995 1.995 0 0 1-1.463.637a1.99 1.99 0 0 1-1.293-.474a2.014 2.014 0 0 1-.25-.212l-7.07-7.071a2 2 0 1 1 2.828-2.829l3.785 3.785V30.014H9.828l3.758 3.757a2 2 0 0 1-2.829 2.829l-7.07-7.071a2.036 2.036 0 0 1-.05-.052A1.995 1.995 0 0 1 3 28.014c0-.493.178-.945.474-1.293c.063-.088.134-.171.212-.25l7.071-7.07a2 2 0 1 1 2.829 2.828L9.8 26.014h16.213V9.801l-3.785 3.785a2 2 0 0 1-2.829-2.829l7.071-7.07c.079-.08.162-.15.25-.213A1.99 1.99 0 0 1 28.013 3c.578 0 1.098.245 1.463.637a.813.813 0 0 1 .052.05l7.07 7.07a2 2 0 1 1-2.828 2.829l-3.757-3.758v16.186h16.185l-3.785-3.785a2 2 0 0 1 2.829-2.829l7.07 7.071c.08.079.15.162.213.25c.296.348.474.8.474 1.293c0 .578-.245 1.098-.637 1.463a2.036 2.036 0 0 1-.05.052l-7.07 7.07a2 2 0 1 1-2.829-2.828l3.758-3.757z" />
+                                </svg>
+                                <!-- THREE dot -->
+                                <div>
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                        aria-label="Example icon-button with a menu"
+                                        (click)="$event.stopPropagation();">
+                                        <mat-icon (click)="$event.stopPropagation();">more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button mat-menu-item>
+                                            delete
+                                        </button>
+                                    </mat-menu>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="child-expansion-panel-inner-content">
+
+                <div class="exp-2-field">
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">Language</mat-label><br />
+                        <div class="">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" [value]="select">
+                                    <mat-option class="btnn" value="Select a course">English</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">Title</mat-label><br />
+                        <div class="">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" [value]="select">
+                                    <mat-option class="btnn" value="Select a course">How can I get course
+                                        updates?</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="in-form-row-textarea">
+                    <mat-label class="form-input-label">Select a course</mat-label><br />
+                    <div class="main-textarea">
+                        <textarea name="" id="" cols="30" rows="10"
+                            placeholder="You will receive a notification after each update is released so you can download updated files from the course page"></textarea>
+                    </div>
+                </div>
+
+                <button class="save-button med-14">Save</button>
+            </div>
+        </mat-expansion-panel>
+    </mat-accordion>
+    <!-- First Inner Expansion Panel End -->
+
+    <!-- second Inner Expansion Panel -->
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <div class="expansion-panel-head">
+                        <div class="">
+                            <img src="assets/Courses/Group 340514.png" alt="">
+                        </div>
+                        <div class="my-quizzer-heading-div-in">
+                            <div class="my-quizzer-heading-div-2">
+                                <div class="expansion-panel-head-text">
+                                    <p class="med-16">How can I download exercise files?</p>
+                                    <!-- <p class="med-12 text-grey">4 Topics | 0:00 Hr</p> -->
+                                </div>
+
+                                <div class="quizzers-arrow-line-div">
+                                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                                    <p class="quizzers-pink-line m0"></p>
+                                </div>
+                            </div>
+
+                            <div class="expansion-panel-heading-icons-div">
+
+                                <!-- Move Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 56 56"
+                                    (click)="$event.stopPropagation();">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M30.014 30.014v16.158l3.757-3.758a2 2 0 0 1 2.829 2.829l-7.071 7.07a2.036 2.036 0 0 1-.052.05a1.995 1.995 0 0 1-1.463.637a1.99 1.99 0 0 1-1.293-.474a2.014 2.014 0 0 1-.25-.212l-7.07-7.071a2 2 0 1 1 2.828-2.829l3.785 3.785V30.014H9.828l3.758 3.757a2 2 0 0 1-2.829 2.829l-7.07-7.071a2.036 2.036 0 0 1-.05-.052A1.995 1.995 0 0 1 3 28.014c0-.493.178-.945.474-1.293c.063-.088.134-.171.212-.25l7.071-7.07a2 2 0 1 1 2.829 2.828L9.8 26.014h16.213V9.801l-3.785 3.785a2 2 0 0 1-2.829-2.829l7.071-7.07c.079-.08.162-.15.25-.213A1.99 1.99 0 0 1 28.013 3c.578 0 1.098.245 1.463.637a.813.813 0 0 1 .052.05l7.07 7.07a2 2 0 1 1-2.828 2.829l-3.757-3.758v16.186h16.185l-3.785-3.785a2 2 0 0 1 2.829-2.829l7.07 7.071c.08.079.15.162.213.25c.296.348.474.8.474 1.293c0 .578-.245 1.098-.637 1.463a2.036 2.036 0 0 1-.05.052l-7.07 7.07a2 2 0 1 1-2.829-2.828l3.758-3.757z" />
+                                </svg>
+                                <!-- THREE dot -->
+                                <div>
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                        aria-label="Example icon-button with a menu"
+                                        (click)="$event.stopPropagation();">
+                                        <mat-icon (click)="$event.stopPropagation();">more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button mat-menu-item>
+                                            delete
+                                        </button>
+                                    </mat-menu>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="child-expansion-panel-inner-content">
+
+
+
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">Select a course</mat-label><br />
+                    <div class="">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" [value]="select">
+                                <mat-option class="btnn" value="Select a course">Select a course</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <p class="grey-16"> Search one of your existing courses and assign it to this bundle</p>
+                    </div>
+                </div>
+
+
+                <button class="save-button med-14">Save</button>
+            </div>
+        </mat-expansion-panel>
+    </mat-accordion>
+    <!-- second Inner Expansion Panel End -->
+
+
+
+
+
+
+</div>

@@ -1,0 +1,158 @@
+<div class="main-notification">
+
+    <!-- Notifications -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Education</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+            <div class="text-with-toggle-div">
+
+                <button class="mark-btn" (click)="successfullpopup()">Add education</button>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="card-slider">
+        <div class="main-card">
+            <!-- card 1 -->
+            <mat-card class="card-year  ">
+                <mat-card-header>
+                    <mat-card-title class="card-year-child  ">Red Hat Certified Engineer (RHCE)</mat-card-title>
+                </mat-card-header>
+                <div class="btn-parent">
+                    <button mat-button [matMenuTriggerFor]="menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="0 0 20 20">
+                            <!-- three dot icon start -->
+                            <g fill="currentColor">
+                                <circle cx="10" cy="15" r="2" />
+                                <circle cx="10" cy="10" r="2" />
+                                <circle cx="10" cy="5" r="2" />
+                            </g>
+                            <!-- three dot icon end -->
+                        </svg></button>
+                    <mat-menu #menu="matMenu">
+
+                        <button mat-menu-item class="btn-3" (click)=" editEducationPopup()">Edit</button>
+                        <button mat-menu-item class="btn-3" (click)="  DeleteItem()">Delete</button>
+
+                    </mat-menu>
+                </div>
+            </mat-card>
+            <!-- card 2 -->
+            <mat-card class="card-year  ">
+                <mat-card-header>
+                    <mat-card-title class="card-year-child  ">AWS Certified DevOps Engineer -
+                        Professional</mat-card-title>
+                </mat-card-header>
+                <div class="btn-parent">
+                    <button mat-button [matMenuTriggerFor]="menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="0 0 20 20">
+                            <!-- three dot icon start -->
+                            <g fill="currentColor">
+                                <circle cx="10" cy="15" r="2" />
+                                <circle cx="10" cy="10" r="2" />
+                                <circle cx="10" cy="5" r="2" />
+                            </g>
+                            <!-- three dot icon end -->
+                        </svg></button>
+                    <mat-menu #menu="matMenu">
+
+                        <button mat-menu-item class="btn-3">Edit</button>
+                        <button mat-menu-item class="btn-3">Delete</button>
+
+                    </mat-menu>
+                </div>
+            </mat-card>
+
+
+            <!-- card 3 -->
+            <mat-card class="card-year  ">
+                <mat-card-header>
+                    <mat-card-title class="card-year-child  ">Linux Foundation Certified System
+                        Administrator</mat-card-title>
+                </mat-card-header>
+                <div class="btn-parent">
+                    <button mat-button [matMenuTriggerFor]="menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="0 0 20 20">
+                            <!-- three dot icon start -->
+                            <g fill="currentColor">
+                                <circle cx="10" cy="15" r="2" />
+                                <circle cx="10" cy="10" r="2" />
+                                <circle cx="10" cy="5" r="2" />
+                            </g>
+                            <!-- three dot icon end -->
+                        </svg></button>
+                    <mat-menu #menu="matMenu">
+
+                        <button mat-menu-item class="btn-3">Edit</button>
+                        <button mat-menu-item class="btn-3">Delete</button>
+
+                    </mat-menu>
+                </div>
+            </mat-card>
+
+
+            <!-- card 4 -->
+            <mat-card class="card-year  ">
+                <mat-card-header>
+                    <mat-card-title class="card-year-child  ">Master of Science in Information Systems (MSIS) from
+                        University of Sydney</mat-card-title>
+                </mat-card-header>
+                <div class="btn-parent">
+                    <button mat-button [matMenuTriggerFor]="menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="0 0 20 20">
+                            <!-- three dot icon start -->
+                            <g fill="currentColor">
+                                <circle cx="10" cy="15" r="2" />
+                                <circle cx="10" cy="10" r="2" />
+                                <circle cx="10" cy="5" r="2" />
+                            </g>
+                            <!-- three dot icon end -->
+                        </svg></button>
+                    <mat-menu #menu="matMenu">
+
+                        <button mat-menu-item class="btn-3">Edit</button>
+                        <button mat-menu-item class="btn-3">Delete</button>
+
+                    </mat-menu>
+                </div>
+            </mat-card>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <!-- Buttons -->
+
+    <div class="btnMain">
+
+        <div class="btn-container">
+            <button mat-raised-button class="pink-btn dull">Previous</button>
+            <button mat-raised-button class="pink-btn">Next</button>
+        </div>
+
+
+        <div class="btn-container">
+            <button mat-raised-button class="red-btn" (click)=" DeleteAccount()">Delete Account</button>
+            <button mat-raised-button class="green-btn">Save</button>
+        </div>
+
+    </div>
+
+
+</div>

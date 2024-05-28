@@ -1,0 +1,82 @@
+<!-- Heading -->
+<div class="my-quizzer-heading-div">
+    <p class="med-20">Images </p>
+
+    <div class="quizzers-arrow-line-div">
+        <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+        <p class="quizzers-pink-line m0"></p>
+    </div>
+</div>
+
+
+<!-- Image DIV -->
+
+<div class="imgContainer">
+
+    <!-- aage ka div -->
+    <div class="profiileImg">
+
+        <p>Profile Image</p>
+        <img mat-card-image src="../../../assets/SettingImages/userBoy.png">
+
+        <label for="upload">
+            <!-- <button mat-button class="blueBtn centerBtn" > -->
+            <span class="blueBtn centerBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256">
+                    <path fill="currentColor"
+                        d="M204.24 116.24a6 6 0 0 1-8.48 0L134 54.49V216a6 6 0 0 1-12 0V54.49l-61.76 61.75a6 6 0 0 1-8.48-8.48l72-72a6 6 0 0 1 8.48 0l72 72a6 6 0 0 1 0 8.48" />
+                </svg>
+                Select an Image
+            </span>
+            <!-- Select an image</button> -->
+
+        </label>
+        <input hidden type="file" id="upload">
+
+
+    </div>
+
+    <!-- pichhe ka div -->
+    <div class="profiileImg">
+
+        <p>Profile Image</p>
+        <img mat-card-image src="../../../assets/SettingImages/profileCover.png">
+
+        <!-- <div class="searchbar">
+    <button mat-button class="blueBtn" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="currentColor" d="M204.24 116.24a6 6 0 0 1-8.48 0L134 54.49V216a6 6 0 0 1-12 0V54.49l-61.76 61.75a6 6 0 0 1-8.48-8.48l72-72a6 6 0 0 1 8.48 0l72 72a6 6 0 0 1 0 8.48"/></svg>
+       </button>
+       <input type="text" placeholder="/store/1015/6.jpg">
+    </div> -->
+
+        <div class="upload-input-div">
+            <label for="accessibility" class="upload-image-div">
+                <img src="../../../assets/Setting/identify-financial/upload.png" alt="">
+            </label>
+            <input hidden type="file" class="input" id="accessibility">
+            <span class="placeholder">/store/1015/certificate_validation.jpg</span>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+<!-- Buttons -->
+
+<div class="btnMain">
+
+    <div class="btn-container">
+        <button mat-raised-button class="pink-btn ">Previous</button>
+        <button mat-raised-button class="pink-btn">Next</button>
+    </div>
+
+
+    <div class="btn-container">
+        <button mat-raised-button class="red-btn " (click)="  successfullpopup()">Delete Account</button>
+        <button mat-raised-button class="green-btn">Save</button>
+    </div>
+
+</div>

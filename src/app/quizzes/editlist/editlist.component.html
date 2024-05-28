@@ -1,0 +1,331 @@
+<div class="result-statistics-div quiz_head">
+    <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+            <p>Edit (Entrance Quiz)</p>
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line m0"></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="main-input-fields-div">
+        <div class="new-form">
+            <mat-label class="new-form-label">Language</mat-label>
+            <div class="selected-form-field">
+                <select class="select-input">
+                    <option value="">English</option>
+                </select>
+                <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 15 15">
+                        <path fill="#808080" d="M7.5 12L0 4h15z" />
+                    </svg></span>
+            </div>
+        </div>
+        <div class="new-form">
+            <mat-label class="new-form-label">Course</mat-label>
+            <div class="selected-form-field">
+                <select class="select-input">
+                    <option value="">Live class</option>
+                </select>
+                <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 15 15">
+                        <path fill="#808080" d="M7.5 12L0 4h15z" />
+                    </svg></span>
+            </div>
+        </div>
+        <div class="new-form">
+            <mat-label class="new-form-label">Quiz title</mat-label>
+            <input class="mat-input-class" matInput placeholder="">
+        </div>
+        <div class="new-form">
+            <mat-label class="new-form-label">Time (Minutes)</mat-label>
+            <input class="mat-input-class" matInput placeholder="Leave it blank for unlimited.
+            ">
+        </div>
+        <div class="new-form">
+            <mat-label class="new-form-label">Number of attempts</mat-label>
+            <input class="mat-input-class" matInput placeholder="Leave it blank for unlimited.
+
+            ">
+        </div>
+        <div class="new-form">
+            <mat-label class="new-form-label">Pass mark</mat-label>
+            <input class="mat-input-class" matInput placeholder="">
+        </div>
+        <div class="new-form">
+            <mat-label class="new-form-label">Expiry days</mat-label>
+            <input class="mat-input-class" matInput placeholder="">
+            <p class="reg-17">The quiz will be expired X days after purchase</p>
+        </div>
+    </div>
+    <div class="result-statistics-div toggle_div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p class="reg-16">Display limited questions</p>
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+            <div class="text-with-toggle-div">
+                <!-- <p>Show only open results</p> -->
+                <mat-slide-toggle checked=""></mat-slide-toggle>
+            </div>
+        </div>
+    </div>
+    <div class="new-form">
+        <mat-label class="new-form-label">Number of questions (Total questions: 6)</mat-label>
+        <input matinput="" placeholder="Leave it blank for unlimited."
+            class="mat-mdc-input-element mat-input-class cdk-text-field-autofill-monitored"
+            ng-reflect-placeholder="Leave it blank for unlimited." id="mat-input-2" aria-invalid="false"
+            aria-required="false">
+    </div>
+
+    <div class=" toggle_div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p class="reg-16">Display questions randomly</p>
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+            <div class="text-with-toggle-div">
+                <!-- <p>Show only open results</p> -->
+                <mat-slide-toggle></mat-slide-toggle>
+            </div>
+        </div>
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p class="reg-16">Certificate included</p>
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+            <div class="text-with-toggle-div">
+                <!-- <p>Show only open results</p> -->
+                <mat-slide-toggle checked=""></mat-slide-toggle>
+            </div>
+        </div>
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p class="reg-16">Active quiz</p>
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+            <div class="text-with-toggle-div">
+                <!-- <p>Show only open results</p> -->
+                <mat-slide-toggle checked=""></mat-slide-toggle>
+            </div>
+        </div>
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p class="reg-18">Questions</p>
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+        </div>
+        <div class="edit-btnlist">
+            <button (click)="multipopup()" mat-dialog-close mat-raised-button=""
+                mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                class=" btn-notice mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base">
+                <span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span>
+                <span class="mdc-button__label">Add a multiple choice</span>
+                <span class="mat-mdc-focus-indicator"></span>
+                <span class="mat-mdc-button-touch-target"></span>
+                <span class="mat-ripple mat-mdc-button-ripple"></span>
+            </button>
+            <button (click)=" adddescribtionpopup()" mat-raised-button=""
+                mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                class=" btn-notice mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base">
+                <span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span>
+                <span class="mdc-button__label">Add descriptive</span>
+                <span class="mat-mdc-focus-indicator"></span>
+                <span class="mat-mdc-button-touch-target"></span>
+                <span class="mat-ripple mat-mdc-button-ripple"></span>
+            </button>
+        </div>
+
+        <!--expansion section start-->
+
+        <div class="expansion-panel-div">
+
+            <div class="example-headers-align">
+
+                <div class="my-quizzer-heading-div">
+                    <p class="sub-heading med-16">Which photo belongs to France?<br>
+                        <span class="edit_para">Multiple choice | Grade: 20</span>
+                    </p>
+
+                    <div class="quizzers-arrow-line-div">
+                        <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                        <p class="quizzers-pink-line m0"></p>
+                    </div>
+                </div>
+
+                <div class="head-icon-row">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                            <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item mat-dialog-close> Edit </button>
+                            <button mat-menu-item (click)="deletepopup()" mat-dialog-close> Delete </button>
+
+                        </mat-menu>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="example-headers-align">
+                <div class="my-quizzer-heading-div">
+                    <p class="sub-heading med-16">Which image is autumn?<br>
+                        <span class="edit_para">Multiple choice | Grade: 20</span>
+                    </p>
+
+                    <div class="quizzers-arrow-line-div">
+                        <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                        <p class="quizzers-pink-line m0"></p>
+                    </div>
+                </div>
+
+                <div class="head-icon-row">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                            <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item mat-dialog-close> Edit </button>
+                            <button mat-menu-item (click)="deletepopup()" mat-dialog-close> Delete </button>
+
+                        </mat-menu>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="example-headers-align">
+                <div class="my-quizzer-heading-div">
+                    <p class="sub-heading med-16">Which image belongs a China?<br>
+                        <span class="edit_para">Multiple choice | Grade: 20</span>
+                    </p>
+
+                    <div class="quizzers-arrow-line-div">
+                        <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                        <p class="quizzers-pink-line m0"></p>
+                    </div>
+                </div>
+
+                <div class="head-icon-row">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                            <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item mat-dialog-close> Edit </button>
+                            <button mat-menu-item (click)="deletepopup()" mat-dialog-close> Delete </button>
+
+                        </mat-menu>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="example-headers-align">
+                <div class="my-quizzer-heading-div">
+                    <p class="sub-heading med-16">Which animal lives in water?<br>
+                        <span class="edit_para">Multiple choice | Grade: 20</span>
+                    </p>
+
+                    <div class="quizzers-arrow-line-div">
+                        <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                        <p class="quizzers-pink-line m0"></p>
+                    </div>
+                </div>
+
+                <div class="head-icon-row">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                            <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item mat-dialog-close> Edit </button>
+                            <button mat-menu-item (click)="deletepopup()" mat-dialog-close> Delete </button>
+
+                        </mat-menu>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="example-headers-align">
+                <div class="my-quizzer-heading-div">
+                    <p class="sub-heading med-16">Which image is autumn?<br>
+                        <span class="edit_para">Multiple choice | Grade: 10</span>
+                    </p>
+
+                    <div class="quizzers-arrow-line-div">
+                        <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                        <p class="quizzers-pink-line m0"></p>
+                    </div>
+                </div>
+
+                <div class="head-icon-row">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                            <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item mat-dialog-close> Edit </button>
+                            <button mat-menu-item (click)="deletepopup()" mat-dialog-close> Delete </button>
+
+                        </mat-menu>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <button mat-raised-button class="btn-notice" (click)="savepopup()">Save</button>
+
+        </div>
+    </div>
+</div>

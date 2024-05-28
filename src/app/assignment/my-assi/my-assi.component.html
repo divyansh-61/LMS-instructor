@@ -1,0 +1,233 @@
+<div class="page-container-div">
+
+
+
+
+    <!-- Students -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Assignment Statistics</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+        <!--cards-->
+<div class="card-grid-div">
+    <!-- First Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="assets/assignment/image 143.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="assets/instructor/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">1</p>
+            <p class="card-bottom">Course Assignments</p>
+        </div>
+    </mat-card>
+    <!-- Second Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="assets/assignment/image 144.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="assets/instructor/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">0</p>
+            <p class="card-bottom">Pending Review</p>
+        </div>
+    </mat-card>
+    <!-- Third Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="assets/assignment/image 145.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="assets/instructor/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">0</p>
+            <p class="card-bottom">Passede</p>
+        </div>
+    </mat-card>
+    <!-- fourth Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="assets/assignment/image 146.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="assets/instructor/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">1</p>
+            <p class="card-bottom">Failed</p>
+        </div>
+    </mat-card>
+</div>
+<!--end cards-->
+
+   
+
+
+
+    <!--  Filter Students -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p> Filter Assignments</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- form div start  -->
+
+        <div class="form-div">
+
+            <div class="form-row">
+
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">From </mat-label><br />
+
+                    <div class="calendar-input-field">
+
+                        <mat-form-field appearance="outline" class="form-field">
+                           <img src="assets/instructor/Group 340247.png" alt="" class="calendar-img">
+
+                            <input matInput class="input">
+
+                        </mat-form-field>
+
+                    </div>
+
+                </div>
+
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">To</mat-label><br />
+
+                    <div class="calendar-input-field">
+
+                        <mat-form-field appearance="outline" class="form-field">
+                           <img src="assets/instructor/Group 340247.png" alt="" class="calendar-img">
+
+                            <input matInput class="input">
+
+                        </mat-form-field>
+
+                    </div>
+
+                </div>
+                <!-- student -->
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">Student</mat-label><br />
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" [(value)]="selected1">
+                                <mat-option value="Hindi">Hindi</mat-option>
+                                <mat-option value="green">English</mat-option>
+                                <mat-option value="blue">Blue</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+            </div>
+ 
+           
+
+            <div class="form-row">
+                <!-- status div start -->
+
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">Status</mat-label><br />
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <mat-select class="select_in" [(value)]="selected1">
+                                <mat-option value="Hindi">Hindi</mat-option>
+                                <mat-option value="green">English</mat-option>
+                                <mat-option value="blue">Blue</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+
+
+                <div class="in-form-row button-div">
+                    <button mat-raised-button class="show-result-button">Show Results</button>
+                </div>
+            </div>
+
+          
+
+        </div>
+
+
+
+
+    <!-- TABLE DIV-->
+    <div class="result-statistics-div">
+        <!-- table  heading -->
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>My Assignments</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- mat card -->
+    
+<!-- card start -->
+<mat-card   class="outer-instructor">
+    
+    <mat-card-content class="inner-instructor  ">
+    <img src="assets/assignment/Group 340281.png" alt="" class="img-course">
+        <p class="heading-content-instructor">
+            No Assignments!</p>
+        <p class="content-instructor">
+            Your courses doesn't include any assignments.</p>
+       
+        
+        
+    </mat-card-content>
+    </mat-card>
+    <!-- card end -->
+
+
+</div>
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+
+.buttons-div {
+    margin: 20px 0;
+    gap: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-wrap: nowrap;
+}
+
+.buttons-div-2 {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.butten-1 {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--lighpink);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+.butten-2 {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+.butten-3 {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--red);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+
+
+.red-btn{
+    background: #FF0000;
+}
+

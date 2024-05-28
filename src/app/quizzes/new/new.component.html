@@ -1,0 +1,116 @@
+<div class="result-statistics-div quiz_head">
+    <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+            <p>New Quiz</p>
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line m0"></p>
+            </div>
+        </div>
+        
+    </div>
+<div class="main-input-fields-div">
+    <div class="new-form">
+        <mat-label class="new-form-label">Language</mat-label>
+        <div class="selected-form-field">
+            <select class="select-input">
+                <option value="">English</option>
+            </select>
+            <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                    viewBox="0 0 15 15">
+                    <path fill="#808080" d="M7.5 12L0 4h15z" />
+                </svg></span>
+        </div>
+    </div>
+    <div class="new-form">
+        <mat-label class="new-form-label">Course</mat-label>
+        <div class="selected-form-field">
+            <select class="select-input">
+                <option value="">Live class</option>
+            </select>
+            <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                    viewBox="0 0 15 15">
+                    <path fill="#808080" d="M7.5 12L0 4h15z" />
+                </svg></span>
+        </div>
+    </div>
+    <div class="new-form">
+        <mat-label class="new-form-label">Quiz title</mat-label>
+        <input class="mat-input-class" matInput placeholder="">
+    </div>
+    <div class="new-form">
+        <mat-label class="new-form-label">Time (Minutes)</mat-label>
+        <input class="mat-input-class" matInput
+            placeholder="Leave it blank for unlimited.
+            ">
+    </div>
+    <div class="new-form">
+        <mat-label class="new-form-label">Number of attempts</mat-label>
+        <input class="mat-input-class" matInput
+            placeholder="Leave it blank for unlimited.
+
+            ">
+    </div>
+    <div class="new-form">
+        <mat-label class="new-form-label">Pass mark</mat-label>
+        <input class="mat-input-class" matInput
+            placeholder="">
+    </div>
+    <div class="new-form">
+        <mat-label class="new-form-label">Expiry days</mat-label>
+        <input class="mat-input-class" matInput
+            placeholder="">
+            <p class="reg-17">The quiz will be expired X days after purchase</p>
+    </div>
+</div>
+
+<div class="result-statistics-div toggle_div">
+    <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+            <p class="reg-16">Display questions randomly</p>
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line m0"></p>
+            </div>
+        </div>
+        <div class="text-with-toggle-div">
+            <!-- <p>Show only open results</p> -->
+            <mat-slide-toggle checked=""></mat-slide-toggle>
+        </div>
+    </div>
+    <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+            <p class="reg-16">Certificate included</p>
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line m0"></p>
+            </div>
+        </div>
+        <div class="text-with-toggle-div">
+            <!-- <p>Show only open results</p> -->
+            <mat-slide-toggle checked=""></mat-slide-toggle>
+        </div>
+    </div>
+    <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+            <p class="reg-16">Active quiz</p>
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line m0"></p>
+            </div>
+        </div>
+        <div class="text-with-toggle-div">
+            <!-- <p>Show only open results</p> -->
+            <mat-slide-toggle checked=""></mat-slide-toggle>
+        </div>
+    </div>
+    <div  class="">
+        <button (click)="quizzepopup()"  mat-dialog-close mat-raised-button="" mat-ripple-loader-class-name="mat-mdc-button-ripple" class=" btn-notice mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base">
+            <span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span>
+            <span class="mdc-button__label">Create</span>
+            <span class="mat-mdc-focus-indicator"></span>
+            <span class="mat-mdc-button-touch-target"></span>
+            <span class="mat-ripple mat-mdc-button-ripple"></span>
+        </button>
+    </div>
+</div>

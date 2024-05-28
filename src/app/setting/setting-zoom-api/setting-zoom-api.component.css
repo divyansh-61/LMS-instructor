@@ -1,0 +1,127 @@
+.main-zoom {
+    padding: 10px;
+}
+
+@media (max-width: 480px) {
+    .main-zoom {
+        margin-bottom: 5rem !important;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+    .main-zoom {
+        margin-bottom: 3rem !important;
+    }
+}
+
+/* ------------------------------------arrow-------------------- */
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* margin: 20px 0 20px 0; */
+}
+
+.aroowline {
+    position: absolute;
+    top: 5px;
+    left: 175px;
+    font-size: 10px;
+    color: var(--lighpink);
+}
+
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+/* ------------------------------------arrow-------------------- */
+.inputs {
+    padding: 17px 6px;
+    border-radius: 4px;
+    border: 2px solid var(--grey);
+    color: var(--grey);
+}
+
+.form-input {
+    box-shadow: 0px 0px 5px 0px var(--grey);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.Biography-input-div-2 {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 80% !important;
+}
+
+.Biography-input-div-2 input {
+    width: 80% !important;
+}
+
+.Biography-form-input {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.input-footer-text {
+    margin-top: 4px !important;
+    color: var(--grey-sec);
+    font-size: 12px;
+}
+
+@media screen and (max-width:500px) {
+
+    .Biography-input-div-2 {
+        width: 100% !important;
+    }
+
+    .Biography-input-div {
+        width: 100% !important;
+    }
+
+
+}
+
+.btnMain {
+    margin: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn-container {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.pink-btn {
+    background: #FF3389;
+    color: white;
+
+}
+
+.red-btn {
+    padding: 0px 12px;
+    background: #FF0000;
+    color: white;
+
+}
+
+.green-btn {
+    background: #00CF70;
+    color: white;
+
+}

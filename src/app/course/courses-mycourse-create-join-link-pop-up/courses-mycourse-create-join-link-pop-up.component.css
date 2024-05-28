@@ -1,0 +1,339 @@
+* {
+    margin: 0px !important;
+}
+
+.section-main-div {
+    /* margin: 4rem !important; */
+    /* overflow-y: scroll !important; */
+}
+
+.centerpartdiv {
+    /* overflow-y: scroll !important; */
+
+}
+
+.upperpart {
+    padding: 10px;
+}
+
+.parapart {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto;
+
+}
+
+@media (max-width: 1070px) {
+    .parapart {
+        grid-template-columns: auto;
+
+    }
+}
+
+.sure {
+    margin: 0px;
+}
+
+/* .parapart p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 4px;
+} */
+
+.doyoupart span {
+    color: grey;
+    font-size: 16px;
+}
+
+.buttondiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-block: 15px;
+}
+
+
+.confirmdelete .buttondiv .mat-mdc-raised-button:nth-child(1) {
+    background-color: var(--lightgreen) !important;
+    color: white !important;
+    padding: 20px !important;
+}
+
+.confirmdelete .buttondiv .mat-mdc-raised-button:nth-child(2) {
+    background-color: var(--red) !important;
+    color: white !important;
+    /* width: 20% !important; */
+    padding: 20px !important;
+}
+
+.upperpart {
+    background-color: rgba(255, 145, 169, 0.2);
+    padding-block: 20px;
+}
+
+.parapart {
+    padding-block: 10px;
+    padding-bottom: 30px;
+}
+
+.buttondiv {
+    background-color: rgba(187, 187, 187, 0.2);
+    font-size: 14px;
+
+}
+
+.spandiv {
+    display: flex;
+    justify-content: center;
+}
+
+.deletespan {
+
+    font-size: 20px;
+    font-weight: 600;
+    padding: 4px;
+}
+
+/* popup border radius notes ngdeep used */
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+    border-radius: 20px !important;
+}
+
+/* popup responsive media queries */
+@media (min-width:320px) and (max-width:900px) {
+    ::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+        width: inherit !important
+    }
+
+    .parapart p {
+        text-align: center;
+        padding-inline: 30px;
+    }
+
+}
+
+.select_in {
+    padding: 0px 10px;
+}
+
+.in-form-row {
+    width: 100% !important;
+}
+
+.reg-16 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.med-20 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.result-statistics-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.result-statistics {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--white);
+    /* display: flex !important; */
+    /* flex-direction: row; */
+    /* align-items: center !important; */
+
+    width: 100%;
+    /* justify-content: center; */
+    gap: 10px;
+    text-wrap: nowrap;
+
+    /* position: absolute; */
+    /* top: 0;
+    left: 0;
+    width: 100%; */
+}
+
+@media (max-width: 500px) {
+
+    .result-statistics {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        /* position: absolute; */
+
+    }
+}
+
+.my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: unset;
+    width: 100%;
+    font-size: 20px;
+    /* margin: 0px 19px; */
+    font-weight: 700;
+    gap: 8px;
+}
+
+.my-quizzer-heading-div-2 {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    /* margin: 0px 19px; */
+    font-weight: 700;
+    gap: 8px;
+}
+
+@media (max-width: 500px) {
+    .my-quizzer-heading-div {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.result-statistics p {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.quizzers-arrow-icon {
+    color: var(--lighpink);
+    font-size: 15px;
+    width: fit-content;
+    height: 100% !important;
+}
+
+.quizzers-pink-line {
+    border: 1px solid var(--lighpink);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+.form-field {
+    width: 100%;
+}
+
+.in-form-row-file-2 {
+    /* height: inherit !important; */
+}
+
+.date-img {
+    width: fit-content;
+    object-fit: cover;
+    height: 2.4rem;
+}
+
+.upload-input-div {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid var(--black);
+    margin: 0px;
+    padding: 0px;
+}
+
+.upload-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    min-width: fit-content;
+    padding: 3px 0px;
+}
+
+.input {
+    border-radius: 5px;
+    border: 1px solid var(--grlight);
+    padding: 20px 10px;
+    width: 100% !important;
+    outline: none;
+}
+
+.input-type-date {
+    position: relative;
+    width: 25px !important;
+    padding: 0rem 1rem !important;
+    left: -60px;
+    opacity: 0;
+}
+
+.description-div {
+    width: 100%;
+}
+
+.description-input {
+    height: 100% !important;
+}
+
+::ng-deep .description-input .mat-form-field-appearance-outline .mat-mdc-text-field-wrapper {
+    height: 82px !important;
+}
+
+/* Paragraph */
+::ng-deep .in-form-row .mat-card-div .mat-mdc-card p {
+    border-bottom-left-radius: 25px;
+}
+
+/* Division */
+::ng-deep .mat-mdc-form-field-subscript-wrapper {
+    padding-right: 0px;
+    z-index: -10;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+}
+
+
+/* Mat dialog container */
+::ng-deep .cdk-global-overlay-wrapper .mat-mdc-dialog-container {
+    position: fixed;
+    left: 0px;
+    margin-top: 10px;
+    margin-left: 120px;
+    padding-bottom: 34px;
+    padding-top: 36px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+@media (max-width: 800px) {
+    ::ng-deep .cdk-global-overlay-wrapper .mat-mdc-dialog-container {
+        margin-left: 30px;
+        padding-bottom: 34px;
+        padding-top: 36px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+/* Dialog  container */
+::ng-deep .cdk-overlay-pane .mdc-dialog__container {
+    overflow: hidden;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.inner-content-div {
+    padding: 2rem !important;
+}

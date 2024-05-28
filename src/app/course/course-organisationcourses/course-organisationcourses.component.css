@@ -1,0 +1,1477 @@
+.main-my-post {
+    padding: 6px 10px;
+}
+
+
+.my-result-heading {
+    font-size: 30px;
+    font-weight: 900;
+    border-bottom: 1px solid var(--primary-color);
+    text-wrap: nowrap;
+    width: 8%;
+    padding-bottom: 10px;
+    /* margin: 20px; */
+
+
+}
+
+.page-container-div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.result-statistics-div {
+    padding: 20px 4px;
+    margin-top: 20px;
+    /* border-top: 1px solid var(--primary-color); */
+    position: relative;
+}
+
+.result-statistics {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--white);
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+    width: 100%;
+    /* justify-content: center; */
+    gap: 10px;
+    text-wrap: nowrap;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+
+    ::ng-deep .result-statistics-div {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        position: relative;
+    }
+
+    .result-statistics {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        position: absolute;
+    }
+}
+
+.my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.result-statistics p {
+    margin: 0;
+}
+
+.quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.quizzers-arrow-icon {
+    color: var(--primary-color);
+    font-size: 15px;
+    width: fit-content;
+    height: 100% !important;
+}
+
+.quizzers-pink-line {
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+
+}
+
+
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 5px 0px var(--grey);
+    border-radius: 10px;
+}
+
+.form-input-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.calendar-input-field {
+    display: flex;
+    height: fit-content !important;
+    width: 100% !important;
+}
+
+.in-form-row {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-field {
+    width: 100% !important;
+    height: fit-content;
+    border: var(--grey);
+}
+
+.form-row {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+@media (max-width: 700px) {
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.button-div {
+    padding: 20px 0 !important;
+}
+
+.button-div button {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.show-result-button {
+    color: var(--white);
+    background-color: var(--primary-color);
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 24px 0px;
+    /* margin-top: 10px; */
+}
+
+::ng-deep .calendar-input-field .mat-mdc-form-field-infix {
+    display: flex !important;
+    flex-direction: row !important;
+    /* gap: 10px; */
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+::ng-deep .calendar-input-field .mdc-text-field {
+    padding: 0 !important;
+}
+
+::ng-deep .calendar-input-field {
+    width: 100% !important;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+    width: 100% !important;
+}
+
+::ng-deep .form-field {
+    width: 100% !important;
+}
+
+.select_in {
+    padding: 0px 10px;
+}
+
+/* mat card */
+
+
+.outer-instructor {
+    margin: 20px;
+    box-shadow: 4px 4px 4px 4px #F5F5F5;
+
+}
+
+.inner-instructor {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heading-content-instructor {
+    color: black;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.content-instructor {
+    font-size: 16px;
+    font-weight: 900px;
+    font-family: Poppins;
+    text-align: center;
+    margin: 0px;
+    color: var(--grey-sec);
+}
+
+@media screen and (max-width:410px) {
+    .img-course {
+        width: 100%;
+    }
+}
+
+.mat-card,
+.mdc-card {
+    background-color: var(--white) !important;
+}
+
+/*card style star*/
+.card-grid-div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin: 10px;
+}
+
+.card-grid-div mat-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    box-shadow: 0px 0px 5px 0px var(--grey);
+    border-radius: 10px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-medium {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 2px !important;
+}
+
+.card-bottom {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--grey-sec) !important;
+}
+
+.card-top .img_first {
+    height: 64px;
+}
+
+.card-top .img_second {
+    height: 14px;
+    width: 67px;
+}
+
+.card-medium {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card-bottom {
+    color: var(--lightgray);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media only screen and(max-width:767px) {
+    .card-grid-div {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card-grid-div {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .card-grid-div {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 30px;
+        margin: 10px;
+    }
+}
+
+.result-statistics-div:nth-child(1) .my-quizzer-heading-div {
+    padding-inline: 20px;
+    padding-block: 30px;
+}
+
+.main-my-post .form-div {
+    margin-top: 51px;
+}
+
+.formbox {
+    padding-inline: 10px;
+}
+
+.result-statistics-div:nth-child(3) .result-statistics {
+    padding-inline: 20px;
+}
+
+.outer-instructor .mat-mdc-raised-button {
+    width: 20% !important;
+    margin-top: 14px;
+    border-radius: 7px;
+    height: 40px !important;
+}
+
+.main-my-post .tooglespandiv span {
+    margin-left: 10px;
+}
+
+/*toogle css  */
+#mat-mdc-slide-toggle-1 {
+    margin-left: 10px;
+}
+
+.main-my-post .tooglespandiv span {
+    color: rgba(193, 193, 193, 0.87);
+}
+
+::ng-deep .mt2 .mat-mdc-form-field-flex .mat-mdc-form-field-infix {
+    width: 50.375vw !important;
+}
+
+::ng-deep .form-row .form-row .in-form-row .mt2 .mat-form-field-appearance-outline .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-infix {
+    width: 100% !important;
+
+}
+
+@media (max-width:599px) {
+
+    /* Mat raised button */
+    ::ng-deep .mat-drawer-container .ng-star-inserted .main-my-post .outer-instructor .inner-instructor .mat-mdc-raised-button {
+        width: 51% !important;
+    }
+
+}
+
+@media (max-width:410px) {
+
+    /* Mat raised button */
+    ::ng-deep .mat-drawer-container .ng-star-inserted .main-my-post .outer-instructor .inner-instructor .mat-mdc-raised-button {
+        width: 50% !important;
+    }
+
+}
+
+@media (max-width: 780px) {
+    .outer-instructor img {
+        width: 50% !important;
+    }
+
+    .contentpara {
+        padding-inline: 10px;
+    }
+
+    .main-my-post .outer-instructor {
+        margin-bottom: 70px !important;
+    }
+}
+
+
+/* lower card div css */
+
+*,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.my-result-heading {
+    font-size: 30px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--primary-color);
+    text-wrap: nowrap;
+    width: 8%;
+    padding-bottom: 20px;
+}
+
+.page-container-div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.result-statistics-div {
+    padding: 12px 20px;
+    /* border-top: 1px solid var(--primary-color); */
+    position: relative;
+}
+
+.result-statistics {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--white);
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+    width: 100%;
+    /* justify-content: center; */
+    gap: 10px;
+    text-wrap: nowrap;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.view-btn {
+    background-color: #FBD6E8;
+
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+
+}
+
+@media (max-width: 500px) {
+
+    ::ng-deep .result-statistics-div {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        position: relative;
+    }
+
+    .result-statistics {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        position: absolute;
+    }
+}
+
+.my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.result-statistics p {
+    margin: 0;
+}
+
+.quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.quizzers-arrow-icon {
+    color: var(--primary-color);
+    font-size: 15px;
+    width: fit-content;
+    height: 100% !important;
+}
+
+.quizzers-pink-line {
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+
+}
+
+
+/*card style star*/
+.card-grid-div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin: 10px;
+}
+
+.card-grid-div mat-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    box-shadow: 0px 0px 5px 0px var(--grey);
+    border-radius: 10px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-medium {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 2px !important;
+}
+
+.card-bottom {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--grey-sec);
+}
+
+.card-top .img_first {
+    height: 64px;
+}
+
+.card-top .img_second {
+    height: 14px;
+    width: 67px;
+}
+
+.card-medium {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card-bottom {
+    color: var(--lightgray);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media only screen and(max-width:767px) {
+    .card-grid-div {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card-grid-div {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .card-grid-div {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 30px;
+        margin: 10px;
+    }
+}
+
+
+/* form css start */
+.form-div {
+    padding: 10px 20px;
+    box-shadow: 0px 0px 5px 0px var(--grey);
+    border-radius: 10px;
+}
+
+.form-input-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.calendar-input-field {
+    display: flex;
+    height: fit-content !important;
+    width: 100% !important;
+}
+
+.in-form-row {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-field {
+    width: 100% !important;
+    /* height: fit-content; */
+    border: var(--grey);
+
+}
+
+/* Quizzers My Result Page */
+::ng-deep .calendar-input-field .mat-mdc-form-field-infix {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10px;
+    padding: 0 !important;
+    width: 100% !important;
+}
+
+::ng-deep .calendar-input-field .mdc-text-field {
+    padding: 0 !important;
+}
+
+::ng-deep .calendar-input-field {
+    width: 100% !important;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+    width: 100% !important;
+}
+
+::ng-deep .form-field {
+    width: 100% !important;
+}
+
+
+
+.button-div {
+    padding: 20px 0 !important;
+}
+
+.button-div button {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.select_in {
+    padding-left: 10px;
+}
+
+.text-with-toggle-div {
+    display: flex;
+    gap: 8px;
+
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--grlight);
+}
+
+@media (max-width: 500px) {
+    .text-with-toggle-div {
+        margin-bottom: 10px;
+    }
+}
+
+table {
+    width: 100%;
+    text-wrap: nowrap;
+}
+
+.quizzer-table-div {
+    overflow-x: auto;
+    border-radius: 10px !important;
+    text-wrap: nowrap;
+    table-layout: auto;
+}
+
+.td-div {
+    display: flex;
+    gap: 5px;
+    padding: 15px 5px;
+}
+
+.td-text-p1 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.td-text-p2 {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--grey-sec);
+}
+
+.td-text-p3 {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--lightgreen);
+}
+
+.quizzer-text-green {
+    color: var(--lightgreen);
+}
+
+.quizzer-text-orange {
+    color: var(--accent-color);
+}
+
+.quizzer-text-red {
+    color: var(--red);
+}
+
+.quizzer-date-td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.reg-12 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+/* table */
+.mat-mdc-header-row {
+    background: none !important;
+    color: var(--white) !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+::ng-deep thead,
+.mat-mdc-header-row .mdc-data-table__header-row .cdk-header-row {
+    background-image: linear-gradient(to right, var(--blue), var(--primary-color)) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    text-wrap: nowrap;
+}
+
+.btn-3 {
+    padding: 10px;
+}
+
+
+.mat-card,
+.mdc-card {
+    background-color: var(--white) !important;
+    margin: 0px;
+}
+
+
+
+/* button slider start */
+.button-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.btn-slider {
+    border-radius: 100px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    font-size: 24px;
+    background-color: var(--white);
+}
+
+.btn-slider:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.bt-icon {
+    border-radius: 100px;
+    padding: 10px 10px;
+    margin-left: 10px;
+    border: 2px solid var(--grey-sec);
+    color: var(--grey-sec);
+    font-size: 24px;
+    background-color: var(--white);
+}
+
+.bt-icon:hover {
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+.btn-div {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px 2px var(--grey-sec);
+    border-radius: 100px;
+    padding: 2px 10px;
+}
+
+@media screen and (max-width:500px) {
+    .btn-slider {
+        padding: 0px 10px;
+        font-size: 10px;
+    }
+
+    .bt-icon {
+        padding: 2px 2px;
+    }
+
+    .button-slider {
+        margin-top: 10px;
+    }
+}
+
+
+
+/*  uppersection div css */
+
+
+
+
+.uppersectiondiv {
+    transform: translatex(3px) translatey(70px);
+    padding-inline: 20px;
+}
+
+.uppersectiondiv .result-statistics-div {
+    margin-bottom: 30px;
+}
+
+
+.My-Up-Coming-Courses {
+    padding: 10px;
+}
+
+
+
+/* ------------------------------------heading css-------------------- */
+
+.heading-tag {
+    margin-top: 10px;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.hr-line {
+    margin-top: 10px;
+    width: 180px;
+    border: 1px solid var(--primary-color);
+}
+
+/* ------------------------------------heading css close-------------------- */
+
+
+
+
+/* ------------------------------------arrow-------------------- */
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 30px 0 10px 0;
+    width: 100%;
+
+}
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 550px) {
+    .sub-heading {
+        font-size: 15px;
+        text-wrap: nowrap;
+        margin-right: 10px;
+    }
+
+    .toggle-with-line .aroowline-3 {
+        position: absolute !important;
+        top: 18px !important;
+        left: 140px !important;
+        font-size: 14px !important;
+        color: var(--lighpink) !important;
+    }
+
+    .toggle-text {
+        font-size: 15px !important;
+        color: var(--grey-sec);
+        /* flex-wrap: nowrap !important; */
+        text-wrap: wrap !important;
+        margin: 0 10px;
+    }
+
+    ::ng-deep .mat-drawer-container .mat-drawer-content .ng-star-inserted .My-Up-Coming-Courses div .sub-heading-div .material-icons {
+        left: 170px !important;
+        top: 20px !important;
+    }
+}
+
+
+/* Courses mat card div */
+.My-Up-Coming-Courses .mat-mdc-card .courses-mat-card-div {
+    padding: 15px 20px !important;
+}
+
+
+.aroowline {
+    position: absolute;
+    top: 21px;
+    left: 170px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-2 {
+    position: absolute;
+    top: 18px;
+    left: 152px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.med-16 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ------------------------------------arrow close-------------------- */
+
+
+/* ------------------------------------card-------------------- */
+
+
+.mat-card-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin: 5px; */
+    align-items: center;
+}
+
+.support-card-border {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+    width: 100%;
+    /* margin: 10px; */
+    padding-left: 10px;
+}
+
+.support-contaent-div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.suppoet-icon-envelop {
+    width: 70px;
+}
+
+.suppoet-img {
+    width: 100px;
+    height: 20px;
+}
+
+.icon-img-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.text-2 {
+    font-size: 14px;
+    color: var(--grey-sec);
+    font-weight: 500;
+    margin: 0px;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+
+    .mat-card-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    .support-card-border {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+        width: 32%;
+    }
+
+    .in-form-row {
+        border-radius: 5px;
+        width: 40% !important;
+    }
+
+    .bonus-img-div {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+
+    .bonus-imagee {
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .bonus-card-div {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        gap: 20px;
+    }
+}
+
+/* ------------------------------------card close-------------------- */
+
+/* ------------------------------------UP COMMING COURCE -------------------- */
+.img-div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 4px;
+}
+
+.cource-mat-card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+
+.hedaing-and-button {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+    /* padding-top: 20px !important; */
+}
+
+@media screen and (max-width: 900px) {
+    .cource-mat-card-content {
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+
+}
+
+.card-heading {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--blue);
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 900px) {
+    .card-heading {
+        font-size: 28px;
+        color: var(--blue);
+    }
+}
+
+.card-button {
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color);
+    font-size: 20px !important;
+    padding: 0 30px 0 30px !important;
+    margin-left: 10px;
+
+}
+
+.details-divs {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 20px;
+    width: -webkit-fill-available;
+}
+
+@media (max-width: 400px) {
+    .details-divs {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+}
+
+@media (min-width: 401px) and (max-width: 670px) {
+    .details-divs {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media (min-width: 671px) and (max-width: 1260px) {
+    .details-divs {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+}
+
+.detail-heading {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey-sec);
+    margin: 10px;
+}
+
+.detail-heading-2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+
+}
+
+
+
+
+
+
+.courses-mat-card-div {
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+    /* margin: 10px 0 10px 0; */
+    padding: 10px;
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .courses-mat-card-div {
+        display: flex !important;
+        flex-direction: row !important;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+    }
+}
+
+
+.img-2-div-absulute {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+
+.three-dot-button {
+    display: flex;
+    justify-content: end !important;
+    float: left !important;
+}
+
+.hedaing-and-button-btn-and-live {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+::ng-deep .mat-mdc-elevation-specific .mat-mdc-menu-item span:hover {
+    color: var(--primary-color) !important;
+}
+
+
+
+
+
+
+/* ------------------------------------UP COMMING COURCE close-------------------- */
+
+/* ------------------------------------TOGGLE With line -------------------- */
+
+
+.toggle-div {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-text {
+    font-size: 20px;
+    color: var(--grey-sec);
+    flex-wrap: nowrap !important;
+    text-wrap: nowrap;
+    margin: 0 10px;
+}
+
+.toggle-with-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* margin: 25px 0 0 0; */
+    width: 100%;
+    margin: 0px;
+}
+
+.text-toggle .sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* margin: 15px 0 0 0; */
+    width: 100%;
+}
+
+.toggle-with-line .aroowline-3 {
+    position: absolute !important;
+    top: 27px !important;
+    left: 224px;
+    font-size: 14px !important;
+    color: var(--lighpink) !important;
+}
+
+/* Support contaent div */
+.mat-card-div .mat-mdc-card .support-contaent-div {
+    padding: 15px 10px !important;
+
+}
+
+
+.mat-card,
+.mdc-card {
+    background-color: var(--white) !important;
+}
+
+
+.purchasecarddiv {
+    transform: translatex(6px) translatey(85px) !important;
+    padding-inline: 30px;
+}
+
+.result-statistics-div:nth-child(2) {
+    margin-top: 2px;
+    min-height: 60px;
+    transform: translatex(-7px) translatey(93px);
+    height: 60px;
+
+
+}
+
+.result-statistics-div:nth-child(2) .my-quizzer-heading-div {
+    padding-inline: 30px;
+}
+
+
+.purchasecarddiv:nth-child(4) {
+    transform: translatex(6px) translatey(101px) !important;
+}
+
+
+.purchasecarddiv:nth-child(4) .mat-mdc-card {
+    padding-bottom: 97px !important;
+}
+
+
+
+/* Courses mat card div */
+.organisationdiv .mat-mdc-card .courses-mat-card-div {
+    transform: translatex(-3px) translatey(-55px);
+}
+
+/* Courses mat card div */
+.organisationdiv .purchasecarddiv:nth-child(2) .courses-mat-card-div {
+    margin-top: 24px;
+}
+
+/* Organisationdiv */
+.main-my-post .organisationdiv {
+    padding-bottom: 46px;
+}
+
+.organisationdiv .purchasecarddiv:nth-child(3) .courses-mat-card-div {
+    margin-top: 25px;
+}
+
+
+.main-my-post .wrapdiv {
+    transform: translatex(-3px) translatey(31px);
+    padding-inline: 20px;
+    padding-bottom: 54px;
+}
+
+.main-my-post .inputformdiv {
+    padding-top: 27px;
+    padding-bottom: 7px;
+}
+
+
+/* Form row */
+
+
+
+/* Form row */
+
+
+/* Form row */
+.main-my-post .inputformdiv .formbox .form-div .form-row:nth-child(2) .in-form-row:nth-child(1) {
+    width: 68% !important;
+}
+
+/* Form row */
+::ng-deep .ng-star-inserted:nth-child(2) .main-my-post .inputformdiv .formbox .form-div .form-row:nth-child(1)>.in-form-row:nth-child(1) {
+    width: 120% !important;
+}
+
+/* Form row */
+::ng-deep .ng-star-inserted .main-my-post .inputformdiv .formbox .form-div .form-row:nth-child(1) .in-form-row:nth-child(2) {
+    width: 120% !important;
+}
+
+.form-row .form-row .in-form-row .mat-form-field-appearance-outline {
+    width: 24.6875rem !important;
+}
+
+
+.form-div .form-row:nth-child(1) .in-form-row:nth-child(2) {
+    /* margin-top: -14px; */
+}
+
+
+@media (max-width:1250px) {
+
+    /* Form row */
+    .formbox .form-div>.form-row {
+        flex-direction: column;
+    }
+
+    /* Form row */
+    ::ng-deep .ng-star-inserted:nth-child(2) .main-my-post .inputformdiv .formbox .form-div .form-row:nth-child(1)>.in-form-row:nth-child(1) {
+        width: 96% !important;
+    }
+
+
+    /* Mat form field appearance outline */
+    ::ng-deep .ng-star-inserted .main-my-post .inputformdiv .formbox .form-div .form-row .form-row .in-form-row .mat-form-field-appearance-outline {
+        width: 241% !important;
+    }
+
+    /* Mat text field wrapper */
+    ::ng-deep .ng-star-inserted .main-my-post .inputformdiv .formbox .form-div .form-row:nth-child(2) .in-form-row .mat-form-field-appearance-outline .mat-mdc-text-field-wrapper {
+        width: 142% !important;
+    }
+
+    ::ng-deep .main-my-post .inputformdiv .formbox .form-div .form-row .in-form-row:nth-child(2) .calendar-input-field .mat-form-field-appearance-outline .mat-mdc-text-field-wrapper {
+        width: 80% !important;
+    }
+
+
+
+
+
+}
+
+
+.form-div .form-row:nth-child(1) .in-form-row:nth-child(2) {
+    /* transform: translatex(7px) translatey(21px); */
+}
+
+@media (max-width:800px) {
+
+    /* Form row */
+    .form-div .form-row .form-row .in-form-row {
+        margin-top: 42px;
+    }
+
+    /* Mat text field wrapper */
+    ::ng-deep .main-my-post .inputformdiv .formbox .form-div .form-row .form-row .in-form-row .ng-tns-c1690755987-34 .mat-form-field-appearance-outline .mat-mdc-text-field-wrapper {
+        width: 40% !important;
+    }
+
+}
+
+@media (max-width:599px) {
+
+    /* Division */
+    .organisationdiv .mat-mdc-card .hedaing-and-button-btn-and-live {
+        padding-top: 15px;
+    }
+
+    /* Card button */
+    .organisationdiv .mat-mdc-card .card-button {
+        margin-top: 14px;
+    }
+
+}
+
+
+@media (max-width:1130px) {
+
+    /* Courses mat card div */
+    .mat-mdc-card .courses-mat-card-div {
+        flex-direction: column !important;
+    }
+
+    /* Cource mat card content */
+    .mat-mdc-card .cource-mat-card-content {
+        align-items: center !important;
+    }
+
+}
+
+@media (max-width:550px) {
+
+    /* Content instructor */
+    .outer-instructor .content-instructor {
+        padding-inline: 30px;
+        padding-block: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------TOGGLE With line close -------------------- */

@@ -1,0 +1,252 @@
+<div class="centerpartdiv" id="showadd">
+    <div class="confirmdelete">
+        <!-- pop up div -->
+        <div class="upperpart">
+            <div class="spandiv">
+                <span class="deletespan">Multiple choice question</span>
+            </div>
+        </div>
+        <!-- p div -->
+        <div class="parapart">
+            <!-- Result Statistics -->
+            <!-- <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Filter Posts</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line "></p>
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+
+            <div class="form-div">
+                <div class="form-row">
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">Language</mat-label><br />
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" [(value)]="selected">
+                                    <mat-option value="All">All</mat-option>
+                                    <mat-option value="green">Green</mat-option>
+                                    <mat-option value="blue">Blue</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">Course</mat-label><br />
+
+                        <div class="calendar-input-field">
+
+                            <mat-form-field appearance="outline" class="form-field">
+
+                                <input matInput class="input" type="email">
+
+                            </mat-form-field>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!-- <div class="form-row"> -->
+                <div class="form-row">
+
+                    <!-- <div class="in-form-row">
+                <mat-label class="form-input-label">Color</mat-label><br />
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" [(value)]="selected">
+                            <mat-option value="All">All</mat-option>
+                            <mat-option value="green">Green</mat-option>
+                            <mat-option value="blue">Blue</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="in-form-row button-div">
+                <button mat-raised-button class="show-result-button">Show Results</button>
+            </div> -->
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">Grade</mat-label><br />
+
+                        <div class="calendar-input-field">
+
+                            <mat-form-field appearance="outline" class="form-field">
+
+                                <input matInput class="input" type="email">
+
+                            </mat-form-field>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-row">
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">Image (Optional)</mat-label><br />
+
+                        <div class="calendar-input-field">
+
+                            <mat-form-field appearance="outline" class="form-field">
+
+                                <img src="assets/quizzes/Group 340767.png" alt="" class="calendar-img">
+
+                                <input matInput class="input">
+
+                            </mat-form-field>
+
+                        </div>
+
+                    </div>
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">Video (Optional)</mat-label><br />
+
+                        <div class="calendar-input-field">
+
+                            <mat-form-field appearance="outline" class="form-field">
+
+                                <img src="assets/quizzes/Group 340767.png" alt="" class="calendar-img">
+
+                                <input matInput class="input">
+
+                            </mat-form-field>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <!-- </div> -->
+
+            </div>
+
+
+
+
+            <!-- Result Statistics -->
+            <div class="heading_notice">
+                <div class="result-statistics-div">
+                    <div class="result-statistics notice">
+                        <div class="my-quizzer-heading-div">
+                            <p class="reg-16">Answers</p>
+                            <div class="quizzers-arrow-line-div">
+                                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                                <p class="quizzers-pink-line m0"></p>
+                            </div>
+                        </div>
+                        <div class="text-with-toggle-div">
+                            <button mat-raised-button class="add_btn">Add an answer</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="form-div list">
+                <div class="form-row">
+
+
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">Answer title</mat-label><br />
+
+                        <div class="calendar-input-field">
+
+                            <mat-form-field appearance="outline" class="form-field">
+
+                                <input matInput class="input" type="email">
+
+                            </mat-form-field>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="form-row list_toggle">
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">Answer image (Optional)</mat-label><br />
+
+                        <div class="calendar-input-field">
+
+                            <mat-form-field appearance="outline" class="form-field">
+
+                                <img src="assets/quizzes/Group 340767.png" alt="" class="calendar-img">
+
+                                <input matInput class="input">
+
+                            </mat-form-field>
+
+                        </div>
+
+                    </div>
+
+                    <div class="in-form-row">
+                        <div class="active_list">
+                            <div class="">
+                                <p class="reg-16 no-wrap">Correct answer</p>
+
+                            </div>
+                            <div class="text-with-toggle-div">
+                                <!-- <p>Show only open results</p> -->
+                                <mat-slide-toggle checked=""></mat-slide-toggle>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+                <!-- </div> -->
+
+            </div>
+        </div>
+
+        <div class="buttondiv">
+            <div class="example-button-row">
+                <button mat-raised-button="" mat-dialog-close=""
+                    class="yes_btn mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base"
+                    mat-ripple-loader-class-name="mat-mdc-button-ripple" ng-reflect-dialog-result="" type="button">
+                    <span class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span>
+                    <span class="mdc-button__label">Save</span>
+                    <span class="mat-mdc-focus-indicator"></span>
+                    <span class="mat-mdc-button-touch-target"></span>
+                    <span class="mat-ripple mat-mdc-button-ripple"></span>
+                </button>
+                <button mat-raised-button="" mat-dialog-close=""
+                    class="close mdc-button mdc-button--raised mat-mdc-raised-button mat-unthemed mat-mdc-button-base"
+                    mat-ripple-loader-uninitialized="" mat-ripple-loader-class-name="mat-mdc-button-ripple"
+                    ng-reflect-dialog-result="" type="button"><span
+                        class="mat-mdc-button-persistent-ripple mdc-button__ripple"></span>
+                    <span class="mdc-button__label">Close</span><span class="mat-mdc-focus-indicator"></span>
+                    <span class="mat-mdc-button-touch-target"></span></button>
+            </div>
+        </div>
+    </div>
+</div>

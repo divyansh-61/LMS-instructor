@@ -1,0 +1,33 @@
+<!-- meeting popup code starts -->
+<div class="centerpartdiv" id="showadd">
+    <div class="confirmdelete">
+        <!-- pop up div -->
+        <div class="upperpart">
+            <div class="spandiv">
+                <span class="deletespan">Change Chapter</span>
+            </div>
+        </div>
+        <!-- p div -->
+        <div class="parapart">
+            <!-- <img src="assets/Courses/error.png" alt=""> -->
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label reg-16">Section</mat-label><br />
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" [(ngModel)]="selectedoption">
+                            <mat-option value="First Chapter">First Chapter</mat-option>
+                            <mat-option value="Second">Second Chapter</mat-option>
+                            <mat-option value="Third">Third Chapter</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+        </div>
+        <div class="buttondiv">
+            <button mat-raised-button (click)=" save()">Save</button>
+            <button mat-raised-button (click)=" openPopup_new()">Close</button>
+        </div>
+    </div>
+</div>

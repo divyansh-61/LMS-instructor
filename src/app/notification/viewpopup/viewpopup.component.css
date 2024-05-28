@@ -1,0 +1,74 @@
+.upperpart{
+    padding: 25px;
+    background-color: var(--lightbluee);
+}
+/* .parapart{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+} */
+
+.doyoupart span{
+   color: grey;
+}
+
+
+
+
+/* popup border radius notes ngdeep used */
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface{
+   border-radius: 20px !important;
+}
+/* popup responsive media queries */
+@media (min-width:320px) and (max-width:900px) {
+  ::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface{
+       width: inherit !important
+   }
+   .parapart p{
+       text-align: center;
+       padding-inline: 30px;
+   }
+   .buttondiv{
+    padding-inline: 50px;
+   }
+
+}
+.parapart{
+   text-align: center;
+   padding-bottom: 20px;
+}
+.parapart p{
+   font-weight: 400;
+   padding-top: 0px!important;
+   color: var( --lightgray);
+   font-size: 16px;
+   margin-bottom: 0px;
+}
+.parapart span{
+    font-weight: 400;
+  
+    color: var( --lightgray);
+    font-size: 16px;
+    padding: 10px 10px;
+    
+}
+.deletespan{
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+}
+.spandiv{
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+}
+
+.spandiv p{
+    /* margin: auto auto; */
+    text-align: center;
+    font-size: medium;
+    font-weight: 660;
+}

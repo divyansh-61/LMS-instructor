@@ -1,0 +1,319 @@
+<!-- settings page -->
+<div class="settings-page">
+    <!-- <div>
+        <p class="heading-tag">Meetings</p>
+        <p class="hr-line"></p>
+    </div> -->
+
+    <!-- toggle with line and text  -->
+    <div class="toggle-with-line">
+        <!-- sub hedaing  -->
+        <div class="my-quizzer-heading-div">
+            <p class="med-20">My Timesheet</p>
+
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line m0"></p>
+            </div>
+        </div>
+        <!-- sub hedaing close -->
+        <div class="toggle-div">
+            <span class="toggle-text">Temporary disable meetings </span>
+            <mat-slide-toggle></mat-slide-toggle>
+        </div>
+    </div>
+    <!-- toggle with line and text close  -->
+
+
+    <!-- table div  -->
+    <div class="quizzer-table-div">
+
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+
+            <!-- Seller Column -->
+            <ng-container matColumnDef="seller">
+                <th mat-header-cell *matHeaderCellDef class="table-thead"> Day </th>
+                <div class="td-div-distance">
+                    <td mat-cell *matCellDef="let element">
+                        <div class="td-div">
+                            <!-- <img [src]="element.seller.img" alt=""> -->
+                            <div class="td-text-div">
+                                <p class="td-text-p1"> {{element.seller.text}}</p>
+
+                                <p class="td-text-p2"> {{element.seller.Text}}</p>
+                            </div>
+                        </div>
+                    </td>
+                </div>
+            </ng-container>
+
+            <!-- Order ID Column -->
+            <ng-container matColumnDef="orderId">
+                <th mat-header-cell *matHeaderCellDef class="table-thead"> Availability Times </th>
+                <div class="td-div-distance">
+
+                    <td mat-cell *matCellDef="let element">
+                        <div class="td-text-div-main">
+                            <div class="td-text-div">
+                                <svg class="icon-absolute" xmlns="http://www.w3.org/2000/svg" width="1.3em"
+                                    height="1.3em" viewBox="0 0 32 32">
+                                    <path fill="currentColor"
+                                        d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12" />
+                                    <path fill="currentColor"
+                                        d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+                                </svg>
+                                <span class="td-text-p1 with-backgrounde"> {{element.orderId.text}}</span>
+                            </div>
+                            <div class="td-text-div">
+                                <svg class="icon-absolute" xmlns="http://www.w3.org/2000/svg" width="1.3em"
+                                    height="1.3em" viewBox="0 0 32 32">
+                                    <path fill="currentColor"
+                                        d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12" />
+                                    <path fill="currentColor"
+                                        d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+                                </svg>
+
+                                <span class="td-text-p1 with-backgrounde"> {{element.orderId.text2}}</span>
+                            </div>
+                            <div class="td-text-div">
+                                <svg [ngClass]="element.orderId.text3 == null ? 'hide':'icon-absolute' "
+                                    xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" viewBox="0 0 32 32">
+                                    <path fill="currentColor"
+                                        d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2m0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12" />
+                                    <path fill="currentColor"
+                                        d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z" />
+                                </svg>
+
+                                <span
+                                    [ngClass]="element.orderId.text3 == null ? 'td-text-p1':'td-text-p1 with-backgrounde' ">
+                                    {{element.orderId.text3}} </span>
+                            </div>
+                        </div>
+                    </td>
+
+                </div>
+            </ng-container>
+
+            <!-- Price Column -->
+            <ng-container matColumnDef="price">
+                <th mat-header-cell *matHeaderCellDef class="table-thead"> Day </th>
+                <div class="td-div-distance">
+                    <td mat-cell *matCellDef="let element" class="reg-12"> {{element.price}} </td>
+                </div>
+            </ng-container>
+
+            <!-- Discount Column -->
+            <ng-container matColumnDef="discount">
+                <th mat-header-cell *matHeaderCellDef class="table-thead"> Date </th>
+                <div class="td-div-distance">
+
+                    <td mat-cell *matCellDef="let element" class="reg-12"> {{element.discount}} </td>
+                </div>
+            </ng-container>
+
+            <!-- Date Column -->
+            <ng-container matColumnDef="date">
+                <th mat-header-cell *matHeaderCellDef class="table-thead"> Actions </th>
+                <div class="td-div-distance">
+                    <td mat-cell *matCellDef="let element">
+                        <div class="quizzer-date-td">
+
+
+                            <div class="dot-dropdown-div">
+
+                                <div class="three-dot-button">
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                        aria-label="Example icon-button with a menu">
+                                        <mat-icon>more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button mat-menu-item (click)="ClearAllPopup()"> Clear All </button>
+                                        <button mat-menu-item (click)="AddtimePopup()"> Add Time </button>
+                                    </mat-menu>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </td>
+                </div>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="tr-for-distance"></tr>
+        </table>
+
+    </div>
+    <!-- table div close -->
+
+
+    <!-- Hourly charge  div  -->
+    <div>
+        <div class="my-quizzer-heading-div">
+            <p class="med-20">Hourly charge</p>
+
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line m0"></p>
+            </div>
+        </div>
+
+        <!-- 2 fields  -->
+        <div class="two-input-fields">
+
+            <div class="new-form">
+                <mat-label class="new-form-label">Amount</mat-label>
+                <div class="icon-relative-div">
+
+                    <svg class="arrow-Icon" xmlns="http://www.w3.org/2000/svg" width="3em" height="3em"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M7 15h2c0 1.08 1.37 2 3 2s3-.92 3-2c0-1.1-1.04-1.5-3.24-2.03C9.64 12.44 7 11.78 7 9c0-1.79 1.47-3.31 3.5-3.82V3h3v2.18C15.53 5.69 17 7.21 17 9h-2c0-1.08-1.37-2-3-2s-3 .92-3 2c0 1.1 1.04 1.5 3.24 2.03C14.36 11.56 17 12.22 17 15c0 1.79-1.47 3.31-3.5 3.82V21h-3v-2.18C8.47 18.31 7 16.79 7 15" />
+                    </svg>
+                    <input class="mat-input-class" placeholder="%" matInput>
+                </div>
+            </div>
+
+            <div class="new-form">
+                <mat-label class="new-form-label">Discount rate (%)</mat-label>
+                <div class="icon-relative-div">
+
+                    <svg class="arrow-Icon" xmlns="http://www.w3.org/2000/svg" width="3em" height="3em"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m18.501 3.5l-15 15.001l1.996 1.996l15-15zM17.003 14a3 3 0 1 1-.006 6a3 3 0 0 1 .006-6M17 16a1 1 0 1 0 0 2a1 1 0 0 0 0-2M7.003 4a3 3 0 1 1-.006 6a3 3 0 0 1 .006-6M7 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2" />
+                    </svg>
+                    <input class="mat-input-class" placeholder="5" matInput>
+                </div>
+            </div>
+
+        </div>
+        <!-- 2 fields close -->
+
+
+        <!-- 1 field and toggle  -->
+        <div class="my-quizzer-heading-div">
+            <p class="med-20">In-person meetings</p>
+
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line m0"></p>
+            </div>
+        </div>
+        <div class="two-input-fields">
+
+            <div class="new-form">
+                <mat-label class="new-form-label">Hourly Price</mat-label>
+                <div class="icon-relative-div">
+                    <svg class="arrow-Icon" xmlns="http://www.w3.org/2000/svg" width="3em" height="3em"
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M7 15h2c0 1.08 1.37 2 3 2s3-.92 3-2c0-1.1-1.04-1.5-3.24-2.03C9.64 12.44 7 11.78 7 9c0-1.79 1.47-3.31 3.5-3.82V3h3v2.18C15.53 5.69 17 7.21 17 9h-2c0-1.08-1.37-2-3-2s-3 .92-3 2c0 1.1 1.04 1.5 3.24 2.03C14.36 11.56 17 12.22 17 15c0 1.79-1.47 3.31-3.5 3.82V21h-3v-2.18C8.47 18.31 7 16.79 7 15" />
+                    </svg>
+
+                    <input class="mat-input-class" placeholder="250" matInput>
+                </div>
+            </div>
+
+            <div class="new-form">
+                <div class="toggle-div">
+                    <span class="toggle-text">Available for In person meetings </span>
+                    <mat-slide-toggle checked=""></mat-slide-toggle>
+                </div>
+            </div>
+
+        </div>
+        <!-- 1 field and toggle close -->
+
+        <p class="toggle-text ">In person Group Meeting Options</p>
+
+    </div>
+    <!-- Hourly charge  div close -->
+
+    <!-- three input fields -->
+    <div class="two-input-fields">
+
+        <div class="new-form ">
+            <mat-label class="new-form-label">Minimum Students</mat-label>
+            <div class="icon-relative-div-2">
+                <input class="mat-input-class" placeholder="5" matInput>
+            </div>
+        </div>
+
+        <div class="new-form">
+            <mat-label class="new-form-label">Maximum Students</mat-label>
+            <div class="icon-relative-div-2">
+                <input class="mat-input-class" placeholder="30" matInput>
+            </div>
+
+        </div>
+
+        <div class="new-form">
+            <mat-label class="new-form-label">Hourly Price</mat-label>
+            <div class="icon-relative-div">
+                <svg class="arrow-Icon" xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M7 15h2c0 1.08 1.37 2 3 2s3-.92 3-2c0-1.1-1.04-1.5-3.24-2.03C9.64 12.44 7 11.78 7 9c0-1.79 1.47-3.31 3.5-3.82V3h3v2.18C15.53 5.69 17 7.21 17 9h-2c0-1.08-1.37-2-3-2s-3 .92-3 2c0 1.1 1.04 1.5 3.24 2.03C14.36 11.56 17 12.22 17 15c0 1.79-1.47 3.31-3.5 3.82V21h-3v-2.18C8.47 18.31 7 16.79 7 15" />
+                </svg>
+
+                <input class="mat-input-class" placeholder="150" matInput>
+            </div>
+        </div>
+
+    </div>
+    <!-- three input fields close -->
+    <div class="my-quizzer-heading-div">
+        <p class="med-20">Group Meeting</p>
+
+        <div class="quizzers-arrow-line-div">
+            <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+            <p class="quizzers-pink-line m0"></p>
+        </div>
+    </div>
+
+    <div class="toggle-div">
+        <span class="toggle-text random-top-marging ">Available for group meetings</span>
+        <mat-slide-toggle checked=""></mat-slide-toggle>
+    </div>
+
+
+    <p class="toggle-text medim-t">Online Group Meeting Options</p>
+
+    <!-- Group meeting  -->
+    <div class="two-input-fields">
+        <div class="new-form ">
+            <mat-label class="new-form-label">Minimum Students</mat-label>
+            <div class="icon-relative-div-2">
+                <input class="mat-input-class" placeholder="200" matInput>
+            </div>
+        </div>
+
+        <div class="new-form">
+            <mat-label class="new-form-label">Maximum Students</mat-label>
+            <div class="icon-relative-div-2">
+                <input class="mat-input-class" placeholder="30" matInput>
+            </div>
+
+        </div>
+
+        <div class="new-form">
+            <mat-label class="new-form-label">Hourly Price</mat-label>
+            <div class="icon-relative-div">
+                <svg class="arrow-Icon" xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M7 15h2c0 1.08 1.37 2 3 2s3-.92 3-2c0-1.1-1.04-1.5-3.24-2.03C9.64 12.44 7 11.78 7 9c0-1.79 1.47-3.31 3.5-3.82V3h3v2.18C15.53 5.69 17 7.21 17 9h-2c0-1.08-1.37-2-3-2s-3 .92-3 2c0 1.1 1.04 1.5 3.24 2.03C14.36 11.56 17 12.22 17 15c0 1.79-1.47 3.31-3.5 3.82V21h-3v-2.18C8.47 18.31 7 16.79 7 15" />
+                </svg>
+
+                <input class="mat-input-class  " placeholder="50" matInput>
+            </div>
+        </div>
+    </div>
+    <!-- Group meeting close -->
+
+
+    <button class="save-butten" mat-raised-button>Save</button>
+</div>
+<!-- settings page close -->

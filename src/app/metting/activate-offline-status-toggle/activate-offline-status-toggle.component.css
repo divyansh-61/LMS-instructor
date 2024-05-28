@@ -1,0 +1,441 @@
+.My-Up-Coming-Courses {
+    margin: 20px 20px;
+}
+
+
+
+/* ------------------------------------heading css-------------------- */
+
+.heading-tag {
+    margin-top: 10px;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.hr-line {
+    margin-top: 10px;
+    width: 75px;
+    border: 1px solid var(--primary-color);
+}
+
+/* ------------------------------------heading css close-------------------- */
+
+
+
+
+/* ------------------------------------arrow-------------------- */
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 30px 0 10px 0;
+    width: 100%;
+
+}
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+
+.aroowline {
+    position: absolute;
+    top: 3px;
+    left: 150px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-2 {
+    position: absolute;
+    top: 3px;
+    left: 128px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+
+
+/* ------------------------------------arrow close-------------------- */
+
+
+
+/* ------------------------------------card-------------------- */
+
+
+.mat-card-div {
+    /* width: 100%; */
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto auto auto;
+}
+
+.mat-card-div mat-card {
+    width: 100% !important;
+}
+
+@media (max-width: 500px) {
+    .mat-card-div {
+        grid-template-columns: auto;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1200px) {
+    .mat-card-div {
+        grid-template-columns: auto auto;
+    }
+}
+
+.support-card-border {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+    width: 100%;
+    margin: 10px;
+}
+
+.support-contaent-div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.suppoet-icon-envelop {
+    width: 70px;
+}
+
+.suppoet-img {
+    width: 100px;
+    height: 20px;
+}
+
+.icon-img-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.icon-img {
+    padding: 10px;
+}
+
+.text-1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.text-2 {
+    font-size: 14px;
+    color: var(--grey-sec);
+    font-weight: 500;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+
+    .support-card-border {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+        width: 32%;
+    }
+
+    .in-form-row {
+        border-radius: 5px;
+        width: 40% !important;
+    }
+
+    .bonus-img-div {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+
+    .bonus-imagee {
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .bonus-card-div {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        gap: 20px;
+    }
+}
+
+/* ------------------------------------card close-------------------- */
+
+
+/* ------------------------------------input fiels-------------------- */
+.three-input-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+@media screen and (max-width: 990px) {
+    .three-input-fields {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 30px;
+    }
+
+}
+
+.second-one {
+    margin: 20px 0;
+}
+
+.new-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.new-form-label {
+    font-size: 16px;
+    color: var(--black);
+}
+
+
+.icon-relative-div {
+    min-width: fit-content;
+    display: flex;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.2rem;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+
+
+.arrow-Icon {
+    padding: 10px 14px;
+    background-color: var(--blue);
+    color: var(--white);
+    /* border-radius: 9px; */
+}
+
+.mat-input-class {
+    border: 0.5px solid var(--grey);
+    border-radius: 0.2rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-bottom: -10px !important;
+    height: 32px !important;
+    outline: none !important;
+    border-width: 0px;
+}
+
+
+.selected-form-field {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.select-input {
+    height: 2.8rem;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.3rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    color: var(--grey-sec);
+    outline: none !important;
+    appearance: none;
+}
+
+.dual-down-arrow {
+    position: absolute;
+    right: 0.4rem;
+    top: 1.2rem;
+}
+
+.save-butten {
+    margin-top: 23px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 22px 30px;
+
+}
+
+/* ------------------------------------input fiels close-------------------- */
+
+
+
+
+/* ------------------------------------TOGGLE With line -------------------- */
+
+@media screen and (max-width: 500px) {
+    .toggle-with-line .sub-heading {
+        font-size: 15px;
+        text-wrap: nowrap;
+        margin-right: 10px;
+        font-weight: 500;
+    }
+
+    .toggle-with-line .aroowline-3 {
+        position: absolute !important;
+        top: 3px !important;
+        left: 135px !important;
+        font-size: 14px !important;
+        color: var(--lighpink) !important;
+    }
+
+
+    .toggle-text {
+        font-size: 15px !important;
+        color: var(--grey-sec);
+        flex-wrap: nowrap !important;
+        text-wrap: wrap !important;
+        margin: 0 10px;
+    }
+}
+
+.toggle-div {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-text {
+    font-size: 20px;
+    color: var(--grey-sec);
+    flex-wrap: nowrap !important;
+    text-wrap: nowrap;
+    margin: 0 10px;
+}
+
+.toggle-with-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* margin: 25px 0 0 0; */
+    width: 100%;
+}
+
+.text-toggle .sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 15px 0 0 0;
+    width: 100%;
+}
+
+.toggle-with-line .aroowline-3 {
+    position: absolute !important;
+    top: 3px !important;
+    left: 174px;
+    font-size: 14px !important;
+    color: var(--lighpink) !important;
+}
+
+
+
+/* ------------------------------------TOGGLE With line close -------------------- */
+
+/* -------------------img with text--------------- */
+.img-with-text {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0px 0px 15px 0px var(--grey);
+}
+
+.img-with-text .text-1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.img-with-text .text-2 {
+    font-size: 16px;
+    color: var(--grey-sec);
+    text-align: center;
+}
+
+/* -------------------img with text close --------------- */
+
+
+
+@media (max-width: 580px) {
+    .toggle-with-line {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.quizzers-pink-line {
+    border: 1px solid var(--lighpink);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+.quizzers-arrow-icon {
+    margin-right: -10px;
+    color: var(--lighpink);
+    font-size: 15px;
+    min-width: fit-content;
+    height: 100% !important;
+}
+
+.med-16 {
+    font-size: 16px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+.med-20 {
+    font-size: 20px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}

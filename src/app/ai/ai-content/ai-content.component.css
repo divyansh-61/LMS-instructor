@@ -1,0 +1,127 @@
+table {
+    width: 100%;
+    text-wrap: nowrap;
+  }
+  .quizzer-table-div {
+    overflow-x: auto;
+    border-radius: 10px !important;
+    text-wrap: nowrap;
+    table-layout: auto;
+    margin-top:10px ;
+    box-shadow: 4px 4px 4px 4px #F5F5F5;
+  }
+  .td-div {
+    display: flex;
+    gap: 5px;
+    padding: 15px 5px;
+  }
+  .td-text-p1 {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px;
+  }
+  .td-text-p2 {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--grey-sec);
+    margin: 0px;
+  }
+  .quizzer-text-green {
+    color: var(--lightgreen);
+  }
+  .quizzer-text-orange {
+    color: var(--accent-color);
+  }
+  .quizzer-text-red {
+    color: var(--red);
+  }
+  .quizzer-date-td {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .reg-12 {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  /* table */
+  .mat-mdc-header-row {
+    background: none !important;
+    color: var(--white) !important;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  ::ng-deep thead, .mat-mdc-header-row .mdc-data-table__header-row .cdk-header-row {
+    background-image: linear-gradient(to right, var(--blue), var(--primary-color)) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    text-wrap: nowrap;
+  }
+  .mat-card, .mdc-card {
+    background-color: var(--white) !important;
+  }
+  .main_page{
+    margin: 40px 20px;
+  }
+
+  .my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    width: 100%;
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  
+  }
+  
+  
+  .result-statistics p {
+    margin: 0;
+  
+  }
+  
+  .quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 81%;
+  }
+  
+  .quizzers-arrow-icon {
+    color: var(--primary-color);
+    font-size: 15px;
+    width: fit-content;
+    height: 100% !important;
+  }
+  
+  .quizzers-pink-line {
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+  
+  }
+  .main_table{
+    background-color: #fff;
+    box-shadow: 4px 4px 4px 4px #F5F5F5;
+    padding: 10px;
+    border-radius: 8px;
+  }
+.quizzer-table-div th{
+    color: #fff;
+}
+.malti_icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.malti_icon .mat_icon{
+    color: var(--primary-color);
+}
+.my-quizzer-heading-div{
+  margin-top: 40px;
+}

@@ -1,0 +1,80 @@
+.signbtn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0px 50px !important;
+  display: block;
+  margin: 0 auto;
+  font-size: 25px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: 0px !important;
+}
+::ng-deep .mat-mdc-text-field-wrapper {
+  background-color: var(--white) !important;
+  /* border: 1px solid var(--grey); */
+
+  /* border-bottom: none; */
+}
+/* .mat-mdc-text-field-wrapper {
+     border: 2px solid var(--grey) !important;
+} */
+.ankrs {
+  text-decoration: none;
+  color: var(--black);
+}
+.recover_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.label-text{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sign_text {
+  font-size: 36px;
+  /* letter-spacing: 2px; */
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.w_div {
+  width: 40%;
+}
+.w_div1 {
+  width: 60%;
+}
+::ng-deep .mat-mdc-text-field-wrapper {
+  border: 1px solid var(--grey);
+  background-color: var(--white) !important;
+}
+::ng-deep .mat-mdc-text-field-wrapper:focus {
+  border: none !important;
+  outline: none !important;
+  background-color: var(--white) !important;
+}
+.mat-mdc-checkbox {
+  font-size: 20px !important;
+}
+.mdc-text-field{
+  position: static !important;
+  will-change: none !important;
+}
+.f_text{
+  font-size: 16px;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .recover_div {
+    display: block;
+  }
+  .w_div {
+    width: 100%;
+  }
+  .w_div1 {
+    width: 100%;
+  }
+}

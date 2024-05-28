@@ -1,0 +1,345 @@
+<div class="courses-extra-info.component-main-div" *ngIf="!isShowNewPlan">
+  <div class="form-div">
+    <div class="form-row">
+      <div class="in-form-row">
+        <mat-label class="form-input-label reg-16">Capacity </mat-label>
+
+        <div class="calendar-input-field">
+          <!-- <mat-form-field appearance="outline" class="form-field"> -->
+
+          <!-- <img src="../../assets/Quizzes/Group 340247.png" alt="" class="calendar-img"> -->
+
+          <input
+            matInput
+            class="input"
+            placeholder="How many students will you host?"
+          />
+
+          <!-- </mat-form-field> -->
+        </div>
+        <p class="reg-12 text-grey">Leave it blank for unlimited.</p>
+      </div>
+
+      <div class="new-form">
+        <mat-label class="new-form-label reg-16">Duration (Minutes)</mat-label>
+        <div class="icon-relative-div">
+          <svg
+            class="arrow-Icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="3em"
+            height="3em"
+            viewBox="0 0 256 256"
+          >
+            <path
+              fill="white"
+              d="M232 136.66A104.12 104.12 0 1 1 119.34 24a8 8 0 0 1 1.32 16A88.12 88.12 0 1 0 216 135.34a8 8 0 0 1 16 1.32M120 72v56a8 8 0 0 0 8 8h56a8 8 0 0 0 0-16h-48V72a8 8 0 0 0-16 0m40-24a12 12 0 1 0-12-12a12 12 0 0 0 12 12m36 24a12 12 0 1 0-12-12a12 12 0 0 0 12 12m24 36a12 12 0 1 0-12-12a12 12 0 0 0 12 12"
+            />
+          </svg>
+          <input class="mat-input-class" matInput placeholder="90" />
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div>
+        <div class="result-statistics">
+          <div class="my-quizzer-heading-div">
+            <p class="reg-16">Course Forum</p>
+
+            <div class="quizzers-arrow-line-div">
+              <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+              <p class="quizzers-pink-line m0"></p>
+            </div>
+          </div>
+
+          <div class="text-with-toggle-div">
+            <!-- <p>Show only open results</p> -->
+            <mat-slide-toggle checked=""></mat-slide-toggle>
+          </div>
+        </div>
+        <div class="reg-12 text-grey course-forum-text-div">
+          - By enabling this feature, students will be able to create questions
+          and communicate with other students.
+        </div>
+      </div>
+
+      <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+          <p class="reg-16">Support</p>
+
+          <div class="quizzers-arrow-line-div">
+            <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+            <p class="quizzers-pink-line m0"></p>
+          </div>
+        </div>
+
+        <div class="text-with-toggle-div">
+          <!-- <p>Show only open results</p> -->
+          <mat-slide-toggle checked=""></mat-slide-toggle>
+        </div>
+      </div>
+
+      <div>
+        <div class="result-statistics">
+          <div class="my-quizzer-heading-div">
+            <p class="reg-16">Completion Certificate</p>
+
+            <div class="quizzers-arrow-line-div">
+              <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+              <p class="quizzers-pink-line m0"></p>
+            </div>
+          </div>
+
+          <div class="text-with-toggle-div">
+            <!-- <p>Show only open results</p> -->
+            <mat-slide-toggle checked=""></mat-slide-toggle>
+          </div>
+        </div>
+        <div class="reg-12 text-grey course-forum-text-div">
+          - A certificate will be awarded to the student when passed the course.
+        </div>
+      </div>
+
+      <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+          <p class="reg-16">Downloadable</p>
+
+          <div class="quizzers-arrow-line-div">
+            <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+            <p class="quizzers-pink-line m0"></p>
+          </div>
+        </div>
+
+        <div class="text-with-toggle-div">
+          <!-- <p>Show only open results</p> -->
+          <mat-slide-toggle checked=""></mat-slide-toggle>
+        </div>
+      </div>
+
+      <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+          <p class="reg-16">Partner Instructor</p>
+
+          <div class="quizzers-arrow-line-div">
+            <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+            <p class="quizzers-pink-line m0"></p>
+          </div>
+        </div>
+
+        <div class="text-with-toggle-div">
+          <!-- <p>Show only open results</p> -->
+          <mat-slide-toggle (click)="toggleNewPlan()"></mat-slide-toggle>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="in-form-row">
+        <mat-label class="form-input-label reg-16">Tags </mat-label>
+
+        <div class="tags-input-div">
+          <div class="tags-input-inner-div">
+            <div class="reg-14">Drip</div>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 16 16"
+            >
+              <g
+                fill="none"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+              >
+                <path d="m10.25 5.75l-4.5 4.5m0-4.5l4.5 4.5" />
+                <circle cx="8" cy="8" r="6.25" />
+              </g>
+            </svg>
+          </div>
+
+          <div class="tags-input-inner-div">
+            <div class="reg-14">Assignment</div>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 16 16"
+            >
+              <g
+                fill="none"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+              >
+                <path d="m10.25 5.75l-4.5 4.5m0-4.5l4.5 4.5" />
+                <circle cx="8" cy="8" r="6.25" />
+              </g>
+            </svg>
+          </div>
+
+          <!-- <mat-form-field appearance="outline" class="form-field"> -->
+
+          <!-- <img src="../../assets/Quizzes/Group 340247.png" alt="" class="calendar-img"> -->
+
+          <!-- <input matInput class="input" placeholder="How many students will you host?"> -->
+
+          <!-- </mat-form-field> -->
+        </div>
+        <p class="reg-12 text-grey">Type tag name and press enter (Max : 5)</p>
+      </div>
+
+      <div class="in-form-row">
+        <mat-label class="form-input-label reg-16">Category</mat-label>
+        <div class="">
+          <!-- <mat-form-field appearance="outline" class="form-field"> -->
+          <select class="select_in input">
+            <option value="all" selected>Language</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+          </select>
+          <!-- </mat-form-field> -->
+        </div>
+      </div>
+
+      <div class="in-form-row">
+        <mat-label class="form-input-label reg-16">Category Filters</mat-label>
+
+        <div class="checkbox-main-div">
+          <section class="checkbox-holder-div">
+            <div class="checkbox-holder-heading med-16">Level</div>
+
+            <div class="checkbox-container">
+              <div class="checkbox-text reg-14">Beginner</div>
+              <mat-checkbox
+                class="example-margin"
+                color="primary"
+              ></mat-checkbox>
+            </div>
+
+            <div class="checkbox-container">
+              <div class="checkbox-text reg-14">Intermediate</div>
+              <mat-checkbox
+                class="example-margin"
+                color="primary"
+                checked=""
+              ></mat-checkbox>
+            </div>
+
+            <div class="checkbox-container">
+              <div class="checkbox-text reg-14">Expert</div>
+              <mat-checkbox
+                class="example-margin"
+                color="primary"
+              ></mat-checkbox>
+            </div>
+          </section>
+
+          <section class="checkbox-holder-div">
+            <div class="checkbox-holder-heading med-16">Language</div>
+
+            <div class="checkbox-container">
+              <div class="checkbox-text reg-14">English</div>
+              <mat-checkbox
+                class="example-margin"
+                color="primary"
+                checked=""
+              ></mat-checkbox>
+            </div>
+
+            <div class="checkbox-container">
+              <div class="checkbox-text reg-14">Español</div>
+              <mat-checkbox
+                class="example-margin"
+                color="primary"
+              ></mat-checkbox>
+            </div>
+
+            <div class="checkbox-container">
+              <div class="checkbox-text reg-14">Português</div>
+              <mat-checkbox
+                class="example-margin"
+                color="primary"
+              ></mat-checkbox>
+            </div>
+
+            <div class="checkbox-container">
+              <div class="checkbox-text reg-14">हिन्</div>
+              <mat-checkbox
+                class="example-margin"
+                color="primary"
+              ></mat-checkbox>
+            </div>
+
+            <div class="checkbox-container">
+              <div class="checkbox-text reg-14">العربية</div>
+              <mat-checkbox
+                class="example-margin"
+                color="primary"
+              ></mat-checkbox>
+            </div>
+          </section>
+
+          <section class="checkbox-holder-div">
+            <div class="checkbox-holder-heading med-16">Topic</div>
+
+            <div class="checkbox-container">
+              <div class="checkbox-text reg-14">English Language</div>
+              <mat-checkbox
+                class="example-margin"
+                color="primary"
+                checked=""
+              ></mat-checkbox>
+            </div>
+
+            <div class="checkbox-container">
+              <div class="checkbox-text reg-14">English Grammer</div>
+              <mat-checkbox
+                class="example-margin"
+                color="primary"
+                checked=""
+              ></mat-checkbox>
+            </div>
+
+            <div class="checkbox-container">
+              <div class="checkbox-text reg-14">Spanish Language</div>
+              <mat-checkbox
+                class="example-margin"
+                color="primary"
+              ></mat-checkbox>
+            </div>
+
+            <div class="checkbox-container">
+              <div class="checkbox-text reg-14">Arabic Language</div>
+              <mat-checkbox
+                class="example-margin"
+                color="primary"
+              ></mat-checkbox>
+            </div>
+
+            <div class="checkbox-container">
+              <div class="checkbox-text reg-14">IELTS</div>
+              <mat-checkbox
+                class="example-margin"
+                color="primary"
+              ></mat-checkbox>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- <div class="in-form-row button-div">
+                <button mat-raised-button class="show-result-button">Show Results</button>
+            </div> -->
+    </div>
+  </div>
+</div>
+
+<ng-container *ngIf="isShowNewPlan">
+  <app-courses-extra-info></app-courses-extra-info>
+</ng-container>

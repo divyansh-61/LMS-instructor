@@ -1,0 +1,1138 @@
+<!-- FAQ page  -->
+<div class="FQA-MAIN">
+
+
+    <!-- What is the course level main div  -->
+    <div>
+        <!-- sub hedaing  -->
+        <div class="sub-heading-div">
+            <p class="sub-heading med-16">FAQ (Optional)</p>
+            <div class="arrow-line-div">
+                <mat-icon class="aroowline">play_arrow</mat-icon>
+                <p class="arrow-line"></p>
+            </div>
+        </div>
+        <!-- sub hedaing close -->
+        <!------ buttton------->
+        <button class="butten-fqa" mat-raised-button>New FAQ</button>
+
+
+        <!-- head div  -->
+        <div class="expansion-panel-div">
+
+            <mat-accordion class="example-headers-align" multi>
+                <mat-expansion-panel [expanded]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div class="sub-heading-div">
+                                <p class="sub-heading med-16">What is the course level?</p>
+                                <mat-icon class="aroowline-2">play_arrow</mat-icon>
+                                <p class="arrow-line"></p>
+                            </div>
+
+                            <div class="head-icon-row">
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                        aria-label="Example icon-button with a menu">
+                                        <mat-icon>more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button (click)="Newdelete()" mat-menu-item>
+                                            delete
+                                        </button>
+                                    </mat-menu>
+                                </div>
+
+                            </div>
+
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <div class="expansion-panel-inner-content">
+                        <div class="two-input-field">
+                            <div class="new-form">
+                                <mat-label class="new-form-label">Language</mat-label>
+                                <div class="selected-form-field">
+                                    <select class="select-input">
+                                        <option value="">English</option>
+                                    </select>
+                                    <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                            height="1em" viewBox="0 0 15 15">
+                                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+
+                            <div class="new-form">
+                                <mat-label class="new-form-label">Title</mat-label>
+                                <input class="mat-input-class" matInput placeholder="What is the course level?">
+                            </div>
+                        </div>
+                        <div class="larg-input-div  new-form">
+                            <mat-label class="new-form-label">Answer</mat-label>
+                            <textarea name="" id="" cols="30" rows="10" class="text-area  mat-input-class  " matInput
+                                placeholder="This is a course for beginners so you will get familiar with the topic from scratch."></textarea>
+                        </div>
+
+                        <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+
+        </div>
+        <!-- head div close -->
+
+
+        <!-- head div  -->
+        <div class="expansion-panel-div">
+
+            <mat-accordion class="example-headers-align" multi>
+                <mat-expansion-panel [expanded]="">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div class="sub-heading-div">
+                                <p class="sub-heading med-16">How can i get course updates?</p>
+                                <mat-icon class="aroowline-2">play_arrow</mat-icon>
+                                <p class="arrow-line"></p>
+                            </div>
+
+                            <div class="head-icon-row">
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                        aria-label="Example icon-button with a menu">
+                                        <mat-icon>more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button (click)="Newdelete()" mat-menu-item>
+                                            delete
+                                        </button>
+                                    </mat-menu>
+                                </div>
+
+                            </div>
+
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <div class="expansion-panel-inner-content">
+                        <div class="two-input-field">
+                            <div class="new-form">
+                                <mat-label class="new-form-label">Language</mat-label>
+                                <div class="selected-form-field">
+                                    <select class="select-input">
+                                        <option value="">English</option>
+                                    </select>
+                                    <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                            height="1em" viewBox="0 0 15 15">
+                                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+
+                            <div class="new-form">
+                                <mat-label class="new-form-label">Title</mat-label>
+                                <input class="mat-input-class" matInput placeholder="What is the course level?">
+                            </div>
+                        </div>
+                        <div class="larg-input-div  new-form">
+                            <mat-label class="new-form-label">Answer</mat-label>
+                            <textarea name="" id="" cols="30" rows="10" class="text-area  mat-input-class  " matInput
+                                placeholder="This is a course for beginners so you will get familiar with the topic from scratch."></textarea>
+                        </div>
+
+                        <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+
+        </div>
+        <!-- head div close -->
+
+
+        <!-- head div  -->
+        <div class="expansion-panel-div">
+
+            <mat-accordion class="example-headers-align" multi>
+                <mat-expansion-panel [expanded]="">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div class="sub-heading-div">
+                                <p class="sub-heading med-16">Is it a supported course?</p>
+                                <mat-icon class="aroowline-2">play_arrow</mat-icon>
+                                <p class="arrow-line"></p>
+                            </div>
+
+                            <div class="head-icon-row">
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                        aria-label="Example icon-button with a menu">
+                                        <mat-icon>more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button (click)="Newdelete()" mat-menu-item>
+                                            delete
+                                        </button>
+                                    </mat-menu>
+                                </div>
+
+                            </div>
+
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <div class="expansion-panel-inner-content">
+                        <div class="two-input-field">
+                            <div class="new-form">
+                                <mat-label class="new-form-label">Language</mat-label>
+                                <div class="selected-form-field">
+                                    <select class="select-input">
+                                        <option value="">English</option>
+                                    </select>
+                                    <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em"
+                                            height="1em" viewBox="0 0 15 15">
+                                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                                        </svg></span>
+                                </div>
+                            </div>
+
+                            <div class="new-form">
+                                <mat-label class="new-form-label">Title</mat-label>
+                                <input class="mat-input-class" matInput placeholder="What is the course level?">
+                            </div>
+                        </div>
+                        <div class="larg-input-div  new-form">
+                            <mat-label class="new-form-label">Answer</mat-label>
+                            <textarea name="" id="" cols="30" rows="10" class="text-area  mat-input-class  " matInput
+                                placeholder="This is a course for beginners so you will get familiar with the topic from scratch."></textarea>
+                        </div>
+
+                        <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+
+        </div>
+        <!-- head div close -->
+
+
+    </div>
+    <!-- What is the course level main div close  -->
+
+
+    <!-- Learning materials (Optional) div-->
+    <div class="Learning-materials-div">
+        <div>
+            <!-- sub hedaing  -->
+            <div class="sub-heading-div">
+                <p class="sub-heading med-16">Learning materials (Optional)</p>
+                <mat-icon class="aroowline-3">play_arrow</mat-icon>
+                <p class="arrow-line"></p>
+            </div>
+            <!-- sub hedaing close -->
+            <!------ buttton------->
+            <button class="butten-fqa" mat-raised-button>New learning material</button>
+
+
+            <!-- head div  -->
+            <div class="expansion-panel-div">
+
+                <mat-accordion class="example-headers-align" multi>
+                    <mat-expansion-panel [expanded]="true">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <div class="sub-heading-div">
+                                    <p class="sub-heading med-16">Have a great unedrstanding of your life's...</p>
+                                    <mat-icon class="aroowline-2">play_arrow</mat-icon>
+                                    <p class="arrow-line"></p>
+                                </div>
+
+                                <div class="head-icon-row">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <button mat-icon-button [matMenuTriggerFor]="menu"
+                                            aria-label="Example icon-button with a menu">
+                                            <mat-icon>more_vert</mat-icon>
+                                        </button>
+                                        <mat-menu #menu="matMenu">
+                                            <button (click)="Newdelete()" mat-menu-item>
+                                                delete
+                                            </button>
+                                        </mat-menu>
+                                    </div>
+
+                                </div>
+
+                            </mat-panel-title>
+
+                        </mat-expansion-panel-header>
+                        <div class="expansion-panel-inner-content">
+                            <div class="two-input-field">
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Language</mat-label>
+                                    <div class="selected-form-field">
+                                        <select class="select-input">
+                                            <option value="">English</option>
+                                        </select>
+                                        <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 15 15">
+                                                <path fill="#808080" d="M7.5 12L0 4h15z" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Title</mat-label>
+                                    <input class="mat-input-class" matInput placeholder="What is the course level?">
+                                </div>
+                            </div>
+
+                            <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                        </div>
+                    </mat-expansion-panel>
+                </mat-accordion>
+
+
+            </div>
+            <!-- head div close -->
+
+
+            <!-- head div  -->
+            <div class="expansion-panel-div">
+
+                <mat-accordion class="example-headers-align" multi>
+                    <mat-expansion-panel [expanded]="">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <div class="sub-heading-div">
+                                    <p class="sub-heading med-16">Replace limiting beliefs with empowering ...</p>
+                                    <mat-icon class="aroowline-2">play_arrow</mat-icon>
+                                    <p class="arrow-line"></p>
+                                </div>
+
+                                <div class="head-icon-row">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <button mat-icon-button [matMenuTriggerFor]="menu"
+                                            aria-label="Example icon-button with a menu">
+                                            <mat-icon>more_vert</mat-icon>
+                                        </button>
+                                        <mat-menu #menu="matMenu">
+                                            <button (click)="Newdelete()" mat-menu-item>
+                                                delete
+                                            </button>
+                                        </mat-menu>
+                                    </div>
+
+                                </div>
+
+                            </mat-panel-title>
+
+                        </mat-expansion-panel-header>
+                        <div class="expansion-panel-inner-content">
+                            <div class="two-input-field">
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Language</mat-label>
+                                    <div class="selected-form-field">
+                                        <select class="select-input">
+                                            <option value="">English</option>
+                                        </select>
+                                        <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 15 15">
+                                                <path fill="#808080" d="M7.5 12L0 4h15z" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Title</mat-label>
+                                    <input class="mat-input-class" matInput placeholder="What is the course level?">
+                                </div>
+                            </div>
+
+                            <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                        </div>
+                    </mat-expansion-panel>
+                </mat-accordion>
+
+
+            </div>
+            <!-- head div close -->
+
+
+            <!-- head div  -->
+            <div class="expansion-panel-div">
+
+                <mat-accordion class="example-headers-align" multi>
+                    <mat-expansion-panel [expanded]="">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <div class="sub-heading-div">
+                                    <p class="sub-heading med-16">See the greater meaning in the experiences in ...</p>
+                                    <mat-icon class="aroowline-2">play_arrow</mat-icon>
+                                    <p class="arrow-line"></p>
+                                </div>
+
+                                <div class="head-icon-row">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <button mat-icon-button [matMenuTriggerFor]="menu"
+                                            aria-label="Example icon-button with a menu">
+                                            <mat-icon>more_vert</mat-icon>
+                                        </button>
+                                        <mat-menu #menu="matMenu">
+                                            <button (click)="Newdelete()" mat-menu-item>
+                                                delete
+                                            </button>
+                                        </mat-menu>
+                                    </div>
+
+                                </div>
+
+                            </mat-panel-title>
+
+                        </mat-expansion-panel-header>
+                        <div class="expansion-panel-inner-content">
+                            <div class="two-input-field">
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Language</mat-label>
+                                    <div class="selected-form-field">
+                                        <select class="select-input">
+                                            <option value="">English</option>
+                                        </select>
+                                        <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 15 15">
+                                                <path fill="#808080" d="M7.5 12L0 4h15z" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Title</mat-label>
+                                    <input class="mat-input-class" matInput placeholder="What is the course level?">
+                                </div>
+                            </div>
+
+                            <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                        </div>
+                    </mat-expansion-panel>
+                </mat-accordion>
+
+
+            </div>
+            <!-- head div close -->
+
+
+            <!-- head div  -->
+            <div class="expansion-panel-div">
+
+                <mat-accordion class="example-headers-align" multi>
+                    <mat-expansion-panel [expanded]="">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <div class="sub-heading-div">
+                                    <p class="sub-heading med-16">Find greater meaning and purpose in your ...</p>
+                                    <mat-icon class="aroowline-2">play_arrow</mat-icon>
+                                    <p class="arrow-line"></p>
+                                </div>
+
+                                <div class="head-icon-row">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <button mat-icon-button [matMenuTriggerFor]="menu"
+                                            aria-label="Example icon-button with a menu">
+                                            <mat-icon>more_vert</mat-icon>
+                                        </button>
+                                        <mat-menu #menu="matMenu">
+                                            <button (click)="Newdelete()" mat-menu-item>
+                                                delete
+                                            </button>
+                                        </mat-menu>
+                                    </div>
+
+                                </div>
+
+                            </mat-panel-title>
+
+                        </mat-expansion-panel-header>
+                        <div class="expansion-panel-inner-content">
+                            <div class="two-input-field">
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Language</mat-label>
+                                    <div class="selected-form-field">
+                                        <select class="select-input">
+                                            <option value="">English</option>
+                                        </select>
+                                        <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 15 15">
+                                                <path fill="#808080" d="M7.5 12L0 4h15z" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Title</mat-label>
+                                    <input class="mat-input-class" matInput placeholder="What is the course level?">
+                                </div>
+                            </div>
+
+                            <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                        </div>
+                    </mat-expansion-panel>
+                </mat-accordion>
+
+
+            </div>
+            <!-- head div close -->
+
+
+        </div>
+    </div>
+    <!-- Learning materials (Optional) div close -->
+
+
+    <!-- Company logos (Optional) div  -->
+    <div>
+        <!-- sub hedaing  -->
+        <div class="sub-heading-div">
+            <p class="sub-heading med-16">Company logos (Optional)</p>
+            <mat-icon class="aroowline-6">play_arrow</mat-icon>
+            <p class="arrow-line"></p>
+        </div>
+        <!-- sub hedaing close -->
+        <!------ buttton------->
+        <button class="butten-fqa" mat-raised-button>New Company logo</button>
+
+
+        <!-- head div  -->
+        <div class="expansion-panel-div">
+
+            <mat-accordion class="example-headers-align" multi>
+                <mat-expansion-panel [expanded]="true">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div class="my-quizzer-heading-div-2">
+
+                                <div class="expansion-panel-head-text">
+                                    <img src="assets/Courses/image 160.png" alt="">
+                                </div>
+
+
+
+                                <div class="quizzers-arrow-line-div">
+                                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                                    <p class="quizzers-pink-line m0"></p>
+                                </div>
+
+                            </div>
+
+                            <div class="head-icon-row">
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                        aria-label="Example icon-button with a menu">
+                                        <mat-icon>more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button (click)="Newdelete()" mat-menu-item>
+                                            delete
+                                        </button>
+                                    </mat-menu>
+                                </div>
+
+                            </div>
+
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <div class="expansion-panel-inner-content">
+                        <div class="two-input-field">
+                            <div class="image-input-form">
+                                <mat-label class="new-form-label">Image</mat-label>
+                                <div class="upload-input-div">
+                                    <label for="accessibility" class="upload-image-div">
+                                        <img src="assets/Courses/upload_2.png" alt="">
+                                    </label>
+                                    <input hidden type="file" class="input" id="accessibility"
+                                        placeholder="/store/929/logo/logo (3).png">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+
+        </div>
+        <!-- head div close -->
+
+
+        <!-- head div  -->
+        <div class="expansion-panel-div">
+
+            <mat-accordion class="example-headers-align" multi>
+                <mat-expansion-panel [expanded]="">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div class="my-quizzer-heading-div-2">
+
+                                <div class="expansion-panel-head-text">
+                                    <img src="assets/Courses/image 161.png" alt="">
+                                </div>
+
+
+
+                                <div class="quizzers-arrow-line-div">
+                                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                                    <p class="quizzers-pink-line m0"></p>
+                                </div>
+
+                            </div>
+
+                            <div class="head-icon-row">
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                        aria-label="Example icon-button with a menu">
+                                        <mat-icon>more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button (click)="Newdelete()" mat-menu-item>
+                                            delete
+                                        </button>
+                                    </mat-menu>
+                                </div>
+
+                            </div>
+
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <div class="expansion-panel-inner-content">
+                        <div class="two-input-field">
+                            <div class="image-input-form">
+                                <mat-label class="new-form-label">Image</mat-label>
+                                <div class="upload-input-div">
+                                    <label for="accessibility" class="upload-image-div">
+                                        <img src="assets/Courses/upload_2.png" alt="">
+                                    </label>
+                                    <input hidden type="file" class="input" id="accessibility"
+                                        placeholder="/store/929/logo/logo (3).png">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+
+        </div>
+        <!-- head div close -->
+
+
+        <!-- head div  -->
+        <div class="expansion-panel-div">
+
+            <mat-accordion class="example-headers-align" multi>
+                <mat-expansion-panel [expanded]="">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div class="my-quizzer-heading-div-2">
+
+                                <div class="expansion-panel-head-text">
+                                    <img src="assets/Courses/image 162.png" alt="">
+                                </div>
+
+
+
+                                <div class="quizzers-arrow-line-div">
+                                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                                    <p class="quizzers-pink-line m0"></p>
+                                </div>
+
+                            </div>
+
+                            <div class="head-icon-row">
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                        aria-label="Example icon-button with a menu">
+                                        <mat-icon>more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button (click)="Newdelete()" mat-menu-item>
+                                            delete
+                                        </button>
+                                    </mat-menu>
+                                </div>
+
+                            </div>
+
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <div class="expansion-panel-inner-content">
+                        <div class="two-input-field">
+                            <div class="image-input-form">
+                                <mat-label class="new-form-label">Image</mat-label>
+                                <div class="upload-input-div">
+                                    <label for="accessibility" class="upload-image-div">
+                                        <img src="assets/Courses/upload_2.png" alt="">
+                                    </label>
+                                    <input hidden type="file" class="input" id="accessibility"
+                                        placeholder="/store/929/logo/logo (3).png">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+
+        </div>
+        <!-- head div close -->
+
+
+        <!-- head div  -->
+        <div class="expansion-panel-div">
+
+            <mat-accordion class="example-headers-align" multi>
+                <mat-expansion-panel [expanded]="">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div class="my-quizzer-heading-div-2">
+
+                                <div class="expansion-panel-head-text">
+                                    <img src="assets/Courses/image 163.png" alt="">
+                                </div>
+
+
+
+                                <div class="quizzers-arrow-line-div">
+                                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                                    <p class="quizzers-pink-line m0"></p>
+                                </div>
+
+                            </div>
+
+                            <div class="head-icon-row">
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                        aria-label="Example icon-button with a menu">
+                                        <mat-icon>more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button (click)="Newdelete()" mat-menu-item>
+                                            delete
+                                        </button>
+                                    </mat-menu>
+                                </div>
+
+                            </div>
+
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <div class="expansion-panel-inner-content">
+                        <div class="two-input-field">
+                            <div class="image-input-form">
+                                <mat-label class="new-form-label">Image</mat-label>
+                                <div class="upload-input-div">
+                                    <label for="accessibility" class="upload-image-div">
+                                        <img src="assets/Courses/upload_2.png" alt="">
+                                    </label>
+                                    <input hidden type="file" class="input" id="accessibility"
+                                        placeholder="/store/929/logo/logo (3).png">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+
+        </div>
+        <!-- head div close -->
+    </div>
+    <!-- Company logos (Optional) div close  -->
+
+
+    <!-- Requirements (Optional) div-->
+    <div class="Learning-materials-div">
+        <div>
+            <!-- sub hedaing  -->
+            <div class="sub-heading-div">
+                <p class="sub-heading med-16">Requirements (Optional)</p>
+                <mat-icon class="aroowline-7">play_arrow</mat-icon>
+                <p class="arrow-line"></p>
+            </div>
+            <!-- sub hedaing close -->
+            <!------ buttton------->
+            <button class="butten-fqa" mat-raised-button>New Requirement</button>
+
+
+
+
+            <!-- head div  -->
+            <div class="expansion-panel-div">
+
+                <mat-accordion class="example-headers-align" multi>
+                    <mat-expansion-panel [expanded]="true">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <div class="sub-heading-div">
+                                    <p class="sub-heading med-16">Prepare to learn real life skills and build ...</p>
+                                    <mat-icon class="aroowline-2">play_arrow</mat-icon>
+                                    <p class="arrow-line"></p>
+                                </div>
+
+                                <div class="head-icon-row">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <button mat-icon-button [matMenuTriggerFor]="menu"
+                                            aria-label="Example icon-button with a menu">
+                                            <mat-icon>more_vert</mat-icon>
+                                        </button>
+                                        <mat-menu #menu="matMenu">
+                                            <button (click)="Newdelete()" mat-menu-item>
+                                                delete
+                                            </button>
+                                        </mat-menu>
+                                    </div>
+
+                                </div>
+
+                            </mat-panel-title>
+
+                        </mat-expansion-panel-header>
+                        <div class="expansion-panel-inner-content">
+                            <div class="two-input-field">
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Language</mat-label>
+                                    <div class="selected-form-field">
+                                        <select class="select-input">
+                                            <option value="">English</option>
+                                        </select>
+                                        <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 15 15">
+                                                <path fill="#808080" d="M7.5 12L0 4h15z" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Title</mat-label>
+                                    <input class="mat-input-class" matInput
+                                        placeholder="Prepare to learn real life skills and build real web apps that will get you hired!">
+                                </div>
+                            </div>
+
+                            <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                        </div>
+                    </mat-expansion-panel>
+                </mat-accordion>
+
+
+            </div>
+            <!-- head div close -->
+
+
+            <!-- head div  -->
+            <div class="expansion-panel-div">
+
+                <mat-accordion class="example-headers-align" multi>
+                    <mat-expansion-panel [expanded]="">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <div class="sub-heading-div">
+                                    <p class="sub-heading med-16">All tools and software used in this course ...</p>
+                                    <mat-icon class="aroowline-2">play_arrow</mat-icon>
+                                    <p class="arrow-line"></p>
+                                </div>
+
+                                <div class="head-icon-row">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <button mat-icon-button [matMenuTriggerFor]="menu"
+                                            aria-label="Example icon-button with a menu">
+                                            <mat-icon>more_vert</mat-icon>
+                                        </button>
+                                        <mat-menu #menu="matMenu">
+                                            <button (click)="Newdelete()" mat-menu-item>
+                                                delete
+                                            </button>
+                                        </mat-menu>
+                                    </div>
+
+                                </div>
+
+                            </mat-panel-title>
+
+                        </mat-expansion-panel-header>
+                        <div class="expansion-panel-inner-content">
+                            <div class="two-input-field">
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Language</mat-label>
+                                    <div class="selected-form-field">
+                                        <select class="select-input">
+                                            <option value="">English</option>
+                                        </select>
+                                        <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 15 15">
+                                                <path fill="#808080" d="M7.5 12L0 4h15z" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Title</mat-label>
+                                    <input class="mat-input-class" matInput placeholder="What is the course level?">
+                                </div>
+                            </div>
+
+                            <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                        </div>
+                    </mat-expansion-panel>
+                </mat-accordion>
+
+
+            </div>
+            <!-- head div close -->
+
+
+            <!-- head div  -->
+            <div class="expansion-panel-div">
+
+                <mat-accordion class="example-headers-align" multi>
+                    <mat-expansion-panel [expanded]="">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <div class="sub-heading-div">
+                                    <p class="sub-heading med-16">No previous coding experience is needed</p>
+                                    <mat-icon class="aroowline-2">play_arrow</mat-icon>
+                                    <p class="arrow-line"></p>
+                                </div>
+
+                                <div class="head-icon-row">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <button mat-icon-button [matMenuTriggerFor]="menu"
+                                            aria-label="Example icon-button with a menu">
+                                            <mat-icon>more_vert</mat-icon>
+                                        </button>
+                                        <mat-menu #menu="matMenu">
+                                            <button (click)="Newdelete()" mat-menu-item>
+                                                delete
+                                            </button>
+                                        </mat-menu>
+                                    </div>
+
+                                </div>
+
+                            </mat-panel-title>
+
+                        </mat-expansion-panel-header>
+                        <div class="expansion-panel-inner-content">
+                            <div class="two-input-field">
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Language</mat-label>
+                                    <div class="selected-form-field">
+                                        <select class="select-input">
+                                            <option value="">English</option>
+                                        </select>
+                                        <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 15 15">
+                                                <path fill="#808080" d="M7.5 12L0 4h15z" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Title</mat-label>
+                                    <input class="mat-input-class" matInput placeholder="What is the course level?">
+                                </div>
+                            </div>
+
+                            <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                        </div>
+                    </mat-expansion-panel>
+                </mat-accordion>
+
+
+            </div>
+            <!-- head div close -->
+
+
+            <!-- head div  -->
+            <div class="expansion-panel-div">
+
+                <mat-accordion class="example-headers-align" multi>
+                    <mat-expansion-panel [expanded]="">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <div class="sub-heading-div">
+                                    <p class="sub-heading med-16">A computer (Windows/Mac/Linux). That's it!</p>
+                                    <mat-icon class="aroowline-2">play_arrow</mat-icon>
+                                    <p class="arrow-line"></p>
+                                </div>
+
+                                <div class="head-icon-row">
+                                    <div class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 23.414L7.586 19L9 17.586l2 2V13H4.414l2 2L5 16.414L.586 12L5 7.586L6.414 9l-2 2H11V4.414l-2 2L7.586 5L12 .586L16.414 5L15 6.414l-2-2V11h6.586l-2-2L19 7.586L23.414 12L19 16.414L17.586 15l2-2H13v6.586l2-2L16.414 19z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <button mat-icon-button [matMenuTriggerFor]="menu"
+                                            aria-label="Example icon-button with a menu">
+                                            <mat-icon>more_vert</mat-icon>
+                                        </button>
+                                        <mat-menu #menu="matMenu">
+                                            <button (click)="Newdelete()" mat-menu-item>
+                                                delete
+                                            </button>
+                                        </mat-menu>
+                                    </div>
+
+                                </div>
+
+                            </mat-panel-title>
+
+                        </mat-expansion-panel-header>
+                        <div class="expansion-panel-inner-content">
+                            <div class="two-input-field">
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Language</mat-label>
+                                    <div class="selected-form-field">
+                                        <select class="select-input">
+                                            <option value="">English</option>
+                                        </select>
+                                        <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="1em" height="1em" viewBox="0 0 15 15">
+                                                <path fill="#808080" d="M7.5 12L0 4h15z" />
+                                            </svg></span>
+                                    </div>
+                                </div>
+
+                                <div class="new-form">
+                                    <mat-label class="new-form-label">Title</mat-label>
+                                    <input class="mat-input-class" matInput placeholder="What is the course level?">
+                                </div>
+                            </div>
+
+                            <button (click)="SavePopup()" mat-raised-button class="save-btns">Save</button>
+                        </div>
+                    </mat-expansion-panel>
+                </mat-accordion>
+
+
+            </div>
+            <!-- head div close -->
+
+
+        </div>
+    </div>
+    <!-- Requirements (Optional) div close -->
+
+</div>
+<!-- FAQ page close -->

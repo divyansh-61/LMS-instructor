@@ -1,0 +1,76 @@
+<div class="main-new-topic">
+
+    <!-- main heading start -->
+    <div class="main-header">
+        <p class="new-topic-heading">New Topic</p>
+        <p class="new-topic-contant">Create new topics and communicate with other users</p>
+    </div>
+    <!-- main heading end -->
+    <!-- form filed start -->
+
+    <div class="form-div">
+
+        <!-- <div class="form-row"> -->
+
+        <div class="in-form-row">
+            <mat-label class="form-input-label">Topic Title </mat-label><br />
+            <mat-form-field appearance="outline" class="form-field">
+                <input matInput class="input">
+
+            </mat-form-field>
+        </div>
+
+        <div class="in-form-row">
+            <mat-label class="form-input-label">Forums</mat-label><br />
+
+
+            <mat-form-field appearance="outline" class="form-field">
+                <input matInput class="input">
+            </mat-form-field>
+        </div>
+
+
+
+        <ckeditor [editor]="Editor" data="<p>Hello, world!</p>" class="text-editar"></ckeditor>
+
+
+        <!-- <div class="form-row"> -->
+
+        <div class="in-form-row">
+            <mat-label class="form-input-label">Attachments </mat-label><br />
+
+            <div class="calendar-input-field">
+
+                <mat-form-field appearance="outline" class="form-field">
+
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg"  width="3em" height="3em" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="m7.086 13.07l-1.702-1.363a7 7 0 1 0 13.232 0l-1.702 1.362a5 5 0 1 1-9.827 0" clip-rule="evenodd"/><path fill="currentColor" d="m12 4l-.625-.78l.625-.5l.625.5zm1 9a1 1 0 1 1-2 0zM6.375 7.22l5-4l1.25 1.56l-5 4zm6.25-4l5 4l-1.25 1.56l-5-4zM13 4v9h-2V4z"/></svg> -->
+                    <img src="assets/forum/upload_2.png" class="arow-sign" alt="">
+
+                    <input matInput class="input">
+
+
+                </mat-form-field>
+
+            </div>
+
+
+            <!-- </div> -->
+        </div>
+
+
+        <!-- </div> -->
+
+    </div>
+    <!-- form filed end -->
+
+
+
+
+    <div class="terms-btn-div">
+        <div>
+            <p class="terms-heading">Terms and rules confirmation</p>
+            <p class="terms-content">By posting a forum topic, you will accept community terms and rules.</p>
+        </div>
+        <button mat-raised-button>Publish topic</button>
+    </div>
+</div>

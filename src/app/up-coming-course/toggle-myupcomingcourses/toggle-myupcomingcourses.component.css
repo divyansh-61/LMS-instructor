@@ -1,0 +1,379 @@
+.My-Up-Coming-Courses {
+    margin: 20px;
+}
+
+
+
+/* ------------------------------------heading css-------------------- */
+
+.heading-tag {
+    margin-top: 10px;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.hr-line {
+    margin-top: 10px;
+    width: 180px;
+    border: 1px solid var(--primary-color);
+}
+
+/* ------------------------------------heading css close-------------------- */
+
+
+
+
+/* ------------------------------------arrow-------------------- */
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 30px 0 10px 0;
+    width: 100%;
+
+}
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+}
+
+@media (max-width:480px) {
+
+    /* Material icons */
+    .My-Up-Coming-Courses div .sub-heading-div .material-icons {
+        left: 135px !important;
+    }
+
+    /* Material icons */
+    ::ng-deep app-root app-sidenav .mat-drawer-container .mat-drawer-content .ng-star-inserted .My-Up-Coming-Courses div .sub-heading-div .material-icons {
+        top: 15px !important;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .sub-heading {
+        font-size: 12px !important;
+        text-wrap: nowrap;
+        margin-right: 10px;
+    }
+
+
+
+    .toggle-text {
+        font-size: 15px !important;
+        color: var(--grey-sec);
+        /* flex-wrap: nowrap !important; */
+        text-wrap: wrap !important;
+        margin: 0 10px;
+    }
+}
+
+.aroowline {
+    position: absolute;
+    top: 22px;
+    left: 145px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+@media (max-width: 500px) {
+    .aroowline {
+        position: absolute;
+        top: 16px;
+        left: 112px;
+        font-size: 14px;
+        color: var(--lighpink);
+    }
+
+}
+
+.aroowline-2 {
+    position: absolute;
+    top: 3px;
+    left: 152px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.med-16 {
+    font-size: 16px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+/* ------------------------------------arrow close-------------------- */
+
+
+/* ------------------------------------card-------------------- */
+
+
+.mat-card-div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-right: 6px;
+    gap: 1rem;
+}
+
+.mat-card-div mat-card {
+    width: 100% !important;
+    padding: 8px;
+}
+
+@media (min-width: 551px) and (max-width:1130px) {
+    .mat-card-div {
+        display: grid;
+        grid-template-columns: auto auto;
+        /* gap: 1rem; */
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .mat-card-div {
+        display: grid;
+        grid-template-columns: auto;
+        /* gap: 1rem; */
+        margin: 10px;
+    }
+}
+
+.support-card-border {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+    width: 100%;
+    margin: 10px;
+}
+
+.support-contaent-div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.suppoet-icon-envelop {
+    width: 70px;
+}
+
+.suppoet-img {
+    width: 100px;
+    height: 20px;
+}
+
+.icon-img-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.text-2 {
+    font-size: 14px;
+    color: var(--grey-sec);
+    font-weight: 500;
+}
+
+
+/* Mat card */
+.My-Up-Coming-Courses .mat-card-div .mat-mdc-card {
+    background-color: transparent !important;
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+    .support-card-border {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+        width: 32%;
+        padding: 0px 20px;
+    }
+
+    .in-form-row {
+        border-radius: 5px;
+        width: 40% !important;
+    }
+
+    .bonus-img-div {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+
+    .bonus-imagee {
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .bonus-card-div {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        gap: 20px;
+    }
+}
+
+/* ------------------------------------card close-------------------- */
+
+/* ------------------------------------TOGGLE With line -------------------- */
+
+
+.toggle-div {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-text {
+    font-size: 20px;
+    color: var(--grey-sec);
+    flex-wrap: nowrap !important;
+    text-wrap: nowrap;
+    margin: 0 10px;
+}
+
+.toggle-with-line {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 450px) {
+    .toggle-with-line {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* margin: 25px 0 0 0; */
+    width: 100%;
+}
+
+.text-toggle .sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 15px 0 0 0;
+    width: 100%;
+}
+
+.toggle-with-line .aroowline-3 {
+    position: absolute !important;
+    top: 26px !important;
+    left: 224px;
+    font-size: 14px !important;
+    color: var(--lighpink) !important;
+}
+
+
+
+/* ------------------------------------TOGGLE With line close -------------------- */
+
+
+
+
+/* ------------------------------IMG DIV -------------- */
+
+.main-image-div {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    margin: 30px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-1 {
+    width: 28%;
+}
+
+.text-h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text-h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--grey-sec);
+}
+
+
+.butten-fqa {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 22px 30px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+/* ------------------------------IMG DIV close -------------- */
+
+
+
+.my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: unset;
+    width: 100%;
+    font-size: 20px;
+    /* margin: 0px 19px; */
+    font-weight: 700;
+    gap: 8px;
+}
+
+.quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+
+
+.quizzers-pink-line {
+    border: 1px solid var(--lighpink);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+.quizzers-arrow-icon {
+    margin-right: -10px;
+    color: var(--lighpink);
+    font-size: 15px;
+    min-width: fit-content;
+    height: 100% !important;
+}

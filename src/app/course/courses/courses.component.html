@@ -1,0 +1,263 @@
+<div class="main-setting">
+    <!-- <div class="charge">
+        <span>Courses</span>
+    </div> -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Points & Rewards Statistics</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <mat-stepper [linear]="isLinear" #stepper class="stepper-div">
+
+        <!-- mat step 1 -->
+        <mat-step [stepControl]="firstFormGroup">
+
+            <div class="steps-parent">
+                <ng-template matStepLabel>
+                    <div class="step-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1" width="2em" height="2em"
+                            viewBox="0 0 20 20">
+                            <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+                                <path
+                                    d="M5.75 11.5a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75m0 3a.75.75 0 0 1 .75-.75h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1-.75-.75" />
+                                <path
+                                    d="M2.5 2.5c0-1.102.898-2 2-2h6.69c.562 0 1.092.238 1.465.631l.006.007l4.312 4.702c.359.383.527.884.527 1.36v10.3c0 1.102-.898 2-2 2h-11c-1.102 0-2-.898-2-2zm8.689 0H4.5v15h11V7.192l-4.296-4.685l-.003-.001a.041.041 0 0 0-.012-.006" />
+                                <path
+                                    d="M11.19.5a1 1 0 0 1 1 1v4.7h4.31a1 1 0 1 1 0 2h-5.31a1 1 0 0 1-1-1V1.5a1 1 0 0 1 1-1" />
+                            </g>
+                        </svg>
+                        <!-- <i class="imgstep1 fa-regular fa-file"></i> -->
+                        <p class="basic-info">Basic Information</p>
+                    </div>
+                </ng-template>
+            </div>
+
+            <app-courses-new-basic-info></app-courses-new-basic-info>
+
+        </mat-step>
+
+        <!-- mat step 2 -->
+        <mat-step [stepControl]="firstFormGroup">
+
+            <div class="steps-parent">
+                <ng-template matStepLabel>
+                    <div class="step-1">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1 " width="2em" height="2em"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zm1-2h12l-3.75-5l-3 4L9 13zm-1 2V5z" />
+                        </svg> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1 " width="2em" height="2em"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M5 2h16v12h-2V4H5v16h8v2H3V2zm2 4h10v2H7zm10 4H7v2h10zM7 14h7v2H7zm13 5h3v2h-3v3h-2v-3h-3v-2h3v-3h2z" />
+                        </svg>
+
+                        <p class="basic-info">Extra Information</p>
+                    </div>
+                </ng-template>
+            </div>
+            <app-courses-extra-info></app-courses-extra-info>
+
+        </mat-step>
+
+        <!-- mat step 3 -->
+        <mat-step [stepControl]="firstFormGroup">
+            <div class="steps-parent">
+                <ng-template matStepLabel>
+                    <div class="step-1">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1" width="2em" height="2em"
+                            viewBox="0 0 14 14">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M7.199.728a.5.5 0 0 0-.398 0l-6.5 2.817a.5.5 0 0 0 0 .917l.893.387v5.591a1.24 1.24 0 1 0 1.003 0V5.283L6.8 7.278a.5.5 0 0 0 .398 0l6.5-2.816a.5.5 0 0 0 0-.917zM2.956 9.353l-.005-2.38l3.353 1.452a1.75 1.75 0 0 0 1.391 0l3.354-1.453v2.38a.5.5 0 0 1-.101.303l-.399-.303l.398.303v.002l-.003.002l-.005.007l-.015.019l-.051.06a3.146 3.146 0 0 1-.186.191a4.355 4.355 0 0 1-.724.553c-.65.398-1.627.784-2.963.784c-1.337 0-2.313-.386-2.96-.785a4.33 4.33 0 0 1-.724-.552a3.118 3.118 0 0 1-.236-.252l-.015-.02l-.005-.006l-.002-.002v-.001c-.001-.001-.001-.001.398-.303l-.4.302a.5.5 0 0 1-.1-.3Z"
+                                clip-rule="evenodd" />
+                        </svg> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1 " width="2em" height="2em"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M5 3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2.28A2 2 0 0 0 22 15V9a2 2 0 0 0-1-1.72V5a2 2 0 0 0-2-2zm0 2h14v2h-6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6v2H5zm8 4h7v6h-7zm3 1.5a1.5 1.5 0 0 0-1.5 1.5a1.5 1.5 0 0 0 1.5 1.5a1.5 1.5 0 0 0 1.5-1.5a1.5 1.5 0 0 0-1.5-1.5" />
+                        </svg>
+
+                        <p class="basic-info">Pricing</p>
+                    </div>
+                </ng-template>
+            </div>
+
+            <app-courses-pricing></app-courses-pricing>
+
+
+        </mat-step>
+
+        <!--  mat step 4 -->
+        <mat-step [stepControl]="firstFormGroup">
+
+            <div class="steps-parent">
+                <ng-template matStepLabel>
+                    <div class="step-1">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1" width="2em" height="2em"
+                            viewBox="0 0 14 14">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M7.199.728a.5.5 0 0 0-.398 0l-6.5 2.817a.5.5 0 0 0 0 .917l.893.387v5.591a1.24 1.24 0 1 0 1.003 0V5.283L6.8 7.278a.5.5 0 0 0 .398 0l6.5-2.816a.5.5 0 0 0 0-.917zM2.956 9.353l-.005-2.38l3.353 1.452a1.75 1.75 0 0 0 1.391 0l3.354-1.453v2.38a.5.5 0 0 1-.101.303l-.399-.303l.398.303v.002l-.003.002l-.005.007l-.015.019l-.051.06a3.146 3.146 0 0 1-.186.191a4.355 4.355 0 0 1-.724.553c-.65.398-1.627.784-2.963.784c-1.337 0-2.313-.386-2.96-.785a4.33 4.33 0 0 1-.724-.552a3.118 3.118 0 0 1-.236-.252l-.015-.02l-.005-.006l-.002-.002v-.001c-.001-.001-.001-.001.398-.303l-.4.302a.5.5 0 0 1-.1-.3Z"
+                                clip-rule="evenodd" />
+                        </svg> -->
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1 " width="2em" height="2em"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M13 14H9a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2m4-10h-1.18A3 3 0 0 0 13 2h-2a3 3 0 0 0-2.82 2H7a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m-7 1a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm8 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1v1a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6h1a1 1 0 0 1 1 1Zm-3-9H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2" />
+                        </svg>
+
+                        <p class="basic-info">Content</p>
+                    </div>
+                </ng-template>
+                <app-courses-new-content></app-courses-new-content>
+            </div>
+
+
+            <!-- <app-education></app-education> -->
+
+        </mat-step>
+
+        <!--  mat step 5 -->
+        <mat-step [stepControl]="firstFormGroup">
+
+            <div class="steps-parent">
+                <ng-template matStepLabel>
+                    <div class="step-1">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1" width="2em" height="2em"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12 12q-1.65 0-2.825-1.175T8 8q0-1.65 1.175-2.825T12 4q1.65 0 2.825 1.175T16 8q0 1.65-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q1.65 0 3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20z" />
+                        </svg> -->
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1 " width="2em" height="2em"
+                            viewBox="0 0 256 256">
+                            <path fill="currentColor"
+                                d="M251.77 73a8 8 0 0 0-8.21.39L208 97.05V72a16 16 0 0 0-16-16H32a16 16 0 0 0-16 16v112a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16v-25l35.56 23.71A8 8 0 0 0 248 184a8 8 0 0 0 8-8V80a8 8 0 0 0-4.23-7M192 184H32V72h160zm48-22.95l-32-21.33v-23.44L240 95Z" />
+                        </svg>
+
+                        <p class="basic-info">Prerequisites</p>
+                    </div>
+                </ng-template>
+                <app-coursenew-prerequisites></app-coursenew-prerequisites>
+            </div>
+
+            <!-- <app-experience-setting></app-experience-setting> -->
+
+        </mat-step>
+
+        <!-- mat step 6-->
+        <mat-step [stepControl]="firstFormGroup">
+
+            <div class="steps-parent">
+                <ng-template matStepLabel>
+                    <div class="step-1">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1" width="2em" height="2em"
+                            viewBox="0 0 24 24">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M10 18v-.107c0-.795-.496-1.488-1.117-1.984a5 5 0 1 1 6.235 0c-.622.497-1.118 1.189-1.118 1.984V18m-4 0v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2m-4 0h4m6-6h1M4 12H3m9-8V3m5.657 3.343l.707-.707m-12.02.707l-.708-.707M12 15v-2" />
+                        </svg> -->
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1 " width="2em" height="2em"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M20 2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2m0 14H8V4h12zm-4 4v2H4a2 2 0 0 1-2-2V7h2v13zm2.53-11.94L17.47 7l-4.88 4.88l-2.12-2.12l-1.06 1.06L12.59 14z" />
+                        </svg>
+
+                        <p class="basic-info">FAQ</p>
+                    </div>
+                </ng-template>
+                <app-courses-faq></app-courses-faq>
+            </div>
+            <!-- <app-skills-topics></app-skills-topics> -->
+
+        </mat-step>
+
+        <!-- mat step 7-->
+        <mat-step [stepControl]="firstFormGroup">
+
+            <div class="steps-parent">
+                <ng-template matStepLabel>
+                    <div class="step-1">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1" width="2em" height="2em"
+                            viewBox="0 0 14 14">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M13.463 9.692C13.463 12.664 10.77 14 7 14S.537 12.664.537 9.713c0-3.231 1.616-4.868 4.847-6.505L4.24 1.077A.7.7 0 0 1 4.843 0H9.41a.7.7 0 0 1 .603 1.023L8.616 3.208c3.23 1.615 4.847 3.252 4.847 6.484M7.625 4.887a.625.625 0 1 0-1.25 0v.627a1.74 1.74 0 0 0-.298 3.44l1.473.322a.625.625 0 0 1-.133 1.236h-.834a.625.625 0 0 1-.59-.416a.625.625 0 1 0-1.178.416a1.877 1.877 0 0 0 1.56 1.239v.636a.625.625 0 1 0 1.25 0v-.636a1.876 1.876 0 0 0 .192-3.696l-1.473-.322a.49.49 0 0 1 .105-.97h.968a.622.622 0 0 1 .59.416a.625.625 0 0 0 1.178-.417a1.874 1.874 0 0 0-1.56-1.238z"
+                                clip-rule="evenodd" />
+                        </svg> -->
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1" width="2em" height="2em"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M9 10a3.04 3.04 0 0 1 3-3a3.04 3.04 0 0 1 3 3a3.04 3.04 0 0 1-3 3a3.04 3.04 0 0 1-3-3m3 9l4 1v-3.08A7.54 7.54 0 0 1 12 18a7.54 7.54 0 0 1-4-1.08V20m4-16a5.78 5.78 0 0 0-4.24 1.74A5.78 5.78 0 0 0 6 10a5.78 5.78 0 0 0 1.76 4.23A5.78 5.78 0 0 0 12 16a5.78 5.78 0 0 0 4.24-1.77A5.78 5.78 0 0 0 18 10a5.78 5.78 0 0 0-1.76-4.26A5.78 5.78 0 0 0 12 4m8 6a8.04 8.04 0 0 1-.57 2.8A7.84 7.84 0 0 1 18 15.28V23l-6-2l-6 2v-7.72A7.9 7.9 0 0 1 4 10a7.68 7.68 0 0 1 2.33-5.64A7.73 7.73 0 0 1 12 2a7.73 7.73 0 0 1 5.67 2.36A7.68 7.68 0 0 1 20 10" />
+                        </svg>
+
+                        <p class="basic-info">Quiz & Certification</p>
+                    </div>
+                </ng-template>
+                <app-coursenew-quiz-certification></app-coursenew-quiz-certification>
+            </div>
+
+            <!-- <app-identity-financial></app-identity-financial> -->
+
+        </mat-step>
+
+        <!-- mat step 8-->
+        <mat-step [stepControl]="firstFormGroup">
+
+            <div class="steps-parent">
+                <ng-template matStepLabel>
+                    <div class="step-1">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1" width="2em" height="2em"
+                            viewBox="0 0 256 256">
+                            <g fill="currentColor">
+                                <path d="M208 88h-56V32Z" opacity="0.2" />
+                                <path
+                                    d="m213.66 82.34l-56-56A8 8 0 0 0 152 24H56a16 16 0 0 0-16 16v176a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16V88a8 8 0 0 0-2.34-5.66M160 51.31L188.69 80H160ZM200 216H56V40h88v48a8 8 0 0 0 8 8h48z" />
+                            </g>
+                        </svg> -->
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="imgstep1" width="2em" height="2em"
+                            viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m0 14H5.2L4 17.2V4h16zm-8-3.6l2.6 1.6l-.7-3l2.3-2l-3-.3L12 6l-1.2 2.8l-3 .2l2.3 2l-.7 3z" />
+                        </svg>
+
+                        <p class="basic-info">Message to reviewer</p>
+                    </div>
+                </ng-template>
+            </div>
+            <app-coursenew-messagetoreviewer></app-coursenew-messagetoreviewer>
+        </mat-step>
+
+    </mat-stepper>
+    <!-- <app-extra-info-setting></app-extra-info-setting> -->
+
+    <!-- buttons div  -->
+    <div class="buttons-div">
+        <div class="buttons-inner-div">
+            <button class="butten-2" mat-raised-button>Previous </button>
+            <button class="butten-2" mat-raised-button>Next</button>
+        </div>
+        <div class="buttons-inner-div">
+            <button class="butten-2" mat-raised-button>Send for Review </button>
+            <button class="butten-2" mat-raised-button>Save as Draft </button>
+            <!-- <button class="butten-3" mat-raised-button>Delete</button> -->
+
+        </div>
+    </div>
+    <!-- buttons div close -->
+
+
+</div>

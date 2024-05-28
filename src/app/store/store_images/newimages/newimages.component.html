@@ -1,0 +1,253 @@
+<div class="main_toggle">
+    <div class="toggle-lines-parent-div">
+
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p class="reg-16">Files</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+          
+
+        </div>
+        <p class="toggle_p">- The customer will access to these files after purchase.</p>
+        <button class="butten-2" mat-raised-button (click)="successpopup()">Add new file</button>
+
+    </div>
+</div>
+<div class="parent-expansion-panel-inner-content">
+
+    <!-- First Inner Expansion Panel -->
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <div class="expansion-panel-head">
+
+
+                        <div class="">
+                            <img src="assets/store/Group 340839.png" alt="">
+                        </div>
+
+                        <div class="my-quizzer-heading-div-in">
+
+
+                            <div class="my-quizzer-heading-div-2">
+
+                                <div class="expansion-panel-head-text" mat-raised-button (click)="successpopup()">
+                                    <p class="med-16">Add new file</p>
+                                    <!-- <p class="med-12 text-grey">4 Topics | 0:00 Hr</p> -->
+                                </div>
+
+                            </div>
+
+                            <div class="expansion-panel-heading-icons-div">
+
+                              
+
+                                <!-- Box Icon -->
+                                <img src="assets/store/widgets (1).png" alt="">
+ 
+
+
+                                <!-- Move Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em"
+                                    viewBox="0 0 56 56">
+                                    <path fill="currentColor" fill-rule="evenodd"
+                                        d="M30.014 30.014v16.158l3.757-3.758a2 2 0 0 1 2.829 2.829l-7.071 7.07a2.036 2.036 0 0 1-.052.05a1.995 1.995 0 0 1-1.463.637a1.99 1.99 0 0 1-1.293-.474a2.014 2.014 0 0 1-.25-.212l-7.07-7.071a2 2 0 1 1 2.828-2.829l3.785 3.785V30.014H9.828l3.758 3.757a2 2 0 0 1-2.829 2.829l-7.07-7.071a2.036 2.036 0 0 1-.05-.052A1.995 1.995 0 0 1 3 28.014c0-.493.178-.945.474-1.293c.063-.088.134-.171.212-.25l7.071-7.07a2 2 0 1 1 2.829 2.828L9.8 26.014h16.213V9.801l-3.785 3.785a2 2 0 0 1-2.829-2.829l7.071-7.07c.079-.08.162-.15.25-.213A1.99 1.99 0 0 1 28.013 3c.578 0 1.098.245 1.463.637a.813.813 0 0 1 .052.05l7.07 7.07a2 2 0 1 1-2.828 2.829l-3.757-3.758v16.186h16.185l-3.785-3.785a2 2 0 0 1 2.829-2.829l7.07 7.071c.08.079.15.162.213.25c.296.348.474.8.474 1.293c0 .578-.245 1.098-.637 1.463a2.036 2.036 0 0 1-.05.052l-7.07 7.07a2 2 0 1 1-2.829-2.828l3.758-3.757z" />
+                                </svg>
+                                
+                                  <!-- Delete Icon -->
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em"
+                                  viewBox="0 0 24 24" mat-raised-button (click)="deletepopup()">
+                                  <path fill="currentColor"
+                                      d="M7 21q-.825 0-1.412-.587T5 19V6H4V4h5V3h6v1h5v2h-1v13q0 .825-.587 1.413T17 21zM17 6H7v13h10zM9 17h2V8H9zm4 0h2V8h-2zM7 6v13z" />
+                              </svg>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <div class="child-expansion-panel-inner-content">
+
+                <div class="grid-div">
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">Course</mat-label><br />
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" [(value)]="selected">
+                                    <mat-option value="All">All</mat-option>
+                                    <mat-option value="green">Green</mat-option>
+                                    <mat-option value="blue">Blue</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">Tittle</mat-label><br />
+
+                        <div class="calendar-input-field">
+
+                            <mat-form-field appearance="outline" class="form-field">
+
+                                <input matInput class="input" type="email">
+
+                            </mat-form-field>
+
+                        </div>
+
+                    </div>
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">To</mat-label><br />
+
+                        <div class="upload-input-div">
+                            <label for="accessibility" class="">
+                                <img src="assets/store/Group 340766.png" alt="">
+                            </label>
+                            <input hidden type="file" class="input" id="accessibility">
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="file_div">
+
+                    <div class="in-form-row file">
+                        <mat-label class="form-input-label">File type</mat-label><br />
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" [(value)]="selected">
+                                    <mat-option value="All">All</mat-option>
+                                    <mat-option value="green">Green</mat-option>
+                                    <mat-option value="blue">Blue</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="in-form-row volume">
+                        <mat-label class="form-input-label">Volume (MB)</mat-label><br />
+
+                        <div class="calendar-input-field">
+
+                            <mat-form-field appearance="outline" class="form-field">
+
+                                <input matInput class="input" type="email">
+
+                            </mat-form-field>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">Description</mat-label><br />
+                    <div class="mt2">
+                        <!-- <mat-form-field appearance="outline" class="description-input form-field"> -->
+                        <textarea class="description-input reg-12" placeholder=""></textarea>
+                        <!-- </mat-form-field> -->
+                    </div>
+                </div>
+
+                <div class="toggle-lines-parent-div">
+
+                    <div class="result-statistics">
+                        <div class="my-quizzer-heading-div">
+                            <p class="reg-16">Active</p>
+
+                            <div class="quizzers-arrow-line-div">
+                                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                                <p class="quizzers-pink-line m0"></p>
+                            </div>
+                        </div>
+
+                        <div class="text-with-toggle-div">
+                            <!-- <p>Show only open results</p> -->
+                            <mat-slide-toggle checked=""></mat-slide-toggle>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <!-- 
+                <div class="in-form-row">
+                    <mat-label class="form-input-label">Access Day limit</mat-label><br />
+                    <div class="mt2">
+                        <mat-form-field appearance="outline" class="form-field">
+                            <input matInput class="select_in" placeholder="300">
+                        </mat-form-field>
+                    </div>
+                </div> -->
+
+                <button class="save-button med-14">Save</button>
+
+            </div>
+
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+<!-- First Inner Expansion Panel End -->
+<div class="out_div">
+    <div class="in-form-row thubnail">
+        <mat-label class="form-input-label">Thumbnail</mat-label><br />
+
+        <div class="upload-input-div">
+            <label for="accessibility" class="">
+                <img src="assets/store/Group 340766.png" alt="">
+            </label>
+            <input hidden type="file" class="input" id="accessibility">
+        </div>
+
+
+    </div>
+    <div class="in-form-row thubnail">
+        <mat-label class="form-input-label">Images</mat-label><br />
+
+        <div class="upload-input-div">
+            <label for="accessibility" class="">
+                <img src="assets/store/Group 340766.png" alt="">
+            </label>
+            <input hidden type="file" class="input" id="accessibility">
+            <label for="accessibility" class="">
+                <img src="assets/store/Group 340853.png" alt="">
+            </label>
+            <input hidden type="file" class="input" id="accessibility">
+        </div>
+
+
+    </div>
+    <div class="in-form-row thubnail">
+        <mat-label class="form-input-label">Demo Video (Optional)</mat-label><br />
+
+        <div class="upload-input-div">
+            <label for="accessibility" class="">
+                <img src="assets/store/Group 340766.png" alt="">
+            </label>
+            <input hidden type="file" class="input" id="accessibility">
+        </div>
+
+
+    </div>
+</div>
+<app-allbtn></app-allbtn>

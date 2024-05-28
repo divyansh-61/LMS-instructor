@@ -1,0 +1,165 @@
+<!-- myupcomingcourses works div  -->
+<div class="My-Up-Coming-Courses" *ngIf="!isShowNewPlan">
+
+
+    <div>
+        <p class="heading-tag">Upcoming Courses</p>
+        <p class="hr-line"></p>
+    </div>
+
+    <div class="sub-heading-div">
+        <p class="sub-heading med-16">Message to reviewer</p>
+        <mat-icon class="aroowline">play_arrow</mat-icon>
+        <p class="arrow-line"></p>
+    </div>
+
+
+    <!-- mat cards   -->
+    <div class="mat-card-div">
+        <mat-card class="support-card-border">
+            <mat-card-content class="support-contaent-div">
+                <div class="icon-img-div">
+                    <img src="assets/upcomingcourses/image 143.png" class="suppoet-icon-envelop" alt="image 143.png">
+                    <!-- <i   fa-solid fa-envelope-open-text"></i> -->
+                    <img src="assets/upcomingcourses/Group 340235.png" class="suppoet-img" alt="Group 340235.png">
+                </div>
+                <div>
+                    <p class="text-1">1</p>
+                    <p class="text-2"> Total Courses</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="support-card-border">
+            <mat-card-content class="support-contaent-div">
+                <div class="icon-img-div">
+                    <img src="assets/upcomingcourses/image 144.png" class="suppoet-icon-envelop" alt="image 144.png">
+                    <img src="assets/upcomingcourses/Group 340235.png" class="suppoet-img" alt="Group 340235.png">
+                </div>
+                <div>
+                    <p class="text-1">1</p>
+                    <p class="text-2">Released Courses</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="support-card-border">
+            <mat-card-content class="support-contaent-div">
+                <div class="icon-img-div">
+                    <img src="assets/upcomingcourses/image 145.png" class="suppoet-icon-envelop" alt="image 145.png">
+                    <img src="assets/upcomingcourses/Group 340235.png" class="suppoet-img" alt="Group 340235.png">
+                </div>
+                <div>
+                    <p class="text-1">1</p>
+                    <p class="text-2">Not Released</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="support-card-border">
+            <mat-card-content class="support-contaent-div">
+                <div class="icon-img-div">
+                    <img src="assets/upcomingcourses/image 146.png" class="suppoet-icon-envelop" alt="image 145.png">
+                    <img src="assets/upcomingcourses/Group 340235.png" class="suppoet-img" alt="Group 340235.png">
+                </div>
+                <div>
+                    <p class="text-1">3</p>
+                    <p class="text-2">Followers</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <!-- mat cards close -->
+
+
+
+    <div class="toggle-with-line">
+        <!-- sub hedaing  -->
+        <div class="sub-heading-div">
+            <p class="sub-heading">My upcoming courses</p>
+            <mat-icon class="aroowline-3">play_arrow</mat-icon>
+            <p class="arrow-line"></p>
+        </div>
+        <!-- sub hedaing close -->
+        <div class="toggle-div">
+            <span class="toggle-text">Only not released courses</span>
+            <mat-slide-toggle (click)="toggleNewPlan()"></mat-slide-toggle>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- my upcoming courses div  -->
+
+    <mat-card>
+        <mat-card-content class="courses-mat-card-div">
+            <div class="img-div">
+                <img src="assets/upcomingcourses/Group 341267.png" class="img-2-div-absulute" alt="Group 341267.png">
+                <img src="assets/upcomingcourses/Rectangle 4569.png" alt="Rectangle 4569.png">
+            </div>
+            <div class="cource-mat-card-content">
+                <div class="hedaing-and-button">
+                    <div class="hedaing-and-button-btn-and-live">
+                        <p class="card-heading">Python for Beginners</p>
+                        <button mat-button class="card-button">Live class</button>
+                    </div>
+
+                    <div class="three-dot-button">
+                        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                            <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <!-- (click)="Newdelete()" -->
+                            <button mat-menu-item (click)="PopupMarkAsReleased()"> Mark as Released </button>
+                            <button mat-menu-item routerLink="/upComingCourse/edit"> Edit </button>
+                            <button mat-menu-item routerLink="/upComingCourse/app-click-view-followers"> View Followers
+                            </button>
+                            <button mat-menu-item (click)="Newdelete()"> Delete </button>
+                        </mat-menu>
+                    </div>
+
+
+                </div>
+                <!-- detail div -->
+                <div class="details-divs">
+                    <div>
+                        <p class="detail-heading">Item ID: </p>
+                        <p class="detail-heading-2">3</p>
+                    </div>
+                    <div>
+                        <p class="detail-heading">Category: </p>
+                        <p class="detail-heading-2">Web Development </p>
+                    </div>
+                    <div>
+                        <p class="detail-heading">Next session duration:</p>
+                        <p class="detail-heading-2"> 1:00 Hrs</p>
+                    </div>
+                    <div>
+                        <p class="detail-heading">Estimated Publish Date:</p>
+                        <p class="detail-heading-2"> 15 Mar 2023 00:00</p>
+                    </div>
+                    <div>
+                        <p class="detail-heading">Price:</p>
+                        <p class="detail-heading-2"> $100</p>
+                    </div>
+                    <div>
+                        <p class="detail-heading">Followers:</p>
+                        <p class="detail-heading-2"> 3</p>
+                    </div>
+                </div>
+                <!-- detail div close -->
+            </div>
+        </mat-card-content>
+
+    </mat-card>
+    <!-- my upcoming courses div close -->
+
+
+</div>
+<!-- myupcomingcourses works div close -->
+
+
+
+<ng-container *ngIf="isShowNewPlan">
+    <app-toggle-myupcomingcourses></app-toggle-myupcomingcourses>
+</ng-container>

@@ -1,0 +1,80 @@
+.heading {
+
+    margin: 7px 0px;
+    display: flex;
+    gap: 15px;
+
+}
+
+/* .heading p {
+    white-space: nowrap;
+    font-size: 9px;
+} */
+
+.line {
+    background: #FF3389;
+    width: 90%;
+    height: 1px;
+    position: relative;
+    top: 30px;
+}
+
+
+.line span {
+    color: #FF3389;
+    position: relative;
+    top: -8px;
+    left: -5px;
+}
+
+/* .specification mat-card{
+    height: 35% !important;
+    width: 80% !important;
+} */
+
+.specification .mat-mdc-card {
+    display: flex;
+    gap: 17px !important;
+    justify-content: center;
+    align-items: center;
+    /* height: 350px !important; */
+    padding: 6px;
+    border-radius: 15px;
+    /* width: fit-content !important; */
+
+}
+
+.specification{
+    display: flex;
+    flex-direction: column;
+    gap: 15px !important;
+    text-align: center;
+
+}
+
+.specification .mat-mdc-card img {
+    width: 25%;
+    margin-top: 15px;
+}
+
+@media(max-width:500px){
+
+    .specification .mat-mdc-card img {
+        width: 50%;
+        margin-top: 15px;
+    }
+    
+
+}
+
+.specification button{
+    width: 120px;
+    background: #FF3389;
+    color: white;
+}
+
+.specificationContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

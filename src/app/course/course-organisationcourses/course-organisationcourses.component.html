@@ -1,0 +1,371 @@
+<div class="main-my-post">
+    <!-- <p class="my-result-heading">Support</p> -->
+
+
+
+
+
+    <!-- Result Statistics -->
+    <!-- <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Account summary</p>
+    
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line "></p>
+                </div>
+            </div>
+    
+        </div>
+    </div> -->
+
+
+    <!--cards-->
+
+    <!--end cards-->
+
+    <!-- Result Statistics -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Filter courses</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line "></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="inputformdiv">
+        <div class="formbox">
+            <div class="form-div">
+                <div class="form-row">
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">From </mat-label><br />
+                        <div class="calendar-input-field">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <img src="../../../assets/CourseImage/Images/courseimagecombined.png" alt=""
+                                    class="calendar-img">
+                                <input matInput class="input">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">To</mat-label><br />
+                        <div class="calendar-input-field">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <img src="../../../assets/CourseImage/Images/courseimagecombined.png" alt=""
+                                    class="calendar-img">
+                                <input matInput class="input">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="in-form-row">
+                            <mat-label class="form-input-label">Course type</mat-label><br />
+                            <div class="mt2">
+                                <mat-form-field appearance="outline" class="form-field">
+                                    <mat-select class="select_in" [(value)]="selected2">
+                                        <mat-option value="All">All</mat-option>
+                                        <mat-option value="green">Green</mat-option>
+                                        <mat-option value="blue">Blue</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="form-row"> -->
+                <div class="form-row">
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label">Sort by</mat-label><br />
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" [(value)]="selected2">
+                                    <mat-option value="All">All</mat-option>
+                                    <mat-option value="green">Green</mat-option>
+                                    <mat-option value="blue">Blue</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="in-form-row button-div">
+                        <button mat-raised-button class="show-result-button">Show Results</button>
+                    </div>
+                </div>
+
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Result Statistics -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Organization courses</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line "></p>
+                    <div class="tooglespandiv">
+                        <span> Only free courses
+                        </span>
+                        <mat-slide-toggle (click)="toggleCard();offcard()"></mat-slide-toggle>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="organisationdiv" *ngIf="secondcardvisible" [@slideRight]>
+
+        <!-- 1st card starts -->
+        <div class="purchasecarddiv">
+
+            <mat-card>
+                <mat-card-content class="courses-mat-card-div">
+                    <div class="img-div">
+                        <img src="assets/upcomingcourses/Group 341267.png" class="img-2-div-absulute"
+                            alt="Group 341267.png">
+                        <img src="assets/upcomingcourses/Rectangle 4569.png" alt="Rectangle 4569.png">
+                    </div>
+                    <div class="cource-mat-card-content">
+                        <div class="hedaing-and-button">
+                            <div class="hedaing-and-button-btn-and-live">
+                                <p class="card-heading">Python for Beginners</p>
+                                <button mat-button class="card-button">Live class</button>
+                            </div>
+
+                            <div class="three-dot-button">
+                                <button mat-icon-button [matMenuTriggerFor]="menu"
+                                    aria-label="Example icon-button with a menu">
+                                    <mat-icon>more_vert</mat-icon>
+                                </button>
+                                <mat-menu #menu="matMenu">
+                                    <!-- (click)="Newdelete()" -->
+                                    <button mat-menu-item> Mark as Released </button>
+                                    <button mat-menu-item routerLink="/upComingCourse/edit"> Edit </button>
+                                    <button mat-menu-item routerLink="/upComingCourse/app-click-view-followers"> View
+                                        Followers </button>
+                                    <button mat-menu-item> Delete </button>
+                                </mat-menu>
+                            </div>
+
+
+                        </div>
+                        <!-- detail div -->
+                        <div class="details-divs">
+                            <div>
+                                <p class="detail-heading">Item ID: </p>
+                                <p class="detail-heading-2">3</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Category: </p>
+                                <p class="detail-heading-2">Web Development </p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Next session duration:</p>
+                                <p class="detail-heading-2"> 1:00 Hrs</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Estimated Publish Date:</p>
+                                <p class="detail-heading-2"> 15 Mar 2023 00:00</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Price:</p>
+                                <p class="detail-heading-2"> $100</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Followers:</p>
+                                <p class="detail-heading-2"> 3</p>
+                            </div>
+                        </div>
+                        <!-- detail div close -->
+                    </div>
+                </mat-card-content>
+
+            </mat-card>
+
+
+
+        </div>
+
+        <!-- 2nd card starts -->
+
+        <div class="purchasecarddiv">
+
+            <mat-card>
+                <mat-card-content class="courses-mat-card-div">
+                    <div class="img-div">
+                        <img src="assets/upcomingcourses/Group 341267.png" class="img-2-div-absulute"
+                            alt="Group 341267.png">
+                        <img src="assets/upcomingcourses/Rectangle 4569.png" alt="Rectangle 4569.png">
+                    </div>
+                    <div class="cource-mat-card-content">
+                        <div class="hedaing-and-button">
+                            <div class="hedaing-and-button-btn-and-live">
+                                <p class="card-heading">Python for Beginners</p>
+                                <button mat-button class="card-button">Live class</button>
+                            </div>
+
+                            <div class="three-dot-button">
+                                <button mat-icon-button [matMenuTriggerFor]="menu"
+                                    aria-label="Example icon-button with a menu">
+                                    <mat-icon>more_vert</mat-icon>
+                                </button>
+                                <mat-menu #menu="matMenu">
+                                    <!-- (click)="Newdelete()" -->
+                                    <button mat-menu-item> Mark as Released </button>
+                                    <button mat-menu-item routerLink="/upComingCourse/edit"> Edit </button>
+                                    <button mat-menu-item routerLink="/upComingCourse/app-click-view-followers"> View
+                                        Followers </button>
+                                    <button mat-menu-item> Delete </button>
+                                </mat-menu>
+                            </div>
+
+
+                        </div>
+                        <!-- detail div -->
+                        <div class="details-divs">
+                            <div>
+                                <p class="detail-heading">Item ID: </p>
+                                <p class="detail-heading-2">3</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Category: </p>
+                                <p class="detail-heading-2">Web Development </p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Next session duration:</p>
+                                <p class="detail-heading-2"> 1:00 Hrs</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Estimated Publish Date:</p>
+                                <p class="detail-heading-2"> 15 Mar 2023 00:00</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Price:</p>
+                                <p class="detail-heading-2"> $100</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Followers:</p>
+                                <p class="detail-heading-2"> 3</p>
+                            </div>
+                        </div>
+                        <!-- detail div close -->
+                    </div>
+                </mat-card-content>
+
+            </mat-card>
+
+
+
+        </div>
+
+        <!-- 3rd card starts -->
+        <div class="purchasecarddiv">
+
+            <mat-card>
+                <mat-card-content class="courses-mat-card-div">
+                    <div class="img-div">
+                        <img src="assets/upcomingcourses/Group 341267.png" class="img-2-div-absulute"
+                            alt="Group 341267.png">
+                        <img src="assets/upcomingcourses/Rectangle 4569.png" alt="Rectangle 4569.png">
+                    </div>
+                    <div class="cource-mat-card-content">
+                        <div class="hedaing-and-button">
+                            <div class="hedaing-and-button-btn-and-live">
+                                <p class="card-heading">Python for Beginners</p>
+                                <button mat-button class="card-button">Live class</button>
+                            </div>
+
+                            <div class="three-dot-button">
+                                <button mat-icon-button [matMenuTriggerFor]="menu"
+                                    aria-label="Example icon-button with a menu">
+                                    <mat-icon>more_vert</mat-icon>
+                                </button>
+                                <mat-menu #menu="matMenu">
+                                    <!-- (click)="Newdelete()" -->
+                                    <button mat-menu-item> Mark as Released </button>
+                                    <button mat-menu-item routerLink="/upComingCourse/edit"> Edit </button>
+                                    <button mat-menu-item routerLink="/upComingCourse/app-click-view-followers"> View
+                                        Followers </button>
+                                    <button mat-menu-item> Delete </button>
+                                </mat-menu>
+                            </div>
+
+
+                        </div>
+                        <!-- detail div -->
+                        <div class="details-divs">
+                            <div>
+                                <p class="detail-heading">Item ID: </p>
+                                <p class="detail-heading-2">3</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Category: </p>
+                                <p class="detail-heading-2">Web Development </p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Next session duration:</p>
+                                <p class="detail-heading-2"> 1:00 Hrs</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Estimated Publish Date:</p>
+                                <p class="detail-heading-2"> 15 Mar 2023 00:00</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Price:</p>
+                                <p class="detail-heading-2"> $100</p>
+                            </div>
+                            <div>
+                                <p class="detail-heading">Followers:</p>
+                                <p class="detail-heading-2"> 3</p>
+                            </div>
+                        </div>
+                        <!-- detail div close -->
+                    </div>
+                </mat-card-content>
+
+            </mat-card>
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- sliding tab -->
+    <div class="wrapdiv">
+        <mat-card class="outer-instructor" *ngIf="isCardVisible" [@slideRight]>
+            <!-- <i class="fa-regular fa-circle-down text-xl text-end p-4 "></i> -->
+            <mat-card-content class="inner-instructor  ">
+                <img src="../../../assets/CourseImage/Images/coursecomputerimage.png" alt="" class="img-course">
+                <p class="heading-content-instructor">
+                    No Course!</p>
+                <p class="content-instructor">
+                    Create your first course and let others learn from you.</p>
+                <button mat-raised-button color="accent">Create a course</button>
+
+
+
+
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+
+
+
+</div>

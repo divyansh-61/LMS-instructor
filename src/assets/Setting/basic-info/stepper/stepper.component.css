@@ -1,0 +1,438 @@
+
+.main-setting{
+    padding: 10px 10px;
+}
+.charge span{
+    color:#000;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'poppins';
+    border-bottom: 2px solid var( --primary-color)!important;
+    padding-bottom: 10px;
+  
+}
+.charge{
+    margin-top: 10px ;
+    margin-bottom: 40px ;
+    margin-left: 10px;
+}
+.head{
+  margin-top: 130px;
+  padding-inline: 20px;
+}
+
+
+/*sub heading style start*/
+
+.result-statistics-div {
+    padding:20px 20px;
+    margin-top: 20px ;
+    /* border-top: 1px solid var(--primary-color); */
+    position: relative;
+  }
+  
+  .result-statistics {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--white);
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+ 
+    width: 100%;
+    /* justify-content: center; */
+    gap: 10px;
+    text-wrap: nowrap;
+ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  @media (max-width: 500px) {
+  
+    ::ng-deep .result-statistics-div{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        position: relative;
+    }
+  
+    .result-statistics {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        position: absolute;
+       
+    }
+  }
+  
+  .my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    margin: 0px 19px;
+    font-weight: 700;
+   
+  
+  }
+  
+  
+  .result-statistics p {
+    margin: 0;
+  }
+  
+  .quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+  }
+  
+  .quizzers-arrow-icon {
+    color: var(--primary-color);
+    font-size: 15px;
+    width: fit-content;
+    height: 100% !important;
+  }
+  
+  .quizzers-pink-line {
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+  
+  
+  }
+
+/* steper  css start */
+/* .mat-stepper-horizontal {
+ 
+    padding: 10px;
+  } */
+  
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
+ ::ng-deep .mat-horizontal-stepper-header .mat-step-icon {
+    display: none !important;
+}
+::ng-deep .mat-stepper-horizontal-line {
+    display: none;
+ 
+}
+/* .stepper-div{
+    box-shadow: 4px 4px 4px 4px #F5F5F5;
+} */
+.step-1{
+    display: flex;
+    gap:4px;
+    align-items: center;
+}
+.basic-info{
+    margin: 0px;
+    font-size: 16px;
+}
+
+::ng-deep .stepper-div .mat-step-label-selected .imgstep1{
+    border:2px solid var(--primary-color) !important;
+    padding: 10px;
+    border-radius: 50px;
+    color:var(--primary-color) !important;
+    font-size: 30px !important;
+   
+}
+.stepper-div .ng-star-inserted .imgstep1{
+    color:var(--grey);
+    border: 2px solid var(--grey) ;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 30px ;
+  
+   
+}
+.stepper-div .ng-star-inserted p{
+  display: none ;
+ 
+}
+::ng-deep .stepper-div .mat-step-label-selected p{
+display: block !important ;
+color:var(--primary-color) !important;
+}
+
+
+::ng-deep .mat-horizontal-stepper-header-container{
+    display: flex !important;
+    /* flex-direction: column !important; */
+    flex-wrap: wrap !important;
+    box-shadow: 0px 0px 5px 0px var(--grey);
+    border-radius: 10px;
+    /* white-space: nowrap !important; */
+}
+::ng-deep .mat-horizontal-stepper-wrapper .mat-step-label .imgstep1{
+    background-color:var(--lightpurpel)!important;
+   }
+   ::ng-deep  .mat-step-label-selected .imgstep1 g{
+    color:#ffffff !important;
+   }
+   ::ng-deep .mat-horizontal-stepper-wrapper .mat-step-label .imgstep1{
+    border-top-width:0px !important;
+    border-top-style:none !important;
+    border-right-style:none !important;
+    border-bottom-style:none !important;
+    border-left-style:none !important;
+   }
+  ::ng-deep .mat-horizontal-stepper-wrapper .mat-step-label p{
+    color:#000000 !important;
+   }
+  ::ng-deep .mat-horizontal-stepper-wrapper .imgstep1 path{
+    /* background-color: whit; */
+    color: var( --blue) !important;
+   }
+  /* ::ng-deep .mat-horizontal-stepper-wrapper .mat-step-label .imgstep1:active{
+    background-color:#f53737 !important;
+   } */
+
+ ::ng-deep  .mat-stepper-horizontal .mat-horizontal-stepper-wrapper .mat-horizontal-stepper-header-container{
+    width: 100% !important;
+   }
+   
+   .new-page {
+    margin: 20px 20px;
+}
+
+/* ------------------------------------heading css-------------------- */
+
+.heading-tag {
+    margin-top: 10px;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.hr-line {
+    margin-top: 10px;
+    width: 180px;
+    border: 1px solid var(--primary-color);
+}
+
+/* ------------------------------------heading css-------------------- */
+
+/* ------------------------------------arrow-------------------- */
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.aroowline {
+    position: absolute;
+    top: 3px;
+    left: 85px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-2 {
+    position: absolute;
+    top: 3px;
+    left: 200px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+}
+
+/* ------------------------------------arrow-------------------- */
+/* ------------------------------------input Field-------------------- */
+
+
+.new-form {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+}
+
+.new-form-label {
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+
+.selected-form-field {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.select-input {
+    height: 2.8rem;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.3rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    color: var(--grey-sec);
+}
+
+.dual-down-arrow {
+    position: absolute;
+    right: 0.4rem;
+    top: 1.2rem;
+}
+
+.select-input {
+    appearance: none;
+}
+
+/* ------------------------------------input Field-------------------- */
+
+
+.main-input-fields-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.mat-input-class {
+
+    margin-top: 4px;
+    height: 2rem;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.4rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+}
+
+
+.icon-relative-div {
+    display: flex;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.2rem;
+
+}
+
+.icon-relative-div .mat-input-class {
+    height: 2rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+}
+
+.arrow-Icon {
+    padding: 10px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.demo-viedo-input-field {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.demo-viedo-input-field .select-input {
+    height: 3.2rem;
+}
+
+.demo-viedo-input-field .dual-down-arrow {
+    top: 1.4rem;
+}
+
+.buttons-div {
+    margin: 20px 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .butten-1{
+    color: var(--white);
+    background-color: var(--lighpink);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+.butten-2{
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+.butten-3{
+    color: var(--white);
+    background-color: var(--red);
+    padding: 22px 30px;
+    margin-right: 10px;
+} */
+
+
+.butten-1 {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--lighpink);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+.butten-2 {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+.butten-3 {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--red);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+
+
+
+@media screen and (min-width: 800px) {
+    .demo-viedo-input-field {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        gap: 20px;
+    }
+
+}
+@media screen and (min-width: 900px) {
+    
+    .buttons-div {
+        margin: 20px 0;
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+::ng-deep .main-input-fields-div .icon-relative-div .mat-mdc-input-element:focus{
+  outline:none !important;
+}
+::ng-deep .main-input-fields-div .new-form select:focus{
+  outline: none !important;
+}
+::ng-deep .main-input-fields-div .new-form .mat-mdc-input-element:focus{
+  outline: none !important;
+}

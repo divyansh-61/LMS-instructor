@@ -1,0 +1,174 @@
+.charge span {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'poppins';
+    border-bottom: 2px solid var(--primary-color) !important;
+    padding-bottom: 10px;
+
+}
+
+.charge {
+    margin-top: 10px;
+    /* margin-bottom: 40px ; */
+    margin-left: 10px;
+}
+
+/*sub heading style start*/
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    margin: 20px 10px 10px 10px;
+}
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.fa-solid {
+    position: absolute;
+    top: 24px;
+    left: 165px;
+    font-size: 18px;
+    color: var(--lighpink);
+}
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+/*sub heading style end*/
+/*card style star*/
+.card-grid-div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    margin: 10px;
+}
+
+.card-grid-div mat-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    box-shadow: 0px 0px 5px 0px var(--grey);
+    border-radius: 10px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-medium {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 2px !important;
+}
+
+.card-bottom {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--grey-sec);
+}
+
+.card-down .card-bottom[_ngcontent-ng-c3784383279] {
+    color: var(--grey-sec);
+}
+
+.card-top .img_first {
+    height: 64px;
+}
+
+.card-top .img_second {
+    height: 14px;
+    width: 67px;
+}
+
+.card-medium {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card-bottom {
+    color: var(--lightgray);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (min-width: 551px) and (max-width:1130px) {
+    .card-grid-div {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .card-grid-div {
+        grid-template-columns: auto;
+    }
+}
+
+
+
+
+.mat-card,
+.mdc-card {
+    background-color: var(--white) !important;
+    margin: 0px;
+}
+
+
+/* mat card css end */
+
+
+
+
+/* card css start */
+.img-course {
+    width: 30%;
+    height: 32%;
+}
+
+.outer-instructor {
+    margin: 20px !important;
+    box-shadow: 4px 4px 4px 4px #F5F5F5;
+
+}
+
+.inner-instructor {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heading-content-instructor {
+    color: black;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 12px;
+
+    text-align: center;
+}
+
+.content-instructor {
+    font-size: 16px;
+    font-weight: 900px;
+    font-family: Poppins;
+    color: var(--grey-sec);
+    text-align: center;
+    margin: 0px;
+}
+
+/* card css end */

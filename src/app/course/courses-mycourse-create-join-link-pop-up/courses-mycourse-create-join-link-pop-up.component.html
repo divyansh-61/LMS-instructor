@@ -1,0 +1,145 @@
+<!-- meeting popup code starts -->
+
+<div class="section-main-div">
+
+    <div class="centerpartdiv" id="showadd">
+        <div class="confirmdelete">
+            <!-- pop up div -->
+            <div class="upperpart">
+                <div class="spandiv">
+                    <span class="deletespan med-20">Next Section Information</span>
+                </div>
+            </div>
+            <!-- p div -->
+            <div class="inner-content-div">
+                <div class="parapart">
+                    <!-- <img src="assets/Courses/error.png" alt=""> -->
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label reg-16">Language</mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" [(value)]="language">
+                                    <mat-option value="English">English</mat-option>
+                                    <mat-option value="Hindi">Hindi</mat-option>
+                                    <mat-option value="Spanish">Spanish</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label reg-16">Section</mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" [(value)]="section" placeholder="Second a Chapter">
+                                    <mat-option value="First">First</mat-option>
+                                    <mat-option value="Second">Second</mat-option>
+                                    <mat-option value="Third">Third</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label reg-16">Section Title</mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="select_in">
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="in-form-row in-form-row-file-2">
+                        <div class="label-radio-buttons">
+                            <label for="" class="reg-16">Date</label>
+                        </div>
+                        <div class="upload-input-div">
+                            <label for="start_date" class="upload-image-div">
+                                <img src="assets/Courses/Group 340247.png" alt="" class="date-img">
+                            </label>
+                            <input type="date" class="input input-type-date" id="start_date">
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="in-form-row description-div">
+                    <div>
+                        <mat-label class="form-input-label reg-16">Description</mat-label>
+                        <div class="mt2 description-input">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="select_in">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="upperpart">
+                <div class="spandiv">
+                    <span class="deletespan med-20">Join Information</span>
+                </div>
+            </div>
+            <!-- p div -->
+            <div class="inner-content-div">
+                <div class="parapart">
+                    <!-- <img src="assets/Courses/error.png" alt=""> -->
+
+                    <div class="in-form-row in-form-row-file-2">
+                        <div class="label-radio-buttons">
+                            <label for="" class="reg-16">Link</label>
+                        </div>
+                        <div class="upload-input-div">
+                            <label for="start_date" class="upload-image-div">
+                                <img src="assets/Courses/Group 340247.png" alt="" class="date-img">
+                            </label>
+                            <input type="date" class="input input-type-date" id="start_date">
+                        </div>
+                    </div>
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label reg-16">Duration</mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="select_in">
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label reg-16">System</mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <mat-select class="select_in" placeholder="Custom (Local)">
+                                    <mat-option value="First">First</mat-option>
+                                    <mat-option value="Second">Second</mat-option>
+                                    <mat-option value="Third">Third</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="in-form-row">
+                        <mat-label class="form-input-label reg-16">Password</mat-label>
+                        <div class="mt2">
+                            <mat-form-field appearance="outline" class="form-field">
+                                <input matInput class="select_in">
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="buttondiv">
+                <button mat-raised-button (click)=" closePopUp()">Save</button>
+                <button mat-raised-button (click)=" closePopUp()">Close</button>
+            </div>
+        </div>
+    </div>
+
+</div>

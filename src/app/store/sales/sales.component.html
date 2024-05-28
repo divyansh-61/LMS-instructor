@@ -1,0 +1,316 @@
+<!-- requests div -->
+<div class="My-Up-Coming-Courses">
+
+
+    <div class="sub-heading-div">
+        <p class="sub-heading">Orders Statistics</p>
+        <mat-icon class="aroowline">play_arrow</mat-icon>
+        <p class="arrow-line"></p>
+    </div>
+
+
+    <!--cards-->
+    <div class="card-grid-div">
+        <!-- First Card -->
+        <mat-card>
+            <div class="card-top">
+                <div>
+                    <img src="assets/store/s1.png" alt="" class="img_first">
+                </div>
+                <div>
+                    <img src="assets/reward/stoke.png" alt="" class="img_second">
+                </div>
+            </div>
+            <div class="card-down">
+                <p class="card-medium">4</p>
+                <p class="card-bottom">Total Orders</p>
+            </div>
+        </mat-card>
+        <!-- Second Card -->
+        <mat-card>
+            <div class="card-top">
+                <div>
+                    <img src="assets/store/s2.png" alt="" class="img_first">
+                </div>
+                <div>
+                    <img src="assets/reward/stoke.png" alt="" class="img_second">
+                </div>
+            </div>
+            <div class="card-down">
+                <p class="card-medium">1</p>
+                <p class="card-bottom">Pending Orders</p>
+            </div>
+        </mat-card>
+        <!-- Third Card -->
+        <mat-card>
+            <div class="card-top">
+                <div>
+                    <img src="assets/store/s3.png" alt="" class="img_first">
+                </div>
+                <div>
+                    <img src="assets/reward/stoke.png" alt="" class="img_second">
+                </div>
+            </div>
+            <div class="card-down">
+                <p class="card-medium">0</p>
+                <p class="card-bottom">Canceled Orders</p>
+            </div>
+        </mat-card>
+        <!-- fourth Card -->
+        <mat-card>
+            <div class="card-top">
+                <div>
+                    <img src="assets/store/s4.png" alt="" class="img_first">
+                </div>
+                <div>
+                    <img src="assets/reward/stoke.png" alt="" class="img_second">
+                </div>
+            </div>
+            <div class="card-down">
+                <p class="card-medium">$156</p>
+                <p class="card-bottom">Total sales</p>
+            </div>
+        </mat-card>
+    </div>
+    <!--end cards-->
+
+
+    <div class="sub-heading-div">
+        <p class="sub-heading">Orders Report</p>
+        <mat-icon class="aroowline-2">play_arrow</mat-icon>
+        <p class="arrow-line"></p>
+    </div>
+
+    <!-- inputs fields div -->
+    <div class="three-input-fields">
+        <div class="new-form">
+            <mat-label class="new-form-label">Form</mat-label>
+            <div class="icon-relative-div">
+                <img _ngcontent-ng-c3124752822="" src="assets/notice-board/icon.png" alt=""
+                    class="calendar-img ng-tns-c1205077789-34">
+                <input class="mat-input-class" matInput>
+            </div>
+        </div>
+        <div class="new-form">
+            <mat-label class="new-form-label">To</mat-label>
+            <div class="icon-relative-div">
+                <img _ngcontent-ng-c3124752822="" src="assets/notice-board/icon.png" alt=""
+                    class="calendar-img ng-tns-c1205077789-34">
+                <input class="mat-input-class" matInput>
+            </div>
+        </div>
+        <div class="new-form">
+            <mat-label class="new-form-label">Customer</mat-label>
+            <div class="selected-form-field">
+                <select class="select-input">
+                    <option value="">All</option>
+                </select>
+                <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 15 15">
+                        <path fill="#808080" d="M7.5 12L0 4h15z" />
+                    </svg></span>
+            </div>
+        </div>
+    </div>
+    <!-- inputs fields div close -->
+
+    <!-- 2 inputs fields div-->
+    <div class="three-input-fields second-one ">
+        <div class="new-form">
+            <mat-label class="new-form-label">Type</mat-label>
+            <div class="selected-form-field">
+                <select class="select-input">
+                    <option value="">All</option>
+                </select>
+                <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 15 15">
+                        <path fill="#808080" d="M7.5 12L0 4h15z" />
+                    </svg></span>
+            </div>
+        </div>
+        <div class="new-form">
+            <mat-label class="new-form-label">Status</mat-label>
+            <div class="selected-form-field">
+                <select class="select-input">
+                    <option value="">All</option>
+                </select>
+                <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 15 15">
+                        <path fill="#808080" d="M7.5 12L0 4h15z" />
+                    </svg></span>
+            </div>
+        </div>
+        <div class="new-form">
+            <button class="save-butten" mat-raised-button>Show Results</button>
+        </div>
+    </div>
+    <!-- 2 inputs fields div close -->
+
+
+    <!-- toggle with line and text  -->
+    <div class="toggle-with-line">
+        <!-- sub hedaing  -->
+        <div class="sub-heading-div">
+            <p class="sub-heading">Orders History</p>
+            <mat-icon class="aroowline-3">play_arrow</mat-icon>
+            <p class="arrow-line"></p>
+        </div>
+        <!-- sub hedaing close -->
+        <!-- <div class="toggle-div">
+            <span class="toggle-text">Show only active quizzes</span>
+            <mat-slide-toggle></mat-slide-toggle>
+        </div> -->
+    </div>
+    <!-- toggle with line and text close  -->
+
+
+    <!-- table div  -->
+    <div class="list_table">
+        <div class="quizzer-table-div">
+
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+
+                <!-- Seller Column -->
+                <ng-container matColumnDef="seller">
+                    <th mat-header-cell *matHeaderCellDef class="table-thead"> Customer</th>
+                    <div class="td-div-distance">
+                        <td mat-cell *matCellDef="let element">
+                            <div class="td-div">
+                                <img [src]="element.seller.img" alt="">
+                                <div class="td-text-div">
+                                    <p class="td-text-p1"> {{element.seller.text}}</p>
+
+                                    <p class="td-text-p2"> {{element.seller.Text}}</p>
+                                </div>
+                            </div>
+                        </td>
+                    </div>
+                </ng-container>
+
+                <!-- Order ID Column -->
+                <ng-container matColumnDef="orderId">
+                    <th mat-header-cell *matHeaderCellDef class="table-thead">Order ID</th>
+                    <div class="td-div-distance">
+
+                        <td mat-cell *matCellDef="let element">
+                            <div class="td-text-div">
+                                <p class="td-text-p1"> {{element.orderId.text}}</p>
+
+                                <p class="td-text-p2"> {{element.orderId.Text}}</p>
+                            </div>
+                        </td>
+
+                    </div>
+                </ng-container>
+
+                <!-- Price Column -->
+                <ng-container matColumnDef="price">
+                    <th mat-header-cell *matHeaderCellDef class="table-thead">Price</th>
+                    <div class="td-div-distance">
+                        <td mat-cell *matCellDef="let element" class="reg-12"> {{element.price}} </td>
+                    </div>
+                </ng-container>
+
+                <!-- Discount Column -->
+                <ng-container matColumnDef="discount">
+                    <th mat-header-cell *matHeaderCellDef class="table-thead">Discount</th>
+                    <div class="td-div-distance">
+
+                        <td mat-cell *matCellDef="let element" class="reg-12"> {{element.discount}} </td>
+                    </div>
+                </ng-container>
+
+                <!-- Tax Column -->
+                <ng-container matColumnDef="tax">
+                    <th mat-header-cell *matHeaderCellDef class="table-thead"> Total Amount</th>
+                    <div class="td-div-distance">
+
+                        <td mat-cell *matCellDef="let element" class="reg-12"> {{element.tax}} </td>
+                    </div>
+                </ng-container>
+
+                <!-- Delivery Fee Column -->
+                <ng-container matColumnDef="deliveryFee">
+                    <th mat-header-cell *matHeaderCellDef class="table-thead"> Income </th>
+                    <div class="td-div-distance">
+
+                        <td mat-cell *matCellDef="let element" class="reg-12"> {{element.deliveryFee}} </td>
+                    </div>
+                </ng-container>
+
+                <!-- Total Amount Column -->
+                <ng-container matColumnDef="totalAmount">
+                    <th mat-header-cell *matHeaderCellDef class="table-thead"> Type </th>
+                    <div class="td-div-distance">
+
+                        <td mat-cell *matCellDef="let element" class="reg-12"> {{element.totalAmount}} </td>
+                    </div>
+                </ng-container>
+
+                <!-- Type Column -->
+                <ng-container matColumnDef="type">
+                    <th mat-header-cell *matHeaderCellDef class="table-thead"> Status </th>
+                    <div class="td-div-distance">
+
+                        <td mat-cell *matCellDef="let element" class="reg-12"> {{element.type}} </td>
+                    </div>
+                </ng-container>
+
+                <!-- Status Column -->
+                <ng-container matColumnDef="status">
+                    <th mat-header-cell *matHeaderCellDef class="table-thead">  Status </th>
+                    <div class="td-div-distance">
+
+                        <td mat-cell *matCellDef="let element"
+                            [ngClass]="element.status.text == 'Shipped' ? 'quizzer-text-orange' : null ">
+                            <p>{{element.status.text}} </p>
+                        </td>
+                    </div>
+                </ng-container>
+
+                <!-- Date Column -->
+                <ng-container matColumnDef="date">
+                    <th mat-header-cell *matHeaderCellDef class="table-thead"> Date </th>
+                    <div class="td-div-distance">
+                        <td mat-cell *matCellDef="let element">
+                            <div class="quizzer-date-td">
+                                <span> {{element.date}}</span>
+
+                                <div class="dot-dropdown-div">
+
+                                    <div class="three-dot-button">
+                                        <button mat-icon-button [matMenuTriggerFor]="menu"
+                                            aria-label="Example icon-button with a menu">
+                                            <mat-icon>more_vert</mat-icon>
+                                        </button>
+                                        <mat-menu #menu="matMenu">
+                                            <!-- (click)="Newdelete()" -->
+
+                                            <button mat-menu-item routerLinkActive="activate-list"
+                                               > Invoice</button>
+
+                                            <button mat-menu-item (click)="salestrackpopup()"> Enter Tracking Code</button>
+                                        </mat-menu>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </td>
+                    </div>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="tr-for-distance"></tr>
+            </table>
+
+        </div>
+        <!-- table div close -->
+    </div>
+
+</div>
+
+<!-- requests div close -->

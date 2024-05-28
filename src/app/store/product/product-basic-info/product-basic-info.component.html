@@ -1,0 +1,147 @@
+<div class="inputdiv">
+
+
+    <!-- new works -->
+    <div class="new-page">
+        <!-- <div>
+          <p class="heading-tag">Upcoming Courses</p>
+          <p class="hr-line"></p>
+      </div> -->
+        <!-- sub hedaing  -->
+        <!-- <div class="sub-heading-div">
+          <p class="sub-heading">Steps: 1/4</p>
+          <mat-icon class="aroowline">play_arrow</mat-icon>
+          <p class="arrow-line"></p>
+      </div> -->
+        <!-- sub hedaing close -->
+
+        <!-- <app-main-setting-page></app-main-setting-page> -->
+
+        <div class="main-input-fields-div">
+            <!-- input field title div  -->
+            <!-- <div> 
+          <mat-label class="new-form-label">Title</mat-label>
+          <mat-form-field class=" w-full my-2 " appearance="outline">
+              <input matInput placeholder="Full name" class="inputfocus">
+          </mat-form-field>
+      </div> -->
+            <!--  category select input  -->
+            <div class="main-input-fields-div">
+                <mat-label class="new-form-label">Language</mat-label>
+                <div class="selected-form-field">
+                    <select class="select-input">
+                        <option value="">English</option>
+                    </select>
+                    <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+            <div class="main-input-fields-div">
+                <mat-label class="new-form-label">Type</mat-label>
+                <div class="selected-form-field">
+                    <select class="select-input">
+                        <option value="">Physical</option>
+                    </select>
+                    <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="#808080" d="M7.5 12L0 4h15z" />
+                        </svg></span>
+                </div>
+            </div>
+            <div>
+                <mat-label class="new-form-label">Title</mat-label>
+                <mat-form-field class=" w-full my-2 " appearance="outline">
+                    <input matInput placeholder="" class="inputfocus">
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-label class="new-form-label">SEO Meta Description</mat-label>
+                <mat-form-field class=" w-full my-2 " appearance="outline">
+                    <input matInput placeholder="" class="inputfocus">
+                </mat-form-field>
+            </div>
+
+
+
+            <div class="main-input-fields-div">
+
+                <div>
+                    <mat-label class="new-form-label">Summary</mat-label>
+                    <mat-form-field class=" coverimage" appearance="outline">
+                        <div class="coverimagediv">
+
+                            <input matInput
+                                placeholder="Keep the summary short. It will be displayed on the top of the product page."
+                                class="inputfocus">
+                        </div>
+                    </mat-form-field>
+                </div>
+
+            </div>
+
+            <!-- <div class="result-statistics">
+          <div class="my-quizzer-heading-div">
+            <p>Demo Video (Optional)</p>
+            <div class="quizzers-arrow-line-div">
+              <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+              <p class="quizzers-pink-line "></p>
+            </div>
+          </div>
+        </div> -->
+
+
+
+        </div>
+        <!-- input field div close -->
+
+
+
+        <div class="ckeditorpart">
+            <div class="labeldiv">
+                <mat-label>Description</mat-label>
+            </div>
+            <ckeditor [editor]="Editor" data="<p>Minimum 300 words. HTML and images supported. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              </p>">
+            </ckeditor>
+        </div>
+
+
+
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p class="med-20">Enable Ordering</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+            <mat-slide-toggle></mat-slide-toggle>
+
+        </div>
+        <span class="basic_p">By disabling this toggle, users won't be able to order this product.</span>
+        <!-- button div starts -->
+        <!-- <app-allbtn></app-allbtn> -->
+
+        <!-- buttons div  -->
+        <div class="buttons-div">
+            <div>
+                <button class="butten-1" mat-raised-button>Previous</button>
+                <button class="butten-2" mat-raised-button>Next</button>
+            </div>
+            <div>
+                <button class="butten-2" mat-raised-button>Send for Review </button>
+                <button class="butten-2" mat-raised-button>Save as Draft </button>
+
+                <button class="butten-2 red-btn" (click)="deletePopup()" mat-raised-button>Delete </button>
+            </div>
+        </div>
+        <!-- buttons div close -->
+
+        <!-- <app-product-btns></app-product-btns> -->
+
+    </div>
+</div>

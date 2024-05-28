@@ -1,0 +1,188 @@
+.main-new-topic {
+  margin-bottom: 80px;
+  padding: 10px;
+}
+
+/* <!-- main heading css start --> */
+.main-header {
+  background-image: linear-gradient(to right, var(--blue), var(--primary-color));
+  border-radius: 10px;
+  color: var(--white);
+  padding: 20px;
+}
+
+.new-topic-heading {
+  font-size: 35px;
+  margin: 0px;
+}
+
+.new-topic-contant {
+  font-size: 25px;
+  margin: 0px;
+
+}
+
+/* form css start */
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  /* width: 30%; */
+  gap: 10px;
+}
+
+
+
+.form-div {
+  padding: 10px 20px;
+  /* box-shadow: 0px 0px 5px 0px var(--grey); */
+  border-radius: 4px;
+  border: 1px solid var(--grey-sec);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-input-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.calendar-input-field {
+  display: flex;
+  height: fit-content !important;
+  width: 100% !important;
+}
+
+.in-form-row {
+  width: 100%;
+
+}
+
+.form-field {
+  width: 100% !important;
+  height: fit-content;
+  border: var(--grey);
+}
+
+.in-form-row {
+  width: 80%;
+}
+
+
+/* .form-row {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row;
+    gap: 10px;
+  } */
+.input-sign {
+  background-color: var(--lightgreen);
+  padding: 10px 20px;
+  margin-bottom: 0px;
+  color: white;
+
+}
+
+.text-editar {
+  box-shadow: 2px 2px 2px 2px var(--grey);
+  border-radius: 10px;
+  width: 85%;
+
+
+}
+
+.form-field .arow-sign {
+  color: var(--white);
+}
+
+.arow-sign {
+  background-color: var(--blue);
+  padding: 10px 20px;
+  margin-bottom: 0px;
+  color: white !important;
+  border-radius: 4px;
+}
+
+.form-field .input {
+  border-radius: 40px !important;
+}
+
+@media (max-width: 700px) {
+  .in-form-row {
+    width: 60%;
+  }
+
+}
+
+@media (min-width:320px) and (max-width: 500px) {
+
+  .in-form-row,
+  .text-editar {
+    width: 100%;
+  }
+
+}
+
+/* terms css start */
+
+.terms-btn-div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--grey-sec);
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.terms-heading {
+  margin: 0px;
+  color: var(--grey-sec);
+}
+
+.terms-content {
+  margin: 0px;
+  color: var(--grey-sec);
+}
+
+.terms-btn-div button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 4px 20px;
+  font-size: 20px;
+  text-wrap: nowrap;
+}
+
+@media screen and (max-width:550px) {
+  .terms-btn-div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+::ng-deep .calendar-input-field .mat-mdc-form-field-infix {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 10px;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+::ng-deep .calendar-input-field .mdc-text-field {
+  padding: 0 !important;
+}
+
+::ng-deep .calendar-input-field {
+  width: 100% !important;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+  width: 100% !important;
+}
+
+::ng-deep .form-field {
+  width: 100% !important;
+}

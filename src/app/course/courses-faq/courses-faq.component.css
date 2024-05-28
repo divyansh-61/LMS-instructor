@@ -1,0 +1,430 @@
+.FQA-MAIN {
+    padding: 10px;
+}
+
+/* ------------------------------------arrow-------------------- */
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* margin: 30px 0 10px 0; */
+    /* padding: 2rem; */
+    width: 100%;
+
+}
+
+.aroowline {
+    height: fit-content;
+    width: fit-content;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-2 {
+    height: fit-content;
+    width: fit-content;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-3 {
+    height: fit-content;
+    width: fit-content;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-4 {
+    height: fit-content;
+    width: fit-content;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-5 {
+    height: fit-content;
+    width: fit-content;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-6 {
+    height: fit-content;
+    width: fit-content;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-7 {
+    height: fit-content;
+    width: fit-content;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-8 {
+    height: fit-content;
+    width: fit-content;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+}
+
+/* ------------------------------------arrow close -------------------- */
+
+
+
+
+
+
+
+
+.butten-fqa {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 22px 30px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.head-btn-div {
+    display: flex;
+    align-items: center;
+}
+
+.head-icon-row {
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+    /* margin: 18px 10px; */
+    /* margin-bottom: 10px; */
+}
+
+.Learning-materials-div {
+    margin-top: 20px;
+}
+
+
+.main-image-div {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    margin: 30px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-1 {
+    width: 28%;
+}
+
+.text-h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text-h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--grey-sec);
+
+}
+
+/* --------------------------expenction panel -------------------   */
+
+.expansion-panel-div {
+    margin: 30px 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.example-headers-align .mat-mdc-form-field+.mat-mdc-form-field {
+    margin-left: 8px;
+}
+
+.mat-expansion-panel-header-title,
+.mat-expansion-panel-header-description {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-right: 0 !important;
+    align-items: center;
+}
+
+mat-expansion-panel-header {
+    margin: 25px 0px;
+}
+
+::ng-deep .expansion-panel-div .mat-accordion-multi .mat-expansion-panel .mat-expansion-indicator {
+    margin-bottom: -10px !important;
+}
+
+.save-btns {
+    color: var(--white);
+    padding: 23px 30px;
+    background-color: var(--lightgreen);
+}
+
+.second-save-btns {
+    color: var(--white);
+    padding: 23px 30px;
+    background-color: var(--lightgreen);
+    margin-top: 20px !important;
+}
+
+/* --------------------------expenction pannel close -------------------   */
+
+
+/* ------------------------------------input Field-------------------- */
+
+.two-input-field {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+    .two-input-field {
+        flex-direction: column;
+    }
+}
+
+.image-input-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 3px;
+}
+
+.new-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3px;
+}
+
+.new-form-label {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 400;
+}
+
+.mat-input-class {
+    /* height: 2rem; */
+    border: 0.5px solid var(--grey);
+    border-radius: 0.2rem;
+    width: -webkit-fill-available;
+    padding: 1rem;
+}
+
+
+.selected-form-field {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.select-input {
+    height: 2.8rem;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.3rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    color: var(--grey-sec);
+}
+
+.dual-down-arrow {
+    position: absolute;
+    right: 0.4rem;
+    top: 1.2rem;
+}
+
+.select-input {
+    appearance: none;
+}
+
+.larg-input-div {
+    margin: 20px 0;
+}
+
+.text-area {
+    height: 6rem !important;
+}
+
+/* ------------------------------------input Field close -------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+::ng-deep .mat-mdc-elevation-specific .mat-mdc-menu-item span {
+    color: var(--primary-color) !important;
+
+}
+
+::ng-deep .cdk-overlay-pane .mat-mdc-elevation-specific .mat-mdc-menu-content {
+    position: 10px !important;
+}
+
+
+::ng-deep .cdk-overlay-pane .mat-mdc-elevation-specific .mat-mdc-menu-content {
+
+    padding: 0 !important;
+}
+
+::ng-deep .mat-mdc-elevation-specific .mat-mdc-menu-item .mat-mdc-menu-ripple {
+    margin-bottom: 10px !important;
+}
+
+.med-16 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 836px) {
+
+    .no-programming-heading {
+        text-wrap: wrap;
+        /* letter-spacing: 6px; */
+    }
+
+    .aroowline-8 {
+        height: fit-content;
+        width: fit-content;
+        font-size: 14px;
+        color: var(--lighpink);
+    }
+}
+
+
+.my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: unset;
+    width: 100%;
+    font-size: 20px;
+    /* margin: 0px 19px; */
+    font-weight: 700;
+    gap: 8px;
+}
+
+.my-quizzer-heading-div-2 {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    /* margin: 0px 19px; */
+    font-weight: 700;
+    gap: 8px;
+}
+
+@media (max-width: 500px) {
+    .my-quizzer-heading-div {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.result-statistics p {
+    margin: 0px !important;
+}
+
+.quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.quizzers-arrow-icon {
+    color: var(--lighpink);
+    font-size: 15px;
+    width: fit-content;
+    height: 100% !important;
+}
+
+.quizzers-pink-line {
+    border: 1px solid var(--lighpink);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+.upload-input-div {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid var(--black);
+}
+
+.upload-image-div {
+    background-color: var(--blue);
+    min-width: fit-content;
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin: 0px !important;
+}
+
+.input {
+    width: 100%;
+    border: none;
+}
+
+@media (max-width: 610px) {}
+
+.expansion-panel-inner-content {
+    padding: 1rem;
+}
+
+.arrow-line-div {
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+}
+
+@media (max-width: 600px) {
+
+    ::ng-deep .expansion-panel-div mat-panel-title {
+        display: flex;
+        flex-wrap: wrap !important;
+    }
+}
+
+/* Mat expansion toggle indicator after */
+::ng-deep .expansion-panel-div .mat-accordion .mat-expansion-toggle-indicator-after {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}

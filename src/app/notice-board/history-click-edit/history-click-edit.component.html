@@ -1,0 +1,78 @@
+<div class="main-new-topic">
+
+    <!-- main heading start -->
+    <!-- <p class="my-result-heading">Noticeboard</p> -->
+
+
+
+    <!-- Students -->
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>Notice Statistics</p>
+
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- main heading end -->
+    <!-- form filed start -->
+    <div class="form-div-parent">
+        <div class="form-div">
+
+            <!-- <div class="form-row"> -->
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Title </mat-label><br />
+                <mat-form-field appearance="outline" class="form-field">
+                    <input matInput class="input select_in" placeholder="Upload final chapter">
+
+                </mat-form-field>
+            </div>
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Course</mat-label><br />
+
+
+                <mat-form-field appearance="outline" class="form-field">
+                    <mat-select class="select_in" [(value)]="course">
+                        <mat-option value="Hindi">Hindi</mat-option>
+                        <mat-option value="green">English</mat-option>
+                        <mat-option value="nlp">New Learning Page</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label">Color</mat-label><br />
+
+
+                <mat-form-field appearance="outline" class="form-field">
+                    <mat-select class="select_in" [(value)]="select">
+                        <mat-option value="Hindi">Hindi</mat-option>
+                        <mat-option value="green">English</mat-option>
+                        <mat-option value="blue">Blue</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+
+
+            <div>
+                <mat-label class="form-input-label">Message</mat-label><br />
+                <ckeditor [editor]="Editor" data="<p>Hello, world!</p>"></ckeditor>
+            </div>
+
+        </div>
+        <div class="btn-notice">
+            <button mat-raised-button (click)="noticepopup()">Send Notice</button>
+        </div>
+        <!-- form filed end -->
+    </div>
+
+</div>

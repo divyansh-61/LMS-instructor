@@ -1,0 +1,212 @@
+p{
+  margin: 0px;
+  padding: 0px;
+}
+
+.carddiv {
+  margin-top: 20px;
+}
+
+.quizzers-arrow-icon {
+  color: var(--primary-color);
+  font-size: 15px;
+  width: fit-content;
+  height: 100% !important;
+}
+
+.carddiv .mat-mdc-card {
+  background-color: #ffffff !important;
+}
+
+.result-statistics {
+  font-size: 20px;
+  font-weight: 500;
+  background-color: var(--white);
+  display: flex !important;
+  flex-direction: row;
+  align-items: center !important;
+  width: 100%;
+  /* justify-content: center; */
+  gap: 10px;
+  text-wrap: nowrap;
+  padding-inline: 20px;
+
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.my-quizzer-heading-div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* padding-inline: 20px; */
+}
+
+.quizzers-arrow-line-div {
+  display: flex;
+  align-items: center !important;
+  gap: -1;
+  width: 100%;
+}
+
+.quizzers-pink-line {
+  border: 1px solid var(--primary-color);
+  width: 100%;
+  opacity: 40%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.mat-mdc-card .mat-mdc-card-content {
+  padding: 0 !important;
+}
+
+.carddiv .mat-mdc-card .result-statistics {
+  margin-top: 3px !important;
+}
+
+.textareadiv {
+  padding-inline: 30px;
+  padding-bottom: 20px;
+}
+
+.textareadiv textarea {
+  width: 100%;
+  height: 180px;
+  border-color: grey;
+  padding-left: 20px;
+  padding-top: 20px;
+  border: none;
+  border: 1px solid grey;
+  border-width: 0.3px;
+  border-radius: 10px;
+}
+
+.result-statistics:nth-child(3) .quizzers-pink-line {
+  width: 50% !important;
+}
+
+.toogle {
+  padding-inline: 20px;
+}
+
+.matbuttondiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+
+
+}
+
+.first_buttondiv {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 10px;
+  width: 30%;
+}
+
+.second_buttondiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 30%;
+  justify-content: end;
+}
+
+.carddiv .matbuttondiv .first_buttondiv {
+  margin-left: 15px;
+}
+
+@media (max-width:599px) {
+
+  /* Quizzer heading div */
+  .carddiv .mat-mdc-card .my-quizzer-heading-div {
+    flex-direction: column !important;
+  }
+
+  /* Quizzers arrow line div */
+  .result-statistics:nth-child(3) .quizzers-arrow-line-div {
+    justify-content: center !important;
+  }
+
+}
+
+@media (max-width:450px) {
+
+  /* Paragraph */
+  .carddiv .mat-mdc-card p {
+    white-space: pre-wrap !important;
+  }
+
+}
+
+@media (max-width:767px) {
+
+  /* Matbuttondiv */
+  .carddiv .matbuttondiv {
+    padding-bottom: 71px !important;
+  }
+
+  .buttondiv .mat-mdc-raised-button {
+    white-space: nowrap !important;
+    width: 100% !important;
+    height: 45px !important;
+  }
+
+  .matbuttondiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+    padding-bottom: 40px;
+    width: 100%;
+
+  }
+
+  .matbuttondiv .first_buttondiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .matbuttondiv .second_buttondiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Mat raised button */
+  .first_buttondiv .mat-mdc-raised-button:nth-child(1) {
+    width: 14.75rem !important;
+  }
+
+  .first_buttondiv .mat-mdc-raised-button:nth-child(2) {
+    width: 14.75rem !important;
+  }
+
+  /* Mat raised button */
+  .second_buttondiv .mat-mdc-raised-button:nth-child(1) {
+    width: 14.75rem !important;
+    margin-left: 9px;
+  }
+
+  /* Mat raised button */
+  .second_buttondiv .mat-mdc-raised-button:nth-child(2) {
+    width: 14.75rem !important;
+    margin-left: 7px;
+  }
+
+}
+
+@media (max-width:767px) {
+
+  /* Matbuttondiv */
+  .carddiv .matbuttondiv {
+    margin-top: 25px !important;
+  }
+
+}

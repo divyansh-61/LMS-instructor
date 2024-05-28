@@ -1,0 +1,111 @@
+.margin-150-div {
+    margin: 130px 20px 20px 20px;
+}
+::ng-deep .mat-horizontal-content-container {
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+
+/* ------------------------------------heading css-------------------- */
+
+.heading-tag {
+    margin-top: 10px;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.hr-line {
+    margin-top: 10px;
+    width: 180px;
+    border: 1px solid var(--primary-color);
+}
+
+/* ------------------------------------heading css-------------------- */
+
+/* ------------------------------------arrow-------------------- */
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.aroowline {
+    position: absolute;
+    top: 3px;
+    left: 85px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-2 {
+    position: absolute;
+    top: 3px;
+    left: 200px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+}
+
+/* ------------------------------------arrow-------------------- */
+
+
+/* ------------------------------buttons css ------------------------------------------ */
+
+.buttons-div {
+    margin: 20px 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.butten-1 {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--lighpink);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+
+.butten-2 {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+
+.butten-3 {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--red);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 900px) {
+
+    .buttons-div {
+        margin: 20px 0;
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* ------------------------------buttons css ------------------------------------------ */

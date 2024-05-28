@@ -1,0 +1,58 @@
+
+.main-course{
+    padding:20px;
+}
+.charge span{
+    color:#000;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'poppins';
+    border-bottom: 2px solid var( --primary-color)!important;
+    padding-bottom: 10px;
+  
+}
+.charge{
+    margin-top: 10px ;
+  margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.outer-instructor{
+    margin: 20px;
+    box-shadow: 4px 4px 4px 4px #F5F5F5;
+    
+}
+.inner-instructor {
+    
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+    align-items: center;
+   
+}
+
+.heading-content-instructor {
+    color: black;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: center;
+}
+.content-instructor {
+    font-size: 16px;
+    font-weight: 900px;
+    font-family: Poppins;
+    text-align: center;
+    margin:0px;
+    color:var( --grey-sec);
+}
+@media screen and  (max-width:410px) {
+    .img-course{
+        width:100%;
+    }
+}
+
+.mat-card, .mdc-card {
+    background-color: var(--white) !important;
+  }

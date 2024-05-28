@@ -1,0 +1,361 @@
+p {
+    margin: 0px;
+}
+
+.charge span {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'poppins';
+    border-bottom: 2px solid var(--primary-color) !important;
+    padding-bottom: 10px;
+
+}
+
+.charge {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+/*sub heading style start*/
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 20px 10px 10px 10px;
+}
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.fa-solid {
+    position: absolute;
+    top: 24px;
+    left: 165px;
+    font-size: 18px;
+    color: var(--lighpink);
+}
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+/*sub heading style end*/
+/*card style star*/
+.card-grid-div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    margin: 10px;
+}
+
+.card-grid-div mat-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    box-shadow: 0px 0px 5px 0px var(--grey);
+    border-radius: 10px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-medium {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 2px !important;
+}
+
+.card-bottom {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px;
+    color: var(--grey-sec);
+}
+
+.card-top .img_first {
+    height: 64px;
+}
+
+.card-top .img_second {
+    height: 14px;
+    width: 67px;
+}
+
+@media (min-width: 551px) and (max-width:1130px) {
+    .card-grid-div {
+        display: grid;
+        grid-template-columns: auto auto;
+        /* gap: 1rem; */
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .card-grid-div {
+        display: grid;
+        grid-template-columns: auto;
+        /* gap: 1rem; */
+        margin: 10px;
+    }
+}
+
+
+
+
+
+
+/* mat cards  css start */
+.main-div {
+    margin: 10px;
+    overflow-x: hidden
+}
+
+.img-div {
+    position: relative;
+}
+
+.heading-tag {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hr-line {
+    width: 160px;
+    border: 1px solid var(--primary-color);
+}
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.fa-solid {
+    position: absolute;
+    top: 5px;
+    left: 160px;
+    font-size: 10px;
+    color: var(--lighpink);
+}
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+}
+
+.courses-mat-card-div {
+    display: flex !important;
+    align-items: center;
+    flex-direction: row !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+    margin: 10px 0 10px 0;
+    padding: 10px 10px !important;
+}
+
+
+.hedaing-and-button {
+    display: flex;
+    align-items: center !important;
+    /* padding-top: 20px !important; */
+}
+
+.hedaing-and-button-and-icon {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px !important;
+}
+
+.card-heading {
+    font-size: 28px;
+    color: var(--blue);
+    font-weight: 500;
+    margin-left: 10px;
+    line-height: 32px;
+}
+
+.star_div {
+    color: var(--yellow);
+    margin-right: 5px;
+}
+
+.star-btn {
+    display: flex;
+    /* align-items: center; */
+    padding-left: 10px;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+}
+
+.num-btn {
+    /* background-color: var( --lightgreen); */
+    /* margin-top: 2px; */
+    border-radius: 4px;
+    padding: 2px;
+    font-size: 20px;
+    font-weight: 600;
+    /* color:var(--white); */
+}
+
+.btn-popup:hover {
+    color: var(--primary-color);
+}
+
+.dolar-purchase {
+    font-size: 22px;
+    padding: 0px 10px;
+    color: var(--lightgreen);
+    font-weight: 600;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: #C4F4DE;
+    display: inline;
+
+}
+
+.absolut_2-course {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background-color: var(--lightgreen);
+    padding: 4px 18px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: var(--white);
+    font-size: 18px;
+}
+
+@media (max-width: 900px) {
+    .courses-mat-card-div {
+        display: flex !important;
+        flex-direction: column !important;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .hedaing-and-button {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-bottom: 6px;
+    }
+
+    .star-btn {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+}
+
+.card-button {
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color);
+    font-size: 17px !important;
+    padding: 0 30px 0 30px !important;
+    margin-left: 10px;
+}
+
+.card-button-gift {
+    color: var(--blue) !important;
+    border: 1px solid var(--blue);
+    font-size: 17px !important;
+    padding: 0 30px 0 30px !important;
+    margin-left: 10px;
+}
+
+.card-button-live {
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color);
+    font-size: 17px !important;
+    /* padding: 0 5px 0 5px !important; */
+    margin-left: 10px;
+}
+
+.details-divs {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+@media (max-width: 380px) {
+    .details-divs {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 381px) and (max-width: 520px) {
+    .details-divs {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (min-width: 521px) and (max-width: 900px) {
+    .details-divs {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1050px) {
+    .details-divs {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+.cource-mat-card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    /* align-items: center; */
+}
+
+@media (max-width: 900px) {
+    .cource-mat-card-content {
+        align-items: center;
+        justify-content: center !important;
+    }
+}
+
+.detail-heading {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey-sec);
+    margin: 10px;
+}
+
+.detail-heading-2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.icon_star_mar svg {
+    color: var(--yellow);
+}
+
+/* mat cards css  end */
+.mat-card,
+.mdc-card {
+    background-color: var(--white) !important;
+}

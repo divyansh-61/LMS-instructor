@@ -1,0 +1,224 @@
+
+    <div class="uppersectiondiv">
+        <!-- Students -->
+        <div class="result-statistics-div">
+            <div class="result-statistics">
+                <div class="my-quizzer-heading-div">
+                    <p>My activity</p>
+                    <div class="quizzers-arrow-line-div">
+                        <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                        <p class="quizzers-pink-line m0"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--cards-->
+        <div class="card-grid-div">
+            <!-- First Card -->
+            <mat-card>
+                <div class="card-top">
+                    <div>
+                        <img src="../../../assets/CourseImage/Images/my-purchase-image_1.png" alt="" class="img_first">
+                    </div>
+                    <div>
+                        <img src="../assets/instructor/stoke.png" alt="" class="img_second">
+                    </div>
+                </div>
+                <div class="card-down">
+                    <p class="card-medium">$251.40</p>
+                    <p class="card-bottom">Account charge</p>
+                </div>
+            </mat-card>
+            <!-- Second Card -->
+            <mat-card>
+                <div class="card-top">
+                    <div>
+                        <img src="../../../assets/CourseImage/Images/my-purchase-image_2.png" alt="" class="img_first">
+                    </div>
+                    <div>
+                        <img src="../assets/instructor/stoke.png" alt="" class="img_second">
+                    </div>
+                </div>
+                <div class="card-down">
+                    <p class="card-medium">$46.50</p>
+                    <p class="card-bottom">Ready to payout</p>
+                </div>
+            </mat-card>
+            <!-- Third Card -->
+            <mat-card>
+                <div class="card-top">
+                    <div>
+                        <img src="../../../assets/CourseImage/Images/my-purchase-image_3.png" alt="" class="img_first">
+                    </div>
+                    <div>
+                        <img src="../assets/instructor/stoke.png" alt="" class="img_second">
+                    </div>
+                </div>
+                <div class="card-down">
+                    <p class="card-medium">$46.50</p>
+                    <p class="card-bottom">Total income</p>
+                </div>
+            </mat-card>
+        </div>
+        <!--end cards-->
+    </div>
+
+    
+
+
+
+
+    <!-- my purchase card starts -->
+
+    <div class="result-statistics-div">
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <p>My activity</p>
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="purchasecarddiv">
+
+        <mat-card>
+            <mat-card-content class="courses-mat-card-div">
+                <div class="img-div">
+                    <img src="assets/upcomingcourses/Group 341267.png" class="img-2-div-absulute"
+                        alt="Group 341267.png">
+                    <img src="assets/upcomingcourses/Rectangle 4569.png" alt="Rectangle 4569.png">
+                </div>
+                <div class="cource-mat-card-content">
+                    <div class="hedaing-and-button">
+                        <div class="hedaing-and-button-btn-and-live">
+                            <p class="card-heading">Python for Beginners</p>
+                            <button mat-button class="card-button">Live class</button>
+                        </div>
+
+                        <div class="three-dot-button">
+                            <button mat-icon-button [matMenuTriggerFor]="menu"
+                                aria-label="Example icon-button with a menu">
+                                <mat-icon>more_vert</mat-icon>
+                            </button>
+                            <mat-menu #menu="matMenu">
+                                <!-- (click)="Newdelete()" -->
+                                <button mat-menu-item > Mark as Released </button>
+                                <button mat-menu-item routerLink="/upComingCourse/edit"> Edit </button>
+                                <button mat-menu-item routerLink="/upComingCourse/app-click-view-followers" > View Followers </button>
+                                <button mat-menu-item  > Delete </button>
+                            </mat-menu>
+                        </div>
+
+
+                    </div>
+                    <!-- detail div -->
+                    <div class="details-divs">
+                        <div>
+                            <p class="detail-heading">Item ID: </p>
+                            <p class="detail-heading-2">3</p>
+                        </div>
+                        <div>
+                            <p class="detail-heading">Category: </p>
+                            <p class="detail-heading-2">Web Development </p>
+                        </div>
+                        <div>
+                            <p class="detail-heading">Next session duration:</p>
+                            <p class="detail-heading-2"> 1:00 Hrs</p>
+                        </div>
+                        <div>
+                            <p class="detail-heading">Estimated Publish Date:</p>
+                            <p class="detail-heading-2"> 15 Mar 2023 00:00</p>
+                        </div>
+                        <div>
+                            <p class="detail-heading">Price:</p>
+                            <p class="detail-heading-2"> $100</p>
+                        </div>
+                        <div>
+                            <p class="detail-heading">Followers:</p>
+                            <p class="detail-heading-2"> 3</p>
+                        </div>
+                    </div>
+                    <!-- detail div close -->
+                </div>
+            </mat-card-content>
+
+        </mat-card>
+
+
+        
+    </div>
+
+    <!-- 2nd card -->
+
+    <div class="purchasecarddiv">
+
+        <mat-card>
+            <mat-card-content class="courses-mat-card-div">
+                <div class="img-div">
+                    <img src="assets/upcomingcourses/Group 341267.png" class="img-2-div-absulute"
+                        alt="Group 341267.png">
+                    <img src="assets/upcomingcourses/Rectangle 4569.png" alt="Rectangle 4569.png">
+                </div>
+                <div class="cource-mat-card-content">
+                    <div class="hedaing-and-button">
+                        <div class="hedaing-and-button-btn-and-live">
+                            <p class="card-heading">Python for Beginners</p>
+                            <button mat-button class="card-button">Live class</button>
+                        </div>
+
+                        <div class="three-dot-button">
+                            <button mat-icon-button [matMenuTriggerFor]="menu"
+                                aria-label="Example icon-button with a menu">
+                                <mat-icon>more_vert</mat-icon>
+                            </button>
+                            <mat-menu #menu="matMenu">
+                                <!-- (click)="Newdelete()" -->
+                                <button mat-menu-item > Mark as Released </button>
+                                <button mat-menu-item routerLink="/upComingCourse/edit"> Edit </button>
+                                <button mat-menu-item routerLink="/upComingCourse/app-click-view-followers" > View Followers </button>
+                                <button mat-menu-item  > Delete </button>
+                            </mat-menu>
+                        </div>
+
+
+                    </div>
+                    <!-- detail div -->
+                    <div class="details-divs">
+                        <div>
+                            <p class="detail-heading">Item ID: </p>
+                            <p class="detail-heading-2">3</p>
+                        </div>
+                        <div>
+                            <p class="detail-heading">Category: </p>
+                            <p class="detail-heading-2">Web Development </p>
+                        </div>
+                        <div>
+                            <p class="detail-heading">Next session duration:</p>
+                            <p class="detail-heading-2"> 1:00 Hrs</p>
+                        </div>
+                        <div>
+                            <p class="detail-heading">Estimated Publish Date:</p>
+                            <p class="detail-heading-2"> 15 Mar 2023 00:00</p>
+                        </div>
+                        <div>
+                            <p class="detail-heading">Price:</p>
+                            <p class="detail-heading-2"> $100</p>
+                        </div>
+                        <div>
+                            <p class="detail-heading">Followers:</p>
+                            <p class="detail-heading-2"> 3</p>
+                        </div>
+                    </div>
+                    <!-- detail div close -->
+                </div>
+            </mat-card-content>
+
+        </mat-card>
+
+
+        
+    </div>

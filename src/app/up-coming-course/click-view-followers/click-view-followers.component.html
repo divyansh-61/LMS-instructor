@@ -1,0 +1,87 @@
+<!-- click view followers works div -->
+<div class="main-click-view-followers-div">
+    <div>
+        <p class="heading-tag">Upcoming Courses</p>
+        <p class="hr-line"></p>
+    </div>
+
+    <div class="sub-heading-div">
+        <p class="sub-heading blue-text">"Python for Beginners" </p>
+        <p class="sub-heading followers ">Followers</p>
+        <mat-icon class="aroowline">play_arrow</mat-icon>
+        <p class="arrow-line"></p>
+    </div>
+
+
+    <!-- Messages History table -->
+    <div class="table-and-img-div">
+        <div class="table-div-22">
+            <table mat-table [dataSource]="dataSource_one">
+
+                <!-- filepath -->
+                <ng-container matColumnDef="filePath">
+                    <th mat-header-cell *matHeaderCellDef> Followers </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div class="table-div-for-img">
+                            <div>
+                                <img [src]="element.filePath">
+                            </div>
+                            <div class="table-div-text">
+                                <span class="contect-text"> {{element.fileName}} </span>
+                                <span class="contect-text-2"> {{element.fileName2}}</span>
+                            </div>
+                        </div>
+                    </td>
+                </ng-container>
+
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="Title">
+                    <th mat-header-cell *matHeaderCellDef> Title </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div class="table-div-text">
+                            <span class="contect-text"> {{element.TiteleData}} </span>
+                            <span class="contect-text-2"> {{element.TiteleData2}}</span>
+                        </div>
+                    </td>
+                </ng-container>
+
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="Status">
+                    <th mat-header-cell *matHeaderCellDef> Status</th>
+                    <td mat-cell *matCellDef="let element"
+                        [ngClass]="element.Status == 'Closed' ? 'text-red' : 'text-orange'">
+                        {{element.Status}}</td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+
+        <!-- Send a notification -->
+        <div class="conversation-div">
+            <div class="conversation-img-div">
+                <img src="assets/upcomingcourses/image 178.png" alt="image 178.png" class="conversation-Image">
+                <p class="img-hedaing">Send a notification</p>
+                <p class="img-hedaing-2">Since you already published this course, a notification sent to followers about
+                    the course publishing.</p>
+            </div>
+            <div class="gray-box">
+                <div>
+                    <span class="grey-box-text-1">Course Published</span><br>
+                    <span class="grey-box-text-2">This course already published</span>
+                </div>
+                <div>
+                    <button class="butten" mat-raised-button>View Course</button>
+                </div>
+            </div>
+        </div>
+        <!-- Send a notification close -->
+
+    </div>
+    <!-- Messages History table close -->
+
+
+</div>
+<!-- click view followers works div close -->

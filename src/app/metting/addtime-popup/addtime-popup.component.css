@@ -1,0 +1,443 @@
+.head {
+    height: 60px;
+    background-color: var(--lighpink);
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.text-1 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+    margin: 0px !important;
+}
+
+
+.buttons-div {
+    display: flex;
+    justify-content: center;
+    background-color: var(--whitligt);
+    justify-content: center;
+    padding: 10px !important;
+}
+
+.yesBtn {
+    background-color: var(--lightgreen) !important;
+    color: var(--white) !important;
+    padding: 10px 20px 10px 20px;
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+.pop-closeBtn {
+    background-color: var(--red) !important;
+    color: var(--white) !important;
+    border-radius: 6px;
+    padding: 10px 30px 10px 30px !important;
+    margin-left: 10px;
+    font-size: 14px;
+    border: none;
+}
+
+@media screen and (max-width:500px) {
+    .pop-closeBtn {
+        background-color: var(--grey) !important;
+        color: var(--white) !important;
+        border-radius: 6px;
+        padding: 10px 30px 10px 30px !important;
+        margin-left: 10px;
+        font-size: 12px;
+        border: none;
+    }
+
+
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+    ::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+        width: inherit !important;
+
+    }
+}
+
+::ng-deep .mat-mdc-dialog-container .mat-mdc-dialog-surface {
+    border-radius: 15px !important;
+}
+
+
+
+
+/* ------------------------------------input fiels-------------------- */
+.three-input-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 20px;
+    height: fit-content;
+    /* width: 100% !important; */
+}
+
+@media screen and (max-width: 1090px) {
+    .three-input-fields {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 30px;
+        width: 100% !important;
+    }
+
+}
+
+.second-one {
+    /* width: 100%; */
+    margin: 20px 0;
+}
+
+.new-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.new-form-label {
+    font-size: 16px;
+    color: var(--black);
+}
+
+
+.icon-relative-div {
+    min-width: fit-content;
+    display: flex;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.2rem;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+
+
+.arrow-Icon {
+    padding: 10px 14px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 9px;
+}
+
+.mat-input-class {
+    border: 0.5px solid var(--grey);
+    border-radius: 0.2rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-bottom: -10px !important;
+    height: 32px !important;
+    outline: none !important;
+    border-width: 0px;
+}
+
+
+
+
+.select-input {
+    height: 2.8rem;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.3rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    color: var(--grey-sec);
+    outline: none !important;
+    appearance: none;
+}
+
+.selected-form-field {
+    position: relative;
+}
+
+.dual-down-arrow {
+    position: absolute;
+    right: 0.4rem;
+    top: 1.2rem;
+}
+
+.save-butten {
+    margin-top: 23px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 22px 30px;
+
+}
+
+/* ------------------------------------input fiels close-------------------- */
+
+.collan-doot {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
+
+.larg-input-div {
+    padding: 20px
+}
+
+.text-area {
+    /* width: 80%; */
+    height: 6rem !important;
+    border: 1px solid var(--grey-sec);
+}
+
+
+/* ----------------------calender ------------------ */
+
+
+/* Input */
+.time-pikkeR .form-group input[type=number] {
+    padding: 5px !important;
+    height: 33px !important;
+    margin-left: -1px;
+    margin-right: 1px;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    width: 29px;
+}
+
+/* Input */
+
+
+/* Input */
+.main-div .new-form .time-pikkeR .form-row .form-group .input-group .number-input input[type=number] {
+    padding-left: 8px !important;
+    height: 38px !important;
+}
+
+
+
+/* Input */
+.main-div .new-form input[type=number] {
+    width: 35px;
+}
+
+.time-pikkeR-222 {
+    display: flex;
+    align-items: center;
+}
+
+
+.time-pikkeR {
+    background-color: var(--whitligt);
+    /* background-color: var(--black); */
+    border: 2px solid var(--grey);
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: fit-content;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+
+    .time-pikkeR {
+        background-color: var(--whitligt);
+        /* background-color: var(--black); */
+        border: 2px solid var(--grey);
+        border-radius: 5px;
+        padding: 5px 10px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+}
+
+/* ----------------------calender close ------------------ */
+/* Input group */
+.time-pikkeR .form-group .input-group {
+    margin-top: 2px !important;
+    margin-bottom: 4px !important;
+}
+
+
+
+
+/* Span Tag */
+::ng-deep .mat-button-toggle-group .mat-button-toggle-button span {
+    margin-top: -14px !important;
+    margin-bottom: -14px !important;
+    margin-right: 2px !important;
+    margin-left: 2px !important;
+    border-radius: 10px !important;
+}
+
+
+
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.number-input {
+    /* border: 2px solid #ddd; */
+    display: inline-flex;
+}
+
+.number-input,
+.number-input * {
+    box-sizing: border-box;
+}
+
+.number-input button {
+    outline: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+    /* display: inline-block;
+    position: absolute;
+    content: '';
+    width: 1rem;
+    height: 2px;
+    background-color: #212121;
+    transform: translate(-50%, -50%); */
+}
+
+.iconssss {
+    color: var(--white);
+
+}
+
+/* Input */
+.input-group .number-input input[type=number] {
+    position: relative;
+    top: 3px;
+}
+
+
+/* Number input */
+.form-group .input-group .number-input {
+    margin-left: -29px;
+    margin-right: 0px;
+}
+
+
+/* Iconssss */
+.number-input .upArrow .iconssss {
+    margin-top: 2px;
+    font-size: 16px;
+}
+
+/* Iconssss */
+.number-input .plus .iconssss {
+    font-size: 16px;
+}
+
+
+/* Arrow */
+.input-group .number-input .upArrow {
+    width: 30px !important;
+    height: 20px !important;
+    left: 59px !important;
+    top: -2px !important;
+}
+
+
+
+
+/* Plus */
+.input-group .number-input .plus {
+    transform: translatex(0px) translatey(0px);
+    width: 30px !important;
+    height: 20px !important;
+    top: 17px !important;
+}
+
+/* Table Data */
+.main-div td {
+    transform: translatex(0px) translatey(0px);
+}
+
+
+
+
+
+.number-input input[type=number] {
+    font-family: sans-serif;
+    max-width: 5rem;
+    padding: .5rem;
+    /* border: solid #ddd; */
+    border-width: 0 2px;
+    text-align: center;
+}
+
+
+/* Form row */
+.main-div .form-row {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 7px;
+
+}
+
+
+
+.form-row {
+    border: 2px solid var(--grey);
+
+}
+
+/* Arrow */
+.input-group .number-input .upArrow {
+    left: 59px !important;
+    background-color: var(--lightpurpel) !important;
+}
+
+/* Plus */
+.input-group .number-input .plus {
+    background-color: var(--lightpurpel) !important;
+}
+
+/* Input */
+.input-group .number-input input[type=number] {
+    border-right-width: 0px !important;
+    border-left-width: 0px !important;
+}
+
+.input-group .number-input input[type=number] {
+    outline: none !important;
+
+}
+
+/* Input */
+.input-group .number-input input[type=number] {
+    width: 29px;
+}

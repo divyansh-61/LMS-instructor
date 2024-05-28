@@ -1,0 +1,80 @@
+.head {
+    height: 60px;
+    background-color: var(--lighpink);
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.text-1 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.text-2 {
+    font-size: 16px;
+    color: var(--grey-sec);
+    text-align: center;
+}
+
+.buttons-div {
+    display: flex;
+    justify-content: center;
+    background-color: var(--whitligt);
+    justify-content: center;
+    padding: 10px !important;
+}
+
+.yesBtn {
+    background-color: var(--red) !important;
+    color: var(--white) !important;
+    padding: 10px 20px 10px 20px;
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+.pop-closeBtn {
+    background-color: var(--lightgreen) !important;
+    color: var(--white) !important;
+    border-radius: 6px;
+    padding: 10px 30px 10px 30px !important;
+    margin-left: 10px;
+    font-size: 14px;
+    border: none;
+}
+
+@media screen and (max-width:500px) {
+    .pop-closeBtn {
+        background-color: var(--lightgreen) !important;
+        color: var(--white) !important;
+        border-radius: 6px;
+        padding: 10px 30px 10px 30px !important;
+        margin-left: 10px;
+        font-size: 12px;
+        border: none;
+    }
+    
+    
+}
+
+ 
+
+
+
+
+@media (min-width:320px) and (max-width: 900px) {
+    ::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+        width: inherit !important;
+
+    }
+}
+
+::ng-deep .mat-mdc-dialog-container .mat-mdc-dialog-surface{
+    border-radius: 15px !important;
+}

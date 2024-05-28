@@ -1,0 +1,100 @@
+<!-- input div starts -->
+<div class="inputdiv">
+
+
+  <!-- new works -->
+  <div class="new-page">
+    <!-- <div>
+        <p class="heading-tag">Upcoming Courses</p>
+        <p class="hr-line"></p>
+    </div> -->
+    <!-- sub hedaing  -->
+    <!-- <div class="sub-heading-div">
+        <p class="sub-heading">Steps: 1/4</p>
+        <mat-icon class="aroowline">play_arrow</mat-icon>
+        <p class="arrow-line"></p>
+    </div> -->
+    <!-- sub hedaing close -->
+
+    <!-- <app-main-setting-page></app-main-setting-page> -->
+
+    <div class="main-input-fields-div">
+      <!-- input field title div  -->
+      <div>
+        <div class="result-statistics">
+          <div class="my-quizzer-heading-div">
+            <p>New Article</p>
+            <div class="quizzers-arrow-line-div">
+              <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+              <p class="quizzers-pink-line "></p>
+            </div>
+          </div>
+        </div>
+        <mat-label class="new-form-label">Title</mat-label>
+        <mat-form-field class=" w-full my-2 " appearance="outline">
+          <input matInput placeholder="Full name" class="inputfocus">
+        </mat-form-field>
+      </div>
+      <!--  category select input  -->
+      <div class="main-input-fields-div">
+        <mat-label class="new-form-label">Category</mat-label>
+        <div class="selected-form-field">
+          <select class="select-input">
+            <option value="">Select a category</option>
+          </select>
+          <span class="dual-down-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+              viewBox="0 0 15 15">
+              <path fill="#808080" d="M7.5 12L0 4h15z" />
+            </svg></span>
+        </div>
+      </div>
+
+
+
+      <div class="main-input-fields-div">
+
+        <div>
+          <mat-label class="new-form-label">Cover Image</mat-label>
+          <mat-form-field class=" coverimage" appearance="outline">
+            <div class="coverimagediv">
+              <img src="../../../assets/Articleimages/Images/coverimagearticle.png" alt="">
+              <input matInput placeholder="350x250px preferred" class="inputfocus">
+            </div>
+          </mat-form-field>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- input field div close -->
+
+
+
+    <div class="ckeditorpart">
+      <div class="labeldiv">
+        <mat-label>Description</mat-label>
+      </div>
+      <ckeditor [editor]="Editor" data="<p>Minimum 300 words. HTML and images supported. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique et illo obcaecati temporibus asperiores culpa sequi at, id voluptate. Ab vero quibusdam quas blanditiis iste ducimus officia accusantium. Quaerat illo aut facere dolores nihil quidem consequatur nostrum dolorem porro voluptatem autem enim, hic, eveniet maiores voluptatum animi ipsa 
+            </p>">
+      </ckeditor>
+    </div>
+
+    <!-- 2nd ck editor starts -->
+    <div class="ckeditorpart">
+      <div class="labeldiv">
+        <mat-label>Content</mat-label>
+      </div>
+      <ckeditor [editor]="Editor" data="<p>Minimum 300 words. HTML and images supported. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique et illo obcaecati temporibus asperiores culpa sequi at, id voluptate. Ab vero quibusdam quas blanditiis iste ducimus officia accusantium. Quaerat illo aut facere dolores nihil quidem consequatur nostrum dolorem porro voluptatem autem enim, hic, eveniet maiores voluptatum animi ipsa 
+        </p>">
+      </ckeditor>
+
+    </div>
+    <!-- 2nd ck editor ends -->
+
+    <!-- button div starts -->
+    <div class="buttondiv">
+      <button mat-raised-button color="accent" class="save-btns">Save Changes</button>
+    </div>
+
+  </div>
+</div>

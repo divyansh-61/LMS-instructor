@@ -1,0 +1,78 @@
+<div class="main_page">
+    <div class="result-statistics">
+        <div class="my-quizzer-heading-div">
+            <p>Generated Contents</p>
+            <div class="quizzers-arrow-line-div">
+                <mat-icon role="img"
+                    class="mat-icon notranslate mat-18 quizzers-arrow-icon material-icons mat-ligature-font mat-icon-no-color"
+                    aria-hidden="true" data-mat-icon-type="font">play_arrow</mat-icon>
+                <p class="quizzers-pink-line m0"></p>
+            </div>
+        </div>
+    </div>
+    <div class="main_table">
+        <div class="quizzer-table-div">
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+                <!-- Instructor Column -->
+                <ng-container matColumnDef="instructor">
+                    <th mat-header-cell *matHeaderCellDef>Service Type </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div class="td-div">
+
+                            <div class="td-text-div">
+                                <p class="td-text-p1"> {{element.instructor.text}}</p>
+                                <p class="td-text-p2"> {{element.instructor.Text}}</p>
+                            </div>
+                        </div>
+                    </td>
+                </ng-container>
+                <!-- Quiz Column -->
+                <ng-container matColumnDef="quiz">
+                    <th mat-header-cell *matHeaderCellDef> Service </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div class="td-text-div">
+                            <p class="td-text-p1 " (click)="Contentpopup()"> {{element.quiz.text}}</p>
+                            <!-- <p class="td-text-p2"> {{element.quiz.Text}}</p> -->
+                        </div>
+                    </td>
+                </ng-container>
+                <!-- Quiz Grade Column -->
+                <ng-container matColumnDef="quizGrade">
+                    <th mat-header-cell *matHeaderCellDef>Keyword</th>
+                    <td mat-cell *matCellDef="let element" class="reg-12"> {{element.quizGrade}} </td>
+                </ng-container>
+                <!-- Date Column -->
+                <ng-container matColumnDef="date">
+                    <th mat-header-cell *matHeaderCellDef>Language</th>
+                    <td mat-cell *matCellDef="let element">
+                        <div class="quizzer-date-td">
+                            <span> {{element.date}}</span>
+                        </div>
+                    </td>
+                </ng-container>
+                <!-- Date Column -->
+                <ng-container matColumnDef="language">
+                    <th mat-header-cell *matHeaderCellDef>Generated Date </th>
+                    <td mat-cell *matCellDef="let element">
+                        <div class="malti_icon">
+
+                            <div class="quizzer-date-td">
+                                <span> {{element.date}}</span>
+                            </div>
+                            <div class="mat_icon" (click)="generatedpopup()">
+                                <mat-icon>visibility</mat-icon>
+                            </div>
+
+                        </div>
+
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+    </div>
+</div>

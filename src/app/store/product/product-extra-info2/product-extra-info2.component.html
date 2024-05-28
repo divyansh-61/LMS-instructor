@@ -1,0 +1,101 @@
+<div class="inputdiv" *ngIf="!isShowNewPlan">
+
+
+    <!-- new works -->
+    <div class="new-page">
+
+
+        <div class="main-input-fields-div">
+            <!-- input field title div  -->
+
+
+
+            <!--  category select input  -->
+            <div>
+                <mat-label class="new-form-label">Price ($)</mat-label>
+                <mat-form-field class=" w-full my-2 " appearance="outline">
+                    <input matInput placeholder="" class="inputfocus">
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-label class="new-form-label">Inventory</mat-label>
+                <mat-form-field class=" w-full my-2 " appearance="outline">
+                    <input matInput placeholder="" class="inputfocus">
+                </mat-form-field>
+            </div>
+
+
+
+        </div>
+        <!-- input field div close -->
+
+
+
+
+
+        <div class="result-statistics">
+            <div class="my-quizzer-heading-div">
+                <div>
+                    <p class="reg-16">Unlimited inventory</p>
+
+                </div>
+                <div class="quizzers-arrow-line-div">
+                    <mat-icon role="img"
+                        class="mat-icon notranslate mat-18 quizzers-arrow-icon material-icons mat-ligature-font mat-icon-no-color"
+                        aria-hidden="true" data-mat-icon-type="font">play_arrow</mat-icon>
+                    <p class="quizzers-pink-line m0"></p>
+                </div>
+                <div class="text-with-toggle-div">
+                    <mat-slide-toggle (click)="toggleProductExtraInfo()" checked="" class="mat-mdc-slide-toggle mat-accent mat-mdc-slide-toggle-checked"
+                        ng-reflect-checked="" id="mat-mdc-slide-toggle-2">
+                        <div class="mdc-form-field">
+                            <button role="switch" type="button"
+                                class="mdc-switch mdc-switch--selected mdc-switch--checked" tabindex="0"
+                                id="mat-mdc-slide-toggle-2-button" aria-labelledby="mat-mdc-slide-toggle-2-label"
+                                aria-checked="true">
+
+
+                            </button>
+                        </div>
+                    </mat-slide-toggle>
+                </div>
+            </div>
+
+        </div>
+        <span class="basic_p">By disabling this toggle, users won't be able to order this product.</span>
+        <!-- Category div  -->
+        <div class="Category-main-div">
+            <mat-label class="new-form-label">Category Filters</mat-label>
+
+            <div class="checkbox-main-div">
+                <section class="checkbox-holder-div">
+                    <div class="checkbox-holder-heading med-16">Type</div>
+                    <div class="checkbox-container">
+                        <div class="checkbox-text reg-14">Novel</div>
+                        <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+                    </div>
+                    <div class="checkbox-container">
+                        <div class="checkbox-text reg-14">Laguage learning</div>
+                        <mat-checkbox class="example-margin" color="primary" checked=""></mat-checkbox>
+                    </div>
+                    <div class="checkbox-container">
+                        <div class="checkbox-text reg-14">Scientific</div>
+                        <mat-checkbox class="example-margin" color="primary"></mat-checkbox>
+                    </div>
+                </section>
+
+
+            </div>
+
+        </div>
+        <!-- Category div close -->
+        <!-- button div starts -->
+        <app-product-btns></app-product-btns>
+
+    </div>
+</div>
+
+
+<ng-container *ngIf="isShowNewPlan">
+    <app-product-extra-info></app-product-extra-info>
+</ng-container>

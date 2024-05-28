@@ -1,0 +1,730 @@
+*,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.my-result-heading {
+    font-size: 30px;
+    font-weight: 500;
+    border-bottom: 1px solid var(--primary-color);
+    text-wrap: nowrap;
+    width: 8%;
+    padding-bottom: 20px;
+}
+
+.page-container-div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.result-statistics-div {
+    padding: 12px 20px;
+    /* border-top: 1px solid var(--primary-color); */
+    position: relative;
+}
+
+.result-statistics {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--white);
+    display: flex !important;
+    flex-direction: row;
+    align-items: center !important;
+    width: 100%;
+    /* justify-content: center; */
+    gap: 10px;
+    text-wrap: nowrap;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.view-btn{
+    background-color: #FBD6E8;
+   
+    border:none;
+    padding: 10px 20px;
+    border-radius: 50px;
+  
+}
+
+@media (max-width: 500px) {
+
+    ::ng-deep .result-statistics-div{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        position: relative;
+    }
+
+    .result-statistics {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        position: absolute;
+    }
+}
+
+.my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.result-statistics p {
+    margin: 0;
+}
+
+.quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.quizzers-arrow-icon {
+    color: var(--primary-color);
+    font-size: 15px;
+    width: fit-content;
+    height: 100% !important;
+}
+
+.quizzers-pink-line {
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+
+}
+
+
+/*card style star*/
+.card-grid-div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin: 10px;
+}
+.card-grid-div mat-card{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    box-shadow: 0px 0px 5px 0px var(--grey);
+    border-radius: 5px;
+}
+.card-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-medium{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 2px!important;
+}
+.card-bottom{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--grey-sec);
+}
+.card-top .img_first{
+height:64px ;
+}
+.card-top .img_second{
+    height: 14px;
+    width: 67px;
+}
+.card-medium{
+    font-size: 30px;
+    font-weight: 700;
+}
+.card-bottom{
+   color: var(--lightgray);
+   font-size: 14px;
+   font-weight: 600;
+}
+@media only screen and(max-width:767px){
+    .card-grid-div{
+        display: block!important;
+    }
+}
+@media screen and (max-width:768px) {
+    .card-grid-div{
+        display: grid;
+        grid-template-columns: auto auto  ;
+        gap: 30px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width:640px) {
+    .card-grid-div{
+        display: grid;
+        grid-template-columns: auto ;
+        gap: 30px;
+        margin: 10px;
+    }
+}
+
+
+/* form css start */
+.form-div {
+    padding: 10px 20px;
+    box-shadow: 0px 0px 5px 0px var(--grey);
+    border-radius: 10px;
+}
+
+.form-input-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.calendar-input-field {
+    display: flex;
+    height: fit-content !important;
+    width: 100% !important;
+}
+
+.in-form-row {
+    width: 100%;
+    margin-top: 10px;
+}
+
+ .form-field {
+    width: 100% !important;
+    /* height: fit-content; */
+    border: var(--grey);
+    
+}
+ 
+
+
+.form-row {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row;
+    gap: 40px;
+}
+
+@media (max-width: 700px) {
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* Quizzers My Result Page */
+::ng-deep .calendar-input-field .mat-mdc-form-field-infix {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10px;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  
+  ::ng-deep  .calendar-input-field .mdc-text-field {
+    padding: 0 !important;
+  }
+  
+  ::ng-deep  .calendar-input-field {
+    width: 100% !important;
+  }
+  
+  ::ng-deep  .mat-mdc-text-field-wrapper {
+    width: 100% !important;
+  }
+  
+  ::ng-deep  .form-field {
+    width: 100% !important;
+  }
+  
+  
+  
+.button-div {
+    padding: 20px 0 !important;
+}
+.button-div button{
+    background-color: var(--primary-color);
+    color:var(--white);
+}
+
+.show-result-button {
+    color: var(--white);
+    background-color: var(--primary-color);
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 28px 10px;
+    margin-top: 10px;
+    text-wrap: nowrap;
+}
+
+.text-with-toggle-div {
+    display: flex;
+    gap: 8px;
+
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--grlight);
+}
+
+@media (max-width: 500px) {
+    .text-with-toggle-div{
+        margin-bottom: 10px;
+    }
+}
+
+table {
+    width: 100%;
+    text-wrap: nowrap;
+}
+
+.quizzer-table-div {
+    overflow-x: auto;
+    border-radius: 10px !important;
+    text-wrap: nowrap;
+    table-layout: auto;
+}
+
+.td-div {
+    display: flex;
+    gap: 5px;
+    padding: 15px 5px;
+}
+
+.td-text-p1 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.td-text-p2 {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--grey-sec);
+}
+.td-text-p3 {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--lightgreen);
+}
+
+.quizzer-text-green {
+    color: var(--lightgreen);
+}
+
+.quizzer-text-orange {
+    color: var(--accent-color);
+}
+
+.quizzer-text-red {
+    color: var(--red);
+}
+
+.quizzer-date-td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.reg-12 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+  
+/* table */
+.mat-mdc-header-row {
+    background: none !important;
+    color: var(--white) !important;
+    font-size: 14px;
+    font-weight: 500;
+  }
+ ::ng-deep thead, .mat-mdc-header-row .mdc-data-table__header-row .cdk-header-row {
+    background-image: linear-gradient(to right, var(--blue), var(--primary-color)) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    text-wrap: nowrap;
+  }
+  .btn-3{
+    padding: 10px ;
+  }
+  .mat-card, .mdc-card {
+    background-color: var(--white) !important;
+}
+.page-container-div{
+    margin: 30px 0px;
+}
+.new-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.new-form-label {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 400;
+}
+.icon-relative-div {
+    min-width: fit-content;
+    display: flex;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.2rem;
+}
+.icon-relative-div .mat-input-class {
+    height: 2rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+}
+.arrow-Icon {
+    padding: 10px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+.mat-input-class {
+    height: 2rem;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.2rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+}
+.main-my-post{
+    padding:6px 10px;
+  }
+  
+  
+  .my-result-heading {
+      font-size: 30px;
+      font-weight: 900;
+      border-bottom: 1px solid var(--primary-color);
+      text-wrap: nowrap;
+      width: 8%;
+      padding-bottom: 10px;
+    /* margin: 20px; */
+    
+    
+    }
+    
+    .page-container-div {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    
+    .result-statistics-div {
+      padding:20px 4px;
+      /* margin-top: 20px ; */
+      /* border-top: 1px solid var(--primary-color); */
+      position: relative;
+    }
+    
+    .result-statistics {
+      font-size: 20px;
+      font-weight: 500;
+      background-color: var(--white);
+      display: flex !important;
+      flex-direction: row;
+      align-items: center !important;
+      width: 100%;
+      /* justify-content: center; */
+      gap: 10px;
+      text-wrap: nowrap;
+    
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    
+    @media (max-width: 500px) {
+    
+      ::ng-deep .result-statistics-div{
+          display: flex;
+          flex-direction: column;
+          gap: 80px;
+          position: relative;
+      }
+    
+      .result-statistics {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 10px;
+          position: absolute;
+      }
+    }
+    
+    .my-quizzer-heading-div {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      font-size: 20px;
+      font-weight: 600;
+    
+    }
+    
+    .result-statistics p {
+      margin: 0;
+    }
+    
+    .quizzers-arrow-line-div {
+      display: flex;
+      align-items: center;
+      gap: -1;
+      width: 100%;
+    }
+    
+    .quizzers-arrow-icon {
+      color: var(--primary-color);
+      font-size: 15px;
+      width: fit-content;
+      height: 100% !important;
+    }
+    
+    .quizzers-pink-line {
+      border: 1px solid var(--primary-color);
+      width: 100%;
+      opacity: 40%;
+      padding: 0 !important;
+      margin: 0 !important;
+    
+    
+    }
+    
+    
+    
+    .form-div {
+      padding: 10px 20px;
+      box-shadow: 0px 0px 5px 0px var(--grey);
+      border-radius: 10px;
+    }
+    
+    .form-input-label {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    
+    .calendar-input-field {
+      display: flex;
+      height: fit-content !important;
+      width: 100% !important;
+    }
+    
+    .in-form-row {
+      width: 100%;
+      margin-top: 20px;
+    }
+    
+    .form-field {
+      width: 100% !important;
+      height: fit-content;
+      border: var(--grey);
+    }
+    
+    .form-row {
+      width: 100% !important;
+      display: flex !important;
+      flex-direction: row;
+      gap: 20px;
+    }
+    
+    @media (max-width: 700px) {
+      .form-row {
+          display: flex;
+          flex-direction: column;
+          gap: 0;
+      }
+    }
+    
+    .button-div {
+        padding: 6px 0 !important;
+    }
+    .button-div button{
+        background-color: var(--primary-color);
+        color:var(--white);
+    }
+    
+    .show-result-button {
+        color: var(--white);
+        background-color: var(--primary-color);
+        border: none;
+        /* width: 65%; */
+        height: 100%;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 28px 10px;
+        margin-top: 10px;
+        box-shadow: none!important;
+    }
+   
+  
+  ::ng-deep .calendar-input-field .mat-mdc-form-field-infix {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10px;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  
+  ::ng-deep  .calendar-input-field .mdc-text-field {
+    padding: 0 !important;
+  }
+  
+  ::ng-deep  .calendar-input-field {
+    width: 100% !important;
+  }
+  
+  ::ng-deep  .mat-mdc-text-field-wrapper {
+    width: 100% !important;
+  }
+  
+  ::ng-deep  .form-field {
+    width: 100% !important;
+  }
+  .select_in{
+    padding:0px 10px;
+  }
+  
+  /* mat card */
+
+
+.outer-instructor{
+    margin: 20px;
+    box-shadow: 4px 4px 4px 4px #F5F5F5;
+    
+}
+.inner-instructor {
+    
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+    align-items: center;
+   
+}
+
+.heading-content-instructor {
+    color: black;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: center;
+}
+.content-instructor {
+    font-size: 16px;
+    font-weight: 900px;
+    font-family: Poppins;
+    text-align: center;
+    margin:0px;
+    color:var( --grey-sec);
+}
+@media screen and  (max-width:410px) {
+    .img-course{
+        width:100%;
+    }
+}
+
+.mat-card, .mdc-card {
+    background-color: var(--white) !important;
+  }
+  .content-instructor{
+    padding:20px 0px;
+  }
+  @media screen and (max-width: 500px) {
+    .toggle-with-line .sub-heading {
+        font-size: 15px;
+        text-wrap: nowrap;
+        margin-right: 10px;
+        font-weight: 500;
+    }
+
+    .toggle-with-line .aroowline-3 {
+        position: absolute !important;
+        top: 3px !important;
+        left: 134px !important;
+        font-size: 14px !important;
+        color: var(--lighpink) !important;
+    }
+
+    .toggle-text {
+        font-size: 15px !important;
+        color: var(--grey-sec);
+        flex-wrap: nowrap !important;
+        text-wrap: wrap !important;
+        margin: 0 10px;
+    }
+}
+
+.toggle-div {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-text {
+    font-size: 18px;
+    color: var(--grey-sec);
+    flex-wrap: nowrap !important;
+    text-wrap: nowrap;
+    margin: 0 10px;
+}
+
+.toggle-with-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* margin: 25px 0 0 0; */
+    width: 100%;
+}
+
+.text-toggle .sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 15px 0 0 0;
+    width: 100%;
+}
+
+.toggle-with-line .aroowline-3 {
+    position: absolute !important;
+    top: 8px !important;
+    left: 109px;
+    font-size: 14px !important;
+    color: var(--lighpink) !important;
+}
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+    font-weight: 500;
+}
+.in-form-row.button-div{
+    width: 49%!important;
+}
+/* ------------------------------------TOGGLE With line close -------------------- */

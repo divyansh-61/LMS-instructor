@@ -1,0 +1,39 @@
+<!-- Success popup page -->
+
+<div class="centerpartdiv" id="showadd">
+    <div class="confirmdelete">
+      <!-- pop up div -->
+      <div class="upperpart">
+        <div class="spandiv">
+          <!-- <span class="deletespan">Confirm delete</span> -->
+        </div>
+      </div>
+      <!-- p div -->
+      <div class="parapart">
+        <img
+          src="../../../../assets/BasicInfoPopup/error.png"
+          alt=""
+        />
+        <!-- <p>Success</p> -->
+        <div class="parasecond">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="popupText">
+        <h5>Are you sure?</h5>
+        
+        <p>This action cannot be undone!</p>
+      </div>
+
+      <div class="buttondiv">
+        
+            <!-- <button class="red-btn" mat-raised-button>Delete</button>
+            <button class=" grey-btn" mat-raised-button>Close</button> -->
+            <button class="red-btn" mat-raised-button (click)="Success()"  >Delete</button>
+            <button mat-raised-button class="grey-btn">close</button>
+        
+      </div>
+
+    </div>
+  </div>

@@ -1,0 +1,136 @@
+.result-statistics-div {
+  padding: 20px 4px;
+  margin-top: 20px;
+  /* border-top: 1px solid var(--primary-color); */
+  position: relative;
+}
+
+.result-statistics {
+  font-size: 20px;
+  font-weight: 500;
+  background-color: var(--white);
+  display: flex !important;
+  flex-direction: row;
+  align-items: center !important;
+  width: 100%;
+  /* justify-content: center; */
+  gap: 10px;
+  text-wrap: nowrap;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.select_in {
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.my-quizzer-heading-div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+
+.quizzers-arrow-line-div {
+  display: flex;
+  align-items: center;
+  /* gap: -1; */
+  width: 100%;
+}
+
+.quizzers-pink-line {
+  border: 1px solid var(--primary-color);
+  width: 100%;
+  opacity: 40%;
+  padding: 0 !important;
+  margin: 0 !important;
+
+
+}
+
+.quizzers-arrow-icon{
+  color: var(--primary-color);
+  font-size: 20px;
+  min-width: fit-content !important;
+}
+
+.result-statistics-div .result-statistics .my-quizzer-heading-div {
+  padding-inline: 30px;
+}
+
+.carddiv {
+  margin-top: 40px;
+}
+
+.imageanddetaildiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.carddiv .mat-mdc-card {
+  border-radius: 20px !important;
+}
+
+@media (max-width: 770px) {
+  .carddiv .mat-mdc-card {
+    margin-bottom: 80px !important;
+  }
+
+
+}
+
+@media (max-width: 520px) {
+  .imageanddetaildiv>span {
+    padding-inline: 30px !important;
+
+  }
+
+
+}
+
+@media (max-width: 380px) {
+  .imageanddetaildiv>img {
+    width: 80% !important;
+  }
+
+}
+
+@media (min-width: 768px) {}
+
+@media (max-width:935px) {
+
+  /* Quizzer heading div */
+  .result-statistics-div .result-statistics .my-quizzer-heading-div {
+    margin-top: 23px;
+  }
+
+  /* Mat card */
+  .carddiv .mat-mdc-card {
+    transform: translatex(0px) translatey(21px);
+  }
+
+}
+
+@media (max-width:767px) {
+
+  /* Quizzer heading div */
+  .result-statistics-div .result-statistics .my-quizzer-heading-div {
+    transform: translatex(3px) translatey(-23px);
+  }
+
+  /* Mat card */
+  .carddiv .mat-mdc-card {
+    transform: translatex(0px) translatey(-14px);
+  }
+
+}

@@ -1,0 +1,791 @@
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.new-page {
+    margin: 20px 20px;
+}
+
+/* ------------------------------------heading css-------------------- */
+.heading-tag {
+    margin-top: 10px;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.hr-line {
+    margin-top: 10px;
+    width: 180px;
+    border: 1px solid var(--primary-color);
+}
+
+/* ------------------------------------heading css-------------------- */
+/* ------------------------------------arrow-------------------- */
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-wrap: wrap !important;
+    margin: 25px 0;
+}
+
+.aroowline {
+    position: absolute;
+    top: 3px;
+    left: 85px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-2 {
+    position: absolute;
+    top: 12px;
+    left: 200px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+}
+
+/* ------------------------------------arrow-------------------- */
+/* ------------------------------------input Field-------------------- */
+.new-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.new-form-label {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+
+.selected-form-field {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.select-input {
+    height: 2.8rem;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.3rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    color: var(--grey-sec);
+}
+
+.dual-down-arrow {
+    position: absolute;
+    right: 0.4rem;
+    top: 1.2rem;
+}
+
+.select-input {
+    appearance: none;
+}
+
+/* ------------------------------------input Field-------------------- */
+.main-input-fields-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0rem 2rem 2rem 0rem !important;
+    margin-top: 20px;
+}
+
+.result-statistics-div {
+    padding: 1rem !important;
+    margin-top: 20px;
+}
+
+.result-statistics-div.toggle_div {
+    /* padding: 0rem 2rem 0rem 0rem !important; */
+}
+
+.mat-input-class {
+    height: 2rem;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.2rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+}
+
+.icon-relative-div {
+    display: flex;
+    border: 0.5px solid var(--grey);
+    min-width: fit-content;
+    border-radius: 0.2rem;
+}
+
+.icon-relative-div .mat-input-class {
+    height: 2rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+}
+
+.arrow-Icon {
+    padding: 10px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.demo-viedo-input-field {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.demo-viedo-input-field .select-input {
+    height: 3.2rem;
+}
+
+.demo-viedo-input-field .dual-down-arrow {
+    top: 1.4rem;
+}
+
+.buttons-div {
+    margin: 20px 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .butten-1{
+    color: var(--white);
+    background-color: var(--lighpink);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+.butten-2{
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+.butten-3{
+    color: var(--white);
+    background-color: var(--red);
+    padding: 22px 30px;
+    margin-right: 10px;
+} */
+.butten-1 {
+    margin-top: 10px;
+    color: var(--primary-color);
+    background-color: var(--white);
+    padding: 22px 30px;
+    margin-right: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+.butten-2 {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+
+.butten-3 {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--red);
+    padding: 22px 30px;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .demo-viedo-input-field {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .buttons-div {
+        margin: 20px 0;
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.med-16 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.ckEditor p {
+    height: 100px !important;
+}
+
+.quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.quizzers-arrow-icon {
+    color: var(--lighpink);
+    font-size: 15px;
+    width: fit-content;
+    height: 100% !important;
+}
+
+.quizzers-pink-line {
+    border: 1px solid var(--lighpink);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.in-form-row {
+    width: 100%
+}
+
+.reg-16 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.reg-17 {
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+
+.reg-18 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.result-statistics-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.result-statistics {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--white);
+    /* display: flex !important; */
+    /* flex-direction: row; */
+    /* align-items: center !important; */
+    width: 100%;
+    /* justify-content: center; */
+    gap: 10px;
+    text-wrap: nowrap;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0;
+    width: 100%; */
+}
+
+@media (max-width: 500px) {
+    .result-statistics {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        /* position: absolute; */
+    }
+}
+
+.my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: unset;
+    width: 100%;
+    font-size: 20px;
+    /* margin: 0px 19px; */
+    font-weight: 700;
+    gap: 8px;
+}
+
+.my-quizzer-heading-div-2 {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    /* margin: 0px 19px; */
+    font-weight: 700;
+    gap: 8px;
+}
+
+@media (max-width: 500px) {
+    .my-quizzer-heading-div {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.result-statistics p {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.quizzers-arrow-icon {
+    color: var(--lighpink);
+    font-size: 15px;
+    width: fit-content;
+    height: 100% !important;
+}
+
+.quizzers-pink-line {
+    border: 1px solid var(--lighpink);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.result-statistics-div.quiz_head {
+    margin: 40px 0px !important;
+}
+
+.btn-notice {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 20px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    box-shadow: none !important;
+    width: fit-content;
+}
+
+.edit-btnlist {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.FQA-MAIN {
+    padding: 10px;
+}
+
+/* ------------------------------------arrow-------------------- */
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 30px 0 10px 0;
+    width: 100%;
+
+}
+
+.aroowline {
+    position: absolute;
+    top: 3px;
+    left: 112px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-2 {
+    position: absolute;
+    top: 12px;
+    left: 232px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-3 {
+    position: absolute;
+    top: 3px;
+    left: 220px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-4 {
+    position: absolute;
+    top: 3px;
+    left: 217px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-5 {
+    position: absolute;
+    top: 3px;
+    left: 335px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-6 {
+    position: absolute;
+    top: 3px;
+    left: 197px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-7 {
+    position: absolute;
+    top: 3px;
+    left: 185px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+.aroowline-8 {
+    position: absolute;
+    top: 3px;
+    left: 280px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+
+.sub-heading {
+    font-size: 20px;
+    text-wrap: nowrap;
+    margin-right: 10px;
+}
+
+/* ------------------------------------arrow close -------------------- */
+
+
+
+
+
+
+
+
+.butten-fqa {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 22px 30px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.head-btn-div {
+    display: flex;
+    align-items: center;
+}
+
+.head-icon-row {
+    display: flex;
+    align-items: center;
+    margin: 18px 10px;
+    margin-bottom: 10px;
+}
+
+.Learning-materials-div {
+    margin-top: 20px;
+}
+
+
+.main-image-div {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    margin: 30px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-1 {
+    width: 28%;
+}
+
+.text-h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text-h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--grey-sec);
+
+}
+
+/* --------------------------expenction panel -------------------   */
+
+.expansion-panel-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 30px 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.example-headers-align .mat-mdc-form-field+.mat-mdc-form-field {
+    margin-left: 8px;
+}
+
+.mat-expansion-panel-header-title,
+.mat-expansion-panel-header-description {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-right: 0 !important;
+    align-items: center;
+}
+
+mat-expansion-panel-header {
+    margin: 5px 0px 20px 0px;
+}
+
+::ng-deep .expansion-panel-div .mat-accordion-multi .mat-expansion-panel .mat-expansion-indicator {
+    margin-bottom: -10px !important;
+}
+
+.save-btns {
+    color: var(--white);
+    padding: 23px 30px;
+    background-color: var(--lightgreen);
+}
+
+.second-save-btns {
+    color: var(--white);
+    padding: 23px 30px;
+    background-color: var(--lightgreen);
+    margin-top: 20px !important;
+}
+
+/* --------------------------expenction pannel close -------------------   */
+
+
+/* ------------------------------------input Field-------------------- */
+
+.two-input-field {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media (max-width: 500px) {
+    .two-input-field {
+        flex-direction: column;
+    }
+}
+
+.new-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.new-form-label {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 400;
+}
+
+.mat-input-class {
+    height: 2rem;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.2rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+}
+
+
+.selected-form-field {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.select-input {
+    height: 2.8rem;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.3rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    color: var(--grey-sec);
+}
+
+.dual-down-arrow {
+    position: absolute;
+    right: 0.4rem;
+    top: 1.2rem;
+}
+
+.select-input {
+    appearance: none;
+}
+
+.larg-input-div {
+    margin: 20px 0;
+}
+
+.text-area {
+    height: 6rem !important;
+}
+
+/* ------------------------------------input Field close -------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+::ng-deep .mat-mdc-elevation-specific .mat-mdc-menu-item span {
+    color: var(--primary-color) !important;
+
+}
+
+::ng-deep .cdk-overlay-pane .mat-mdc-elevation-specific .mat-mdc-menu-content {
+    position: 10px !important;
+}
+
+
+::ng-deep .cdk-overlay-pane .mat-mdc-elevation-specific .mat-mdc-menu-content {
+
+    padding: 0 !important;
+}
+
+::ng-deep .mat-mdc-elevation-specific .mat-mdc-menu-item .mat-mdc-menu-ripple {
+    margin-bottom: 10px !important;
+}
+
+.med-16 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width: 836px) {
+
+    .no-programming-heading {
+        text-wrap: wrap;
+        /* letter-spacing: 6px; */
+    }
+
+    .aroowline-8 {
+        position: absolute;
+        top: -10px;
+        left: 280px;
+        font-size: 14px;
+        color: var(--lighpink);
+    }
+}
+
+.edit_para {
+    font-size: 12px;
+    color: gray;
+}
+
+
+
+.my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.quizzers-pink-line {
+    border: 1px solid var(--lighpink);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+.quizzers-arrow-icon {
+    margin-right: -10px;
+    color: var(--lighpink);
+    font-size: 15px;
+    min-width: fit-content;
+    height: 100% !important;
+}
+
+.med-16 {
+    font-size: 16px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+.med-20 {
+    font-size: 20px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+
+.example-headers-align {
+    padding: 5px 0px;
+    padding-left: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+}
+
+@media (max-width: 550px) {
+    .example-headers-align {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2px;
+    }
+}

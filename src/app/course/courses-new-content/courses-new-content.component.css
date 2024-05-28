@@ -1,0 +1,523 @@
+p {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.main-section-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.result-statistics-div {
+    padding: 20px;
+    margin-top: 20px;
+    /* border-top: 1px solid var(--primary-color); */
+    box-shadow: 0px 0px 5px 0px var(--grey);
+    position: relative;
+    border-radius: 10px;
+}
+
+.result-statistics {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--white);
+    /* display: flex !important; */
+    /* flex-direction: row; */
+    /* align-items: center !important; */
+
+    width: 100%;
+    /* justify-content: center; */
+    gap: 10px;
+    text-wrap: nowrap;
+
+    /* position: absolute; */
+    /* top: 0;
+    left: 0;
+    width: 100%; */
+}
+
+@media (max-width: 500px) {
+
+    ::ng-deep .result-statistics-div {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        position: relative;
+    }
+
+    .result-statistics {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        /* position: absolute; */
+
+    }
+}
+
+.my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: unset;
+    width: 100%;
+    font-size: 20px;
+    /* margin: 0px 19px; */
+    font-weight: 700;
+    gap: 8px;
+}
+
+.my-quizzer-heading-div-2 {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    /* margin: 0px 19px; */
+    font-weight: 700;
+    gap: 8px;
+}
+
+@media (max-width: 500px) {
+    .my-quizzer-heading-div {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.result-statistics p {
+    margin: 0px !important;
+}
+
+.quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.quizzers-arrow-icon {
+    color: var(--lighpink);
+    font-size: 15px;
+    width: fit-content;
+    height: 100% !important;
+}
+
+.quizzers-pink-line {
+    border: 1px solid var(--lighpink);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+.buttons-div {
+    margin: 20px 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 900px) {
+
+    .buttons-div {
+        margin: 20px 0;
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.buttons-inner-div {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.butten-1 {
+    margin-top: 10px;
+    color: var(--primary-color);
+    background-color: var(--white);
+    padding: 22px 30px;
+    margin-right: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+.butten-2 {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 16px 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.butten-3 {
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--red);
+    padding: 22px 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.reg-12 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.reg-14 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.reg-16 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.med-12 {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.med-14 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.med-16 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.text-grey {
+    color: var(--grey-sec);
+}
+
+.expansion-panels-parent-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0rem;
+}
+
+.circular-blue-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/Courses/Ellipse 631.png");
+    background-size: cover;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.mat-expansion-panel-header {
+    height: 100%;
+    padding: 20px;
+}
+
+.expansion-panel-head {
+    display: flex;
+    gap: 5px;
+    padding: 2rem 0rem !important;
+    margin: 2rem 0rem !important;
+}
+
+mat-accordion {
+    box-shadow: 0px 0px 15px 0px var(--grey);
+}
+
+.mat-expansion-panel-header-title {
+    display: block;
+    padding: 2rem 0rem !important;
+}
+
+.expansion-panel-head-text {
+    text-wrap: nowrap;
+}
+
+.expansion-panel-heading-icons-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 5px;
+}
+
+.expansion-panel-heading-icons-div svg {
+    color: var(--grey-sec);
+}
+
+.expansion-panel-heading-icons-div svg:hover {
+    color: var(--primary-color);
+}
+
+.expansion-panel-plus-icon-dropdown-div {
+    position: relative;
+}
+
+.expansion-panel-plus-icon-dropdown {
+    /* position: absolute; */
+    font-size: x-small;
+    display: none;
+    position: absolute;
+    height: fit-content;
+    z-index: 50;
+    top: 0px;
+    right: 12rem;
+    background-color: var(--lightwhite);
+    cursor: default;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 0px var(--textcol);
+    min-height: fit-content;
+    min-width: fit-content;
+}
+
+.plus-icon-dropdown-div:hover .expansion-panel-plus-icon-dropdown {
+    display: block;
+}
+
+.dropdown-items {
+    text-wrap: nowrap;
+    color: var(--grey-sec);
+    padding: 2px 4px;
+}
+
+::ng-deep .mdc-button {
+    min-width: fit-content !important;
+}
+
+.plus-icon {
+    width: fit-content !important;
+}
+
+.plus-icon-menu {
+    color: var(--grey);
+    background-color: var(--greylight) !important;
+}
+
+.box-icon-div {
+    color: var(--grey-sec) !important;
+}
+
+.parent-expansion-panel-inner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem 0.5rem;
+
+}
+
+.grid-div {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+}
+
+.in-form-row {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-input-label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-field {
+    width: 100% !important;
+    height: fit-content;
+    border: var(--grey);
+}
+
+::ng-deep .form-field {
+    width: 100% !important;
+}
+
+.linkfile {
+    background-color: var(--blue);
+    padding: 14px 20px;
+    margin: 0px;
+    color: white !important;
+    border-radius: 4px;
+    height: max-content;
+}
+
+.in-form-row-file-2 {
+    width: 100%;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+}
+
+.input-and-button-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-head-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.identity-field {
+    width: 100%;
+}
+
+.label-radio-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 3px; */
+}
+
+.radio-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#hideinput {
+    display: none;
+}
+
+.upload-image-div {
+    background-color: var(--blue);
+    min-width: fit-content;
+    padding: 12px 15px;
+    margin: 0px !important;
+}
+
+.input {
+    width: 100%;
+    border: none;
+}
+
+.upload-input-div {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid var(--black);
+}
+
+.description-input {
+    padding: 1rem;
+    width: 95%;
+    height: 100px !important;
+}
+
+.text-with-toggle-div {
+    display: flex;
+    gap: 8px;
+
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--grlight);
+}
+
+@media (max-width: 540px) {
+
+    .buttons-inner-div {
+        flex-wrap: wrap;
+    }
+
+    .expansion-panel-heading-icons-div {
+        flex-wrap: wrap;
+    }
+
+    .text-with-toggle-div {
+        margin-bottom: 10px;
+    }
+}
+
+.child-expansion-panel-inner-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0.5rem;
+}
+
+.save-button {
+    color: var(--white);
+    background-color: var(--lightgreen);
+    width: fit-content;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 24px;
+    box-shadow: 0px 0px 12px 0px var(--grey);
+}
+
+.my-quizzer-heading-div-in {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    /* margin: 0px 19px; */
+    font-weight: 700;
+    gap: 8px;
+}
+
+@media (max-width:610px) {
+
+    ::ng-deep .mat-horizontal-content-container {
+        padding: 0px;
+    }
+
+    ::ng-deep .mat-expansion-panel-body {
+        padding: 0px !important;
+    }
+
+    .parent-expansion-panel-inner-content {
+        padding: 1rem 8px;
+    }
+
+    .my-quizzer-heading-div-in {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:599px) {
+    .grid-div {
+        grid-template-columns: auto;
+    }
+}
+
+@media (min-width:600px) and (max-width:1100px) {
+    .grid-div {
+        grid-template-columns: auto auto;
+    }
+}
+
+.mat-mdc-elevation-specific .mat-mdc-menu-item span {
+    color: var(--grey) !important;
+}
+
+
+.select_in {
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+
+
+/* Mat expansion toggle indicator after */
+::ng-deep .main-section-div .mat-accordion .mat-expansion-toggle-indicator-after {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}

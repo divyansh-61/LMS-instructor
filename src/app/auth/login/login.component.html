@@ -1,0 +1,139 @@
+<!-- login page startclass="p10 mt50 grid"   < fxFlexFill -->
+<div
+  fxLayout="row "
+  fxLayout.xs="column"
+  fxLayoutGap="16px "
+  class="my5 px2 login_main"
+>
+  <div fxFlex="50%" fxFlex.sm="100%" class="px2">
+    <div class="text-center">
+      <p class="login_text">Login to your account</p>
+      <img
+        src="assets/images/loginimg.png"
+        alt="imageAlt"
+        class="width8 text-center"
+      />
+    </div>
+  </div>
+
+  <div fxFlexAlign="center-center" fxFlex="50%" fxFlex.sm="100%" class="wful">
+    <div>
+      <div class="mfbtn_login">
+        <button
+          mat-button
+          class="emailbtn"
+          (click)="setSelectedButton('email')"
+          [class.bgpink]="selectedButton === 'email'"
+          [class.bggrey]="selectedButton !== 'email'"
+        >
+          email
+        </button>
+        <button
+          mat-button
+          class="phonebtn upercase mx py"
+          (click)="setSelectedButton('phone')"
+          [class.bgpink]="selectedButton === 'phone'"
+          [class.bggrey]="selectedButton !== 'phone'"
+        >
+          phone
+        </button>
+      </div>
+      <div class="mt50 inrep">
+        <div [hidden]="selectedButton == 'phone'">
+          <mat-label class="email_text_label">Email :</mat-label><br />
+          <div class="mt2">
+            <mat-form-field appearance="outline" class="w100 py3">
+              <input matInput type="email" placeholder="Email" class="" />
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div [hidden]="selectedButton == 'email'">
+          <div class="recover_div">
+            <div class="w_div">
+              <mat-label class="email_text_label">Country:</mat-label><br />
+              <div class="mt2">
+                <mat-form-field appearance="outline" class="py3 w100">
+                  <!-- <input matInput type="tel" id="phone" /> -->
+                  <input matInput type="tel" id="phone" class="mt2" />
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="w_div1">
+              <mat-label class="email_text_label">Phone:</mat-label><br />
+              <div class="mt2">
+                <mat-form-field appearance="outline" class="py3 w100">
+                  <input matInput type="number" placeholder="phone" class="" />
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <mat-label class="email_text_label">Password :</mat-label><br />
+        <div class="mt2">
+          <mat-form-field appearance="outline" class="w100 py3">
+            <input matInput type="password" placeholder="Password " class="" />
+          </mat-form-field>
+        </div>
+
+        <p routerLink="/recoverypassword" class="forg_text">
+          Forgot your password?
+        </p>
+
+        <div class="login_div">
+          <button mat-button class="upercase loginbtn">Login</button>
+          <p class="login_as_text">Login as</p>
+          <div class="mfbtn_login">
+            <button
+            routerLink="/student"
+              mat-button
+              class="student_btn"
+              (click)="setStudentbtn('student')"
+              [class.bgpn]="studentbtn === 'student'"
+              [class.bgrey]="studentbtn !== 'student'"
+            >
+              Student
+            </button>
+            <button
+              mat-button
+              class="ins_btn upercase mx py"
+              (click)="setStudentbtn('student')"
+              [class.bgpn]="studentbtn === 'student'"
+              [class.bgrey]="studentbtn !== 'student'"
+            >
+              instructor
+            </button>
+            <button
+              mat-button
+              class="org_btn upercase py"
+              (click)="setStudentbtn('student')"
+              [class.bgpn]="studentbtn === 'student'"
+              [class.bgrey]="studentbtn !== 'student'"
+            >
+              organization
+            </button>
+          </div>
+          <p class="dont_text">
+            Don't have an account? <span class="si_text">Signup</span>
+          </p>
+        </div>
+        <div class="mfbtn">
+          <button mat-raised-button class="fac_btn">
+            <!-- <mat-icon fontIcon="user"> -->
+            <img src="assets/images/fac.png" alt="facebook" class="w2 mr2" />
+            <!-- </mat-icon> -->
+            Facebook
+          </button>
+          <button mat-raised-button class="fac_btn">
+            <img src="assets/images/gog.png" alt="facebook" class="w2 mr2" />
+
+            Google
+          </button>
+
+          <div class="wrapper"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

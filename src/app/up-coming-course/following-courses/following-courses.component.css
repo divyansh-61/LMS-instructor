@@ -1,0 +1,303 @@
+.My-Up-Coming-Courses {
+    padding: 10px;
+}
+
+
+
+/* ------------------------------------heading css-------------------- */
+
+.heading-tag {
+    margin-top: 10px;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.hr-line {
+    margin-top: 10px;
+    width: 180px;
+    border: 1px solid var(--primary-color);
+}
+
+/* ------------------------------------heading css close-------------------- */
+
+
+
+
+/* ------------------------------------arrow-------------------- */
+.sub-heading-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* margin: 30px 0 10px 0; */
+    width: 100%;
+
+}
+
+.sub-heading {
+    font-size: 20px;
+    font-weight: 500;
+    text-wrap: nowrap;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 550px) {
+    .sub-heading {
+        font-size: 15px;
+        text-wrap: nowrap;
+        margin-right: 10px;
+    }
+
+    .toggle-with-line .aroowline-3 {
+        position: absolute !important;
+        top: 3px !important;
+        left: 140px !important;
+        font-size: 14px !important;
+        color: var(--lighpink) !important;
+    }
+
+    .toggle-text {
+        font-size: 15px !important;
+        color: var(--grey-sec);
+        /* flex-wrap: nowrap !important; */
+        text-wrap: wrap !important;
+        margin: 0 10px;
+    }
+}
+
+.aroowline {
+    position: absolute;
+    top: 28px;
+    left: 184px;
+    font-size: 14px;
+    color: var(--lighpink);
+}
+
+
+
+.arrow-line {
+    width: 100%;
+    border-bottom: 2px solid var(--lighpink);
+}
+
+
+/* ------------------------------------arrow close-------------------- */
+
+
+
+/* ------------------------------------UP COMMING COURCE -------------------- */
+.img-div {
+    width: fit-content;
+}
+
+.cource-mat-card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+
+.hedaing-and-button {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding-top: 20px !important;
+}
+
+@media screen and (max-width: 900px) {
+    .cource-mat-card-content {
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+
+}
+
+.card-heading {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--blue);
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 900px) {
+    .card-heading {
+        font-size: 28px;
+        color: var(--blue);
+    }
+}
+
+.card-button {
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color);
+    font-size: 20px !important;
+    padding: 0 30px 0 30px !important;
+    margin-left: 10px;
+
+}
+
+
+
+.detail-heading {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey-sec);
+    margin: 10px;
+}
+
+.detail-heading-2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+
+}
+
+.courses-mat-card-div {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+    margin: 10px 0 10px 0;
+    padding: 10px !important;
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .courses-mat-card-div {
+        display: flex !important;
+        flex-direction: row !important;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+    }
+}
+
+
+.img-2-div-absulute {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+
+.three-dot-button {
+    display: flex;
+    justify-content: end !important;
+    float: left !important;
+}
+
+.hedaing-and-button-btn-and-live {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+::ng-deep .mat-mdc-elevation-specific .mat-mdc-menu-item span:hover {
+    color: var(--primary-color) !important;
+}
+
+
+
+
+
+
+/* ------------------------------------UP COMMING COURCE close-------------------- */
+
+.mat-card,
+.mdc-card {
+    background-color: var(--white) !important;
+}
+
+
+
+
+
+
+.details-divs {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 6px;
+    flex-direction: column;
+    margin-top: 20px;
+    width: --webkit-fill-available;
+    justify-content: space-between;
+    /* padding: 1rem; */
+    /* text-wrap: nowrap; */
+}
+
+@media (max-width:420px) {
+
+    .details-divs {
+        grid-template-columns: auto;
+        padding: 0px;
+    }
+}
+
+@media (min-width:421px) and (max-width:520px) {
+
+    .details-divs {
+        grid-template-columns: auto auto;
+        padding: 0px;
+    }
+}
+
+@media (min-width:521px) and (max-width:899px) {
+    .details-divs {
+        grid-template-columns: auto auto auto;
+        padding: 0px;
+    }
+}
+
+@media (min-width:900px) and (max-width:1000px) {
+
+    .details-divs {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width:1001px) and (max-width: 1200px) {
+    .details-divs {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+.my-quizzer-heading-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.quizzers-arrow-line-div {
+    display: flex;
+    align-items: center;
+    gap: -1;
+    width: 100%;
+}
+
+.quizzers-pink-line {
+    border: 1px solid var(--lighpink);
+    width: 100%;
+    opacity: 40%;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+.quizzers-arrow-icon {
+    margin-right: -10px;
+    color: var(--lighpink);
+    font-size: 15px;
+    min-width: fit-content;
+    height: 100% !important;
+}
+
+.med-16 {
+    font-size: 16px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}

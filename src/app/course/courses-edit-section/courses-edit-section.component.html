@@ -1,0 +1,80 @@
+<!-- meeting popup code starts -->
+<div class="centerpartdiv" id="showadd">
+    <div class="confirmdelete">
+        <!-- pop up div -->
+        <div class="upperpart">
+            <div class="spandiv">
+                <span class="deletespan">Edit Section</span>
+            </div>
+        </div>
+        <!-- p div -->
+        <div class="parapart">
+            <!-- <img src="assets/Courses/error.png" alt=""> -->
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label reg-16">Language</mat-label><br />
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <mat-select class="select_in" [(value)]="language">
+                            <mat-option value="English">English</mat-option>
+                            <mat-option value="Hindi">Hindi</mat-option>
+                            <mat-option value="Spanish">Spanish</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="in-form-row">
+                <mat-label class="form-input-label reg-16">Section Title</mat-label><br />
+                <div class="mt2">
+                    <mat-form-field appearance="outline" class="form-field">
+                        <input matInput class="select_in" placeholder="Second Chapter">
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="result-statistics-div">
+
+                <div class="result-statistics">
+                    <div class="my-quizzer-heading-div">
+                        <p class="reg-16">Active</p>
+
+                        <div class="quizzers-arrow-line-div">
+                            <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                            <p class="quizzers-pink-line m0"></p>
+                        </div>
+                    </div>
+
+                    <div class="text-with-toggle-div">
+                        <!-- <p>Show only open results</p> -->
+                        <mat-slide-toggle checked=""></mat-slide-toggle>
+                    </div>
+
+                </div>
+
+                <div class="result-statistics">
+                    <div class="my-quizzer-heading-div">
+                        <p class="reg-16">The student should pass all parts</p>
+
+                        <div class="quizzers-arrow-line-div">
+                            <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                            <p class="quizzers-pink-line m0"></p>
+                        </div>
+                    </div>
+
+                    <div class="text-with-toggle-div">
+                        <!-- <p>Show only open results</p> -->
+                        <mat-slide-toggle checked=""></mat-slide-toggle>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="buttondiv">
+            <button mat-raised-button (click)=" openPopup_new()">Save</button>
+            <button mat-raised-button (click)=" openPopup_new2()">Close</button>
+        </div>
+    </div>
+</div>

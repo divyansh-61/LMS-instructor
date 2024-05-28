@@ -1,0 +1,111 @@
+<!-- myupcomingcourses works div  -->
+<div class="My-Up-Coming-Courses" *ngIf="!isShowNewPlan">
+
+
+    <div>
+        <p class="heading-tag">Upcoming Courses</p>
+        <p class="hr-line"></p>
+    </div>
+
+    <div class="sub-heading-div">
+        <p class="sub-heading med-16">Meeting statistics</p>
+        <mat-icon class="aroowline">play_arrow</mat-icon>
+        <p class="arrow-line"></p>
+    </div>
+
+
+    <!-- mat cards   -->
+    <div class="mat-card-div">
+        <mat-card class="support-card-border">
+            <mat-card-content class="support-contaent-div">
+                <div class="icon-img-div">
+                    <img src="assets/upcomingcourses/image 143.png" class="suppoet-icon-envelop" alt="image 143.png">
+                    <!-- <i   fa-solid fa-envelope-open-text"></i> -->
+                    <img src="assets/upcomingcourses/Group 340235.png" class="suppoet-img" alt="Group 340235.png">
+                </div>
+                <div>
+                    <p class="text-1">1</p>
+                    <p class="text-2"> Total Courses</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="support-card-border">
+            <mat-card-content class="support-contaent-div">
+                <div class="icon-img-div">
+                    <img src="assets/upcomingcourses/image 144.png" class="suppoet-icon-envelop" alt="image 144.png">
+                    <img src="assets/upcomingcourses/Group 340235.png" class="suppoet-img" alt="Group 340235.png">
+                </div>
+                <div>
+                    <p class="text-1">1</p>
+                    <p class="text-2">Released Courses</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="support-card-border">
+            <mat-card-content class="support-contaent-div">
+                <div class="icon-img-div">
+                    <img src="assets/upcomingcourses/image 145.png" class="suppoet-icon-envelop" alt="image 145.png">
+                    <img src="assets/upcomingcourses/Group 340235.png" class="suppoet-img" alt="Group 340235.png">
+                </div>
+                <div>
+                    <p class="text-1">1</p>
+                    <p class="text-2">Not Released</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="support-card-border">
+            <mat-card-content class="support-contaent-div">
+                <div class="icon-img-div">
+                    <img src="assets/upcomingcourses/image 146.png" class="suppoet-icon-envelop" alt="image 145.png">
+                    <img src="assets/upcomingcourses/Group 340235.png" class="suppoet-img" alt="Group 340235.png">
+                </div>
+                <div>
+                    <p class="text-1">3</p>
+                    <p class="text-2">Followers</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <!-- mat cards close -->
+
+
+
+    <div class="toggle-with-line">
+        <!-- sub hedaing  -->
+        <div class="my-quizzer-heading-div">
+            <p class="med-16">My Upcoming Courses</p>
+
+            <div class="quizzers-arrow-line-div">
+                <mat-icon class="mat-18 quizzers-arrow-icon">play_arrow</mat-icon>
+                <p class="quizzers-pink-line m0"></p>
+            </div>
+        </div>
+        <!-- sub hedaing close -->
+        <div class="toggle-div">
+            <span class="toggle-text">Only not released courses</span>
+            <mat-slide-toggle checked="" (click)="toggleNewPlan()"></mat-slide-toggle>
+        </div>
+    </div>
+
+
+    <!-- img div  -->
+    <div class="main-image-div">
+        <img src="assets/upcomingcourses/Group 340669.png" class="image-1" alt="Group 340482.png">
+        <p class="text-h1">No upcoming courses</p>
+        <p class="text-h3"> You do not have any upcoming courses...</p>
+        <button class="butten-fqa" mat-raised-button>Create an upcoming courses</button>
+
+    </div>
+    <!-- img div close --><!-- image-div  -->
+    <div>
+
+    </div>
+    <!-- image-div  close -->
+
+</div>
+<!-- myupcomingcourses works div close -->
+
+
+<ng-container *ngIf="isShowNewPlan">
+    <app-myupcomingcourses></app-myupcomingcourses>
+</ng-container>

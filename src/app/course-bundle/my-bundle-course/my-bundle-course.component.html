@@ -1,0 +1,183 @@
+<!-- var(--grey) -->
+<!-- sub hedaing  -->
+<div class="sub-heading-div">
+    <p class="sub-heading">My activity</p>
+    <i class="fa-solid fa-caret-right"></i>
+    <p class="arrow-line"></p>
+</div>
+<!-- sub hedaing close -->
+<!--cards-->
+<div class="card-grid-div">
+    <!-- First Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="../assets/Financial/img1.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="../assets/Financial/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">$251.40</p>
+            <p class="card-bottom">Account charge</p>
+        </div>
+    </mat-card>
+    <!-- Second Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="../assets/Financial/img2.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="../assets/Financial/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">$46.50</p>
+            <p class="card-bottom">Ready to payout</p>
+        </div>
+    </mat-card>
+    <!-- Third Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="../assets/Financial/img3.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="../assets/Financial/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">$46.50</p>
+            <p class="card-bottom">Total income</p>
+        </div>
+    </mat-card>
+    <!-- fourth Card -->
+    <mat-card>
+        <div class="card-top">
+            <div>
+                <img src="../assets/Financial/img3.png" alt="" class="img_first">
+            </div>
+            <div>
+                <img src="../assets/Financial/stoke.png" alt="" class="img_second">
+            </div>
+        </div>
+        <div class="card-down">
+            <p class="card-medium">$46.50</p>
+            <p class="card-bottom">Total income</p>
+        </div>
+    </mat-card>
+</div>
+<!--end cards-->
+
+
+<!-- sub hedaing  -->
+<div class="sub-heading-div">
+    <p class="sub-heading">My Bundles</p>
+    <i class="fa-solid fa-caret-right"></i>
+    <p class="arrow-line"></p>
+</div>
+<!-- sub hedaing close -->
+
+<!-- cources card -->
+<div>
+    <!-- mat card 1 -->
+    <mat-card>
+        <mat-card-content>
+            <div class="courses-mat-card-div">
+                <div class="img-div">
+                    <div class="absolut_2-course">Active</div>
+                    <img src="assets/courseBundle/Rectangle 4569.png" alt="Rectangle 4569.png">
+                </div>
+                <div class="cource-mat-card-content">
+                    <div class="hedaing-and-button-and-icon">
+                        <div class="hedaing-and-button">
+                            <p class="card-heading">Microsoft Office Beginner to Expert Bundle</p>
+                        </div>
+                        <span>
+                            <button mat-button [matMenuTriggerFor]="menu">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em"
+                                    viewBox="0 0 20 20">
+                                    <!-- three dot icon start -->
+                                    <g fill="currentColor">
+                                        <circle cx="10" cy="15" r="2" />
+                                        <circle cx="10" cy="10" r="2" />
+                                        <circle cx="10" cy="5" r="2" />
+                                    </g>
+                                    <!-- three dot icon end -->
+                                </svg></button>
+                            <mat-menu #menu="matMenu">
+                                <button mat-menu-item class="btn-popup" routerLink="/CourseBundle/edit">Edit</button>
+                                <button mat-menu-item class="btn-popup"
+                                    routerLink="/CourseBundle/click-course">Courses</button>
+                                <button mat-menu-item class="btn-popup">Export students list</button>
+                                <button mat-menu-item class="btn-popup" (click)="delete()">Delete</button>
+
+                            </mat-menu>
+                        </span>
+                    </div>
+                    <div class="star-btn">
+                        <p class="icon_star_mar">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z" />
+                            </svg>
+                        </p>
+
+                        <p class="num-btn">5.00</p>
+
+                    </div>
+                    <span>
+                        <p class="dolar-purchase">$50</p>
+                    </span>
+                    <!-- detail div -->
+                    <div class="details-divs">
+                        <div>
+                            <p class="detail-heading">Item ID: </p>
+                            <p class="detail-heading-2">5</p>
+                        </div>
+                        <div>
+                            <p class="detail-heading">Category: </p>
+                            <p class="detail-heading-2">Design </p>
+                        </div>
+                        <div>
+                            <p class="detail-heading">Duration:</p>
+                            <p class="detail-heading-2">15:10 Hrs </p>
+                        </div>
+                        <div>
+                            <p class="detail-heading">Course:</p>
+                            <p class="detail-heading-2"> 4</p>
+                        </div>
+                        <div>
+                            <p class="detail-heading">Sales:</p>
+                            <p class="detail-heading-2"> 1 ($50)</p>
+                        </div>
+
+                    </div>
+                    <!-- detail div close -->
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+
+</div>
+<!-- cources card close -->

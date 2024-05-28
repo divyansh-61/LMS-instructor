@@ -1,0 +1,143 @@
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    background-color: var(--lighpink);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 5px;
+}
+
+
+.buttons-div {
+    display: flex;
+    justify-content: center;
+    background-color: var(--whitligt);
+    justify-content: center;
+    padding: 10px !important;
+    gap: 0.5rem;
+}
+
+.yesBtn {
+    background-color: var(--lightgreen) !important;
+    color: var(--white) !important;
+    padding: 20px 30px !important;
+    font-size: 16px;
+    /* margin-left: 12px; */
+}
+
+.pop-closeBtn {
+    background-color: var(--red) !important;
+    color: var(--white) !important;
+    border-radius: 6px;
+    padding: 10px 30px 10px 30px !important;
+    /* margin-left: 10px; */
+    font-size: 16px;
+    border: none;
+
+}
+
+
+/* ------------------------------------input Field-------------------- */
+
+
+.new-form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center;  */
+    text-align: left !important;
+}
+
+.new-form-label {
+    float: left !important; 
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 400;
+}
+
+.selected-form-field {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.select-input {
+    height: 2.8rem;
+    border: 0.5px solid var(--grey);
+    border-radius: 0.3rem;
+    width: -webkit-fill-available;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    color: var(--grey-sec);
+}
+
+.dual-down-arrow {
+    position: absolute;
+    right: 0.4rem;
+    top: 1.2rem;
+}
+
+.select-input {
+    appearance: none;
+}
+
+/* ------------------------------------input Field-------------------- */
+
+
+.new-form .selected-form-field select{
+    outline: none !important;
+}
+
+.main-div .new-form .selected-form-field{
+    width: 90%;
+}
+
+@media screen and (min-width: 700px) {
+
+    .pop-closeBtn {
+        background-color: var(--red) !important;
+        color: var(--white) !important;
+        border-radius: 6px;
+        padding: 10px 30px 10px 30px !important;
+        margin-left: 10px;
+        font-size: 16px;
+        border: none;
+    }
+}
+
+@media screen and (min-width:400) {
+    .text-1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .text-2 {
+        font-size: 12px;
+        color: var(--grey-sec);
+        text-align: center;
+    }
+
+}
+
+@media (min-width:320px) and (max-width: 900px) {
+    ::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+        width: inherit !important;
+
+    }
+}
+
+::ng-deep .mat-mdc-dialog-container .mat-mdc-dialog-surface{
+    border-radius: 15px !important;
+}

@@ -1,0 +1,83 @@
+.upperpart{
+    padding: 25px;
+    background-color: var(--lightbluee);
+}
+/* .parapart{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+} */
+
+.doyoupart span{
+   color: grey;
+}
+.buttondiv{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-block: 10px;
+   text-align: center;
+   gap: 10px;
+   font-size: 14px;
+   margin-top: 20px;
+   
+}
+
+.yes_btn{
+   background-color: var(--greeen);
+   text-wrap: nowrap;
+   color: #fff !important;
+   margin: 0px 10px!important;
+   box-shadow: none!important;
+   padding: 0px 26px!important;
+}
+
+.buttondiv{
+   background-color: rgba(187, 187, 187, 0.2);
+
+}
+.close{
+   background-color: #FF0000;
+   color: var(--white);
+   padding: 0px 26px!important;
+   box-shadow: none!important;
+}
+/* popup border radius notes ngdeep used */
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface{
+   border-radius: 20px !important;
+}
+/* popup responsive media queries */
+@media (min-width:320px) and (max-width:900px) {
+  ::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface{
+       width: inherit !important
+   }
+   .parapart p{
+       text-align: center;
+       padding-inline: 30px;
+   }
+   .buttondiv{
+    padding-inline: 50px;
+   }
+
+}
+.parapart{
+   text-align: center;
+}
+.parapart p{
+   font-weight: 600;
+   padding-top: 0px!important;
+   margin-bottom: 0px!important;
+}
+.parapart span{
+   font-size: 16px;
+   margin-bottom: 20px!important;
+}
+
+.example-button-row{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 10px;
+}

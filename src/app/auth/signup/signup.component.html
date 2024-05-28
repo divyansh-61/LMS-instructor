@@ -1,0 +1,122 @@
+<!-- login page startclass="p10 mt50 grid"   < fxFlexFill -->
+<div class="my5 main_sign_up">
+  <div class="mfbtn">
+    <p class="sign_text">Signup</p>
+  </div>
+  <div
+    fxLayout="row "
+    fxLayout.xs="column"
+    fxLayoutGap="16px "
+    fxLayoutAlign="center center"
+    class="px2"
+  >
+    <div fxFlex="50%" fxFlex.sm="100%" class="px2">
+      <div class="text-center">
+        <img
+          src="assets/images/signup.png"
+          alt="imageAlt"
+          class="w100 text-center"
+        />
+      </div>
+    </div>
+
+    <div fxFlexAlign="center-center" fxFlex="50%" fxFlex.sm="100%" class="wful">
+      <div>
+        <div class="mt50 inrep">
+          <!-- [hidden]="selectedButton == 'phone'" -->
+          <div>
+            <mat-label class="label-text">Email :</mat-label><br />
+            <div class="mt2">
+              <mat-form-field class="w100" appearance="outline">
+                <input matInput type="email" placeholder="email" />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="recover_div">
+            <div class="w_div">
+              <mat-label class="label-text">Country:</mat-label><br />
+              <div class="mt2">
+                <mat-form-field appearance="outline" class="py3 w100">
+                  <input matInput type="tel" id="phone" />
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="w_div1">
+              <mat-label class="label-text">Phone (Optional):</mat-label><br />
+              <div class="mt2">
+                <mat-form-field class="w100 py3" appearance="outline">
+                  <input matInput type="text" placeholder="phone" class="" />
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+          <div>
+            <mat-label class="label-text">FullName</mat-label><br />
+            <div class="mt2">
+              <mat-form-field class="w100 py3" appearance="outline">
+                <input matInput type="text" class="" />
+              </mat-form-field>
+            </div>
+          </div>
+          <div>
+            <mat-label class="label-text">Password</mat-label><br />
+            <div class="mt2">
+              <mat-form-field appearance="outline" class="w100 py3">
+                <input matInput type="password" class="" />
+              </mat-form-field>
+            </div>
+          </div>
+          <div>
+            <mat-label class="label-text">Retype Password:</mat-label><br />
+            <div class="mt2">
+              <mat-form-field appearance="outline" class="w100 py3">
+                <input matInput type="password" class="" />
+              </mat-form-field>
+            </div>
+          </div>
+          <div>
+            <mat-label class="label-text">Time Zone</mat-label><br />
+            <div class="mt2">
+              <mat-form-field appearance="outline" class="w100 py3">
+                <mat-select class="select_in">
+                  <mat-option value="red">Red</mat-option>
+                  <mat-option value="green">Green</mat-option>
+                  <mat-option value="blue">Blue</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <div>
+            <mat-label class="label-text">Referral code:</mat-label><br />
+            <div class="mt2">
+              <mat-form-field appearance="outline" class="w100 py3">
+                <input matInput type="text" class="input_fil" />
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="mt2">
+            <section>
+              <mat-checkbox class="f_text"
+                >I agree with
+                <span class="fnw">terms & rules</span></mat-checkbox
+              >
+            </section>
+          </div>
+          <!-- [hidden]="selectedButton == 'email'" -->
+
+          <div class="mt20">
+            <button mat-button class="upercase signbtn">Signup</button>
+          </div>
+          <div>
+            <p class="text-center fnw5 f20">
+              Already have an account? &nbsp;
+              <a routerLink="login" class="ankrs"
+                ><span class="fnw">Login</span></a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
